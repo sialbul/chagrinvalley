@@ -1,8 +1,113 @@
-body {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* body {
+  font-family: 'Quicksand', sans-serif;
   background-image: url("Chagrin-Valley.png");
 }
 
-#logo {
+* body .navbar {
+  font-size: 18px;
+  background-color: #dae954;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 30px;
+  position: fixed;
+  width: 100%;
+}
+
+* body .main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+* body .nav-links,
+* body .logo {
+  text-decoration: none;
+  color: dark grey;
+}
+
+* body .main-nav li {
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bold;
+}
+
+* body .logo {
+  display: inline-block;
+}
+
+* body .logo img {
+  width: 18vh;
+  height: 18vh;
+  margin: 2vh;
+  padding: 1vh;
   border-radius: 20%;
+}
+
+* body .navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+* body .active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  * body .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 0;
+    height: 90px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * body .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  * body .main-nav .navbar-toggle {
+    display: none;
+  }
+  * body .main-nav li {
+    margin: 0;
+  }
+  * body .main-nav .nav-links {
+    margin-left: 40px;
+  }
+  * body .main-nav .logo {
+    margin-top: 0;
+  }
+  * body .main-nav .logo:hover,
+  * body .main-nav .nav-links:hover {
+    color: white;
+  }
+}
+
+.mainphoto {
+  width: 100%;
+  max-height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
