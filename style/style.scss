@@ -14,6 +14,8 @@
  }
  
  .sectionHeader {
+     font-family: 'Ubuntu', sans-serif;
+     font-weight: bold;
      font-size: 6vh;
      font-weight: 900;
      color: $blue;
@@ -96,12 +98,10 @@
      }
  }
  
- #aboutUsInfoPhotos,
- #ourActivitiesPhoto {
+ #aboutUsInfoPhotos {
      width: 55vh;
      height: 40vh;
      border-radius: 10%;
-     box-shadow: 2px 2px 4px #000000;
  }
  
  .aboutUsInfo,
@@ -124,17 +124,21 @@
  }
  
  .ourActivitiesInfo {
-     justify-content: space-evenly;
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     padding: 6vh 0;
  }
  
  #ourActivitiesPhoto {
-     width: 60vh;
-     height: 40vh;
+     width: 30vh;
+     height: 30vh;
      align-items: center;
-     margin: 5vh;
+     margin-bottom: 6vh;
+     border-radius: 10%;
  }
  
  .ourActivitiesLink {
+     padding-bottom: 6vh;
      img {
          height: 30vh;
          width: 30vh;

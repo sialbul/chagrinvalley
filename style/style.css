@@ -137,6 +137,8 @@ body {
 }
 
 .sectionHeader {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
   font-size: 6vh;
   font-weight: 900;
   color: #0779E4;
@@ -230,13 +232,10 @@ body {
   color: white;
 }
 
-#aboutUsInfoPhotos,
-#ourActivitiesPhoto {
+#aboutUsInfoPhotos {
   width: 55vh;
   height: 40vh;
   border-radius: 10%;
-  -webkit-box-shadow: 2px 2px 4px #000000;
-          box-shadow: 2px 2px 4px #000000;
 }
 
 .aboutUsInfo,
@@ -261,18 +260,25 @@ body {
 }
 
 .ourActivitiesInfo {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  padding: 6vh 0;
 }
 
 #ourActivitiesPhoto {
-  width: 60vh;
-  height: 40vh;
+  width: 30vh;
+  height: 30vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5vh;
+  margin-bottom: 6vh;
+  border-radius: 10%;
+}
+
+.ourActivitiesLink {
+  padding-bottom: 6vh;
 }
 
 .ourActivitiesLink img {
