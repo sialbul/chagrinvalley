@@ -108,6 +108,10 @@
     font-size: 1.6vw;
     padding: 0.8em 1.4em;
   }
+  .learnMoreButton2 {
+    font-size: 1.8vw;
+    padding: 1em 1.6em;
+  }
   .sectionHeader {
     font-size: 2vh;
     font-weight: 200;
@@ -187,6 +191,7 @@ body {
 .learnMoreButton2 {
   background-color: #ffE75E;
   color: black;
+  margin-top: 5vh;
 }
 
 /*About Us Section*/
@@ -224,14 +229,33 @@ body {
   color: white;
 }
 
-#aboutUsInfoPhotos {
-  width: 60vh;
+#aboutUsInfoPhotos,
+#ourActivitiesPhoto {
+  width: 55vh;
   height: 40vh;
+  border-radius: 10%;
+  -webkit-box-shadow: 2px 2px 4px #000000;
+          box-shadow: 2px 2px 4px #000000;
+}
+
+.aboutUsInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 5vh;
+  line-height: 5vh;
+}
+
+.aboutUsInfoParargaf {
+  text-align: center;
+  margin: 5vh;
 }
 
 /*Our Activities Section*/
 .ourActivities {
   background-color: #00ead350;
+  padding-top: 6vh;
 }
 
 #ourActivitiesPhoto {
