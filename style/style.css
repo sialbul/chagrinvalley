@@ -104,6 +104,19 @@
   main {
     padding-top: 50px;
   }
+  .learnMoreButton {
+    font-size: 1.6vw;
+    padding: 0.8em 1.4em;
+  }
+  .sectionHeader {
+    font-size: 2vh;
+    font-weight: 200;
+  }
+  .aboutLink ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 * {
@@ -119,6 +132,13 @@ body {
   text-align: center;
 }
 
+.sectionHeader {
+  font-size: 6vh;
+  font-weight: 900;
+  color: #0779E4;
+}
+
+/*Top Picture Section*/
 .topPicture {
   position: relative;
 }
@@ -135,23 +155,73 @@ body {
   left: 30%;
 }
 
+/*Buttons*/
 .learnMoreButton {
-  background-color: red;
-  border-radius: 45%;
-  color: white;
-  font-size: 1vw;
-  padding: 2vh;
-  margin: 0;
-  position: absolute;
   top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.learnMoreButton,
+.learnMoreButton2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  background-color: #F12D2D;
+  color: white;
+  font-size: 1.2vw;
+  padding: 0.6em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  border: none;
   cursor: pointer;
 }
 
-.learnMoreButton:hover {
+.learnMoreButton:hover,
+.learnMoreButton2:hover {
   background-color: #0779E4;
+  color: white;
+}
+
+.learnMoreButton2 {
+  background-color: #ffE75E;
+  color: black;
+}
+
+/*About Us Section*/
+.aboutUs {
+  padding-top: 6vh;
+}
+
+.aboutLink ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 4vh 0;
+}
+
+.aboutLink ul li {
+  margin-right: 2vh;
+  padding: 1vh;
+  background-color: #ffE75E;
+  padding: 0.6em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.aboutLink ul li:hover {
+  background-color: #0779E4;
+  color: white;
 }
 
 #aboutUsInfoPhotos {
@@ -159,6 +229,7 @@ body {
   height: 40vh;
 }
 
+/*Our Activities Section*/
 .ourActivities {
   background-color: #00ead350;
 }
@@ -168,18 +239,20 @@ body {
   height: 40vh;
 }
 
+/*Event Section*/
+.eventGallery {
+  width: 50vh;
+  height: 30vh;
+  margin: 5vh;
+}
+
+/*Parent section*/
 .parentSection {
   background-color: #fff;
   background-size: 100% 1.2em;
   background-image: linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), linear-gradient(#eee 0.05em, transparent 0.05em);
   -pie-background: linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px) 0 0/100% 1.2em, linear-gradient(#eee 0.05em, transparent 0.05em) 0 0/100% 1.2em #fff;
   behavior: url(/PIE.htc);
-}
-
-.eventGallery {
-  width: 50vh;
-  height: 30vh;
-  margin: 5vh;
 }
 
 .parentSectionPhoto {
