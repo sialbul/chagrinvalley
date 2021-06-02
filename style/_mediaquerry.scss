@@ -34,3 +34,9 @@
         color: rgba(255, 255, 255, 1);
     }
 }
+
+@media screen and (max-width: 411px) {
+    main {
+        padding-top: 50px;
+    }
+}
