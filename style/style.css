@@ -6,13 +6,13 @@
   position: fixed;
   width: 100%;
   z-index: 3;
-  background-color: pink;
+  background-color: #ffE75E;
 }
 
 .main-nav {
   list-style-type: none;
   display: none;
-  background-color: pink;
+  background-color: #ffE75E;
   padding: 6vh;
 }
 
@@ -109,7 +109,7 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-image: url("./images/Chagrin-Valley.png");
+  background-image: url("../images/Chagrin-Valley.png");
   text-align: center;
 }
 
@@ -126,13 +126,25 @@ body {
   left: 30%;
 }
 
+.learnMoreButton {
+  background-color: red;
+  border-radius: 50%;
+  font-weight: bolder;
+  color: white;
+  font-size: 2vh;
+  position: absolute;
+  padding: 2vh;
+  top: 30%;
+  left: 30%;
+}
+
 #aboutUsInfoPhotos {
   width: 60vh;
   height: 40vh;
 }
 
 .ourActivities {
-  background-color: #00ead378;
+  background-color: #00ead350;
 }
 
 #ourActivitiesPhoto {

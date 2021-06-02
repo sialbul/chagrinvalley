@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: url("./images/Chagrin-Valley.png");
+    background-image: url("../images/Chagrin-Valley.png");
     text-align: center;
 }
 
@@ -23,6 +23,18 @@ body {
     width: 35%;
     position: absolute;
     top: 15%;
+    left: 30%;
+}
+
+.learnMoreButton {
+    background-color: red;
+    border-radius: 50%;
+    font-weight: bolder;
+    color: white;
+    font-size: 2vh;
+    position: absolute;
+    padding: 2vh;
+    top: 30%;
     left: 30%;
 }
 
