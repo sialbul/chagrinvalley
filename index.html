@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="icon" href="./images/chagrinvalley3.png" type="image/x-icon" />
     <script src="https://use.fontawesome.com/5bb1f52388.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Chagrin Valley Early Learning Center</title>
 
@@ -33,9 +35,7 @@
             <li>
                 <a href="#" class="nav-links">RESOURCES</a>
             </li>
-            <li>
-                <a href="#" class="nav-links">ABOUT</a>
-            </li>
+
             <li>
                 <a href="#" class="nav-links">CONTACT US</a>
             </li>
@@ -74,12 +74,15 @@
         </div>
         <div class="ourActivities">
             <p class="sectionHeader">Our Programs</p>
-
-            <img id="ourActivitiesPhoto" src="./images/schoolage2.jpg" alt="">
-            <img src="./images/book.png" alt="">
-            <img src="./images/book.png" alt="">
-            <img src="./images/book.png" alt="">
-            <img src="./images/book.png" alt="">
+            <div class="ourActivitiesInfo">
+                <img id="ourActivitiesPhoto" src="./images/schoolage2.jpg" alt="">
+                <div class="ourActivitiesLink">
+                    <img data-aos="fade-down" data-aos-delay="50" src="./images/infants.png" alt="">
+                    <img data-aos="fade-down" data-aos-delay="100" src="./images/toddlers.png" alt="">
+                    <img data-aos="fade-down" data-aos-delay="150" src="./images/preschool.png" alt="">
+                    <img data-aos="fade-down" data-aos-delay="200" src="./images/schoolage.png" alt="">
+                </div>
+            </div>
         </div>
         <div class="ourEventGallery">
             <p class="sectionHeader">Our Event Gallery</p>
@@ -106,6 +109,7 @@
         </div>
 
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script src="./index.js"></script>
 </body>

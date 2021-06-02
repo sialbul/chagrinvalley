@@ -17,6 +17,7 @@
      font-size: 6vh;
      font-weight: 900;
      color: $blue;
+     margin-bottom: 5vh;
  }
  /*Top Picture Section*/
  
@@ -103,7 +104,8 @@
      box-shadow: 2px 2px 4px #000000;
  }
  
- .aboutUsInfo {
+ .aboutUsInfo,
+ .ourActivitiesInfo {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
      margin: 5vh;
@@ -121,9 +123,22 @@
      padding-top: 6vh;
  }
  
+ .ourActivitiesInfo {
+     justify-content: space-evenly;
+ }
+ 
  #ourActivitiesPhoto {
      width: 60vh;
      height: 40vh;
+     align-items: center;
+     margin: 5vh;
+ }
+ 
+ .ourActivitiesLink {
+     img {
+         height: 30vh;
+         width: 30vh;
+     }
  }
  /*Event Section*/
  

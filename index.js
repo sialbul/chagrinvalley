@@ -17,3 +17,6 @@ navBarToggle.addEventListener('click', function() {
     }
 
 });
+
+/*animation*/
+AOS.init();
