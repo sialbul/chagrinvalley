@@ -1,5 +1,4 @@
 //navbar
-
 let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
@@ -22,39 +21,44 @@ navBarToggle.addEventListener('click', function() {
 AOS.init();
 
 
+let header = document.getElementById("headerAboutUs");
+let parargaf = document.getElementById("parargafAboutUs");
+let image = document.getElementById('aboutUsInfoPhotos');
+let title = document.getElementById("aboutUsLink").innerHTML;
 
 
-//getting info
-class MoreAboutUs {
-    async getData() {
-        try {
-            let result = await fetch('data.json');
-            let data = await result.json();
+function changeImage(title = "MISSION") {
 
-            let moreAboutUsAll = data.aboutUsHeaders;
-            moreAboutUsAll = moreAboutUsAll.map(aboutUsHeader => {
-                const { id, img, header, exp } = aboutUsHeader;
-                return { id, img, header, exp }
-            })
-            return moreAboutUsAll
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    header.innerHTML = "Your Kids is Our Future ";
+    parargaf.innerHTML = "Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential."
+    image.src = "./images/schoolage.jpg";
+    alert("mission");
 }
 
 
-function changeImage() {
-    const viewAboutUs = `
-    <div class="aboutUsInfoParargaf">
-    <h2>${aboutUsHeader.exp}</h2>
 
-    <p>Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential.</p>
-    <button class="learnMoreButton2">LEARN MORE</button>
-</div>
-<div class="aboutUsInfoPicture">
-    <img id="aboutUsInfoPhotos" src="./images/schoolage.jpg">
-</div>`
-    document.getElementById("aboutUsInfo").innerText = viewAboutUs;
 
-};
+(title === "VISION") {
+    header.innerHTML = "1-Your Kids is Our Future ";
+    parargaf.innerHTML = "1-Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential."
+    image.src = "./images/schoolage2.jpg";
+    alert("vision");
+
+} else if (title === "GOALS") {
+    header.innerHTML = "2-Your Kids is Our Future ";
+    parargaf.innerHTML = "2-Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential."
+    image.src = "./images/schoolage3.jpg";
+    alert("goals");
+
+} else if (title === "BELIEFS") {
+    header.innerHTML = "3-Your Kids is Our Future ";
+    parargaf.innerHTML = "3-Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential."
+    image.src = "./images/toddler.jpg";
+    alert("beliefs");
+
+} else {
+    header.innerHTML = "Your Kids is Our Future ";
+    parargaf.innerHTML = "Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential."
+    image.src = "./images/schoolage.jpg";
+}
+}
