@@ -16,7 +16,7 @@
  .sectionHeader {
      font-family: 'Ubuntu', sans-serif;
      font-weight: bold;
-     font-size: 6vh;
+     font-size: 5vw;
      font-weight: 900;
      color: $blue;
      margin-bottom: 5vh;
@@ -99,7 +99,7 @@
  }
  
  #aboutUsInfoPhotos {
-     width: 55vh;
+     width: 90%;
      height: 40vh;
      border-radius: 10%;
  }
@@ -130,8 +130,8 @@
  }
  
  #ourActivitiesPhoto {
-     width: 30vh;
-     height: 30vh;
+     width: 100%;
+     height: 40vh;
      align-items: center;
      margin-bottom: 6vh;
      border-radius: 10%;
@@ -168,7 +168,7 @@
  
  .parentSectionInfo {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
      justify-items: center;
      text-align: center;
  }
@@ -176,14 +176,13 @@
  .parentSectionPhoto {
      margin-bottom: 6vh;
      img {
-         width: 10vh;
-         height: 10vh;
+         width: 80%;
+         height: 35vh;
          border-radius: 50%;
      }
  }
  
  .parentSectionText {
-     width: 90%;
      margin-bottom: 6vh;
      p {
          font-size: 4vw;
@@ -270,6 +269,9 @@
      .ourActivitiesInfo {
          grid-template-columns: 1fr 2fr;
      }
+     #ourActivitiesPhoto {
+         width: 70%;
+     }
      .contactSection i {
          font-size: 3vw;
      }
@@ -278,16 +280,22 @@
      .emailSection {
          grid-template-columns: 1fr 3fr;
      }
-     .parentSectionText p {
-         font-size: 2vw;
+     .parentSectionText {
+         width: 90%;
+         p {
+             font-size: 2vw;
+         }
      }
      .parentSectionPhoto {
          margin-bottom: 6vh;
          img {
-             width: 20vh;
-             height: 20vh;
+             width: 55%;
+             height: 50vh;
              border-radius: 50%;
          }
+     }
+     .sectionHeader {
+         font-size: 3vw;
      }
  }
  
@@ -296,7 +304,7 @@
          padding-top: 50px;
      }
      .learnMoreButton {
-         font-size: 1.6vw;
+         font-size: 1.8vw;
          padding: 0.8em 1.4em;
      }
      .learnMoreButton2 {
@@ -304,10 +312,13 @@
          padding: 1em 1.6em;
      }
      .sectionHeader {
-         font-size: 2vh;
+         font-size: 4vh;
          font-weight: 200;
+         font-weight: bold;
      }
-     .aboutLink ul {
+     .aboutLink ul li {
          justify-content: space-evenly;
+         margin-right: 1vh;
+         padding: 1vh;
      }
  }
