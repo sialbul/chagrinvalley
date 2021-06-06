@@ -15,18 +15,34 @@
     display: none;
     background-color: $yellow;
     padding: 6vh;
+    position: relative;
+    li {
+        text-align: center;
+        margin: 25px auto;
+        font-weight: bold;
+        a {
+            text-decoration: none;
+        }
+        &:hover {
+            ul {
+                display: block;
+            }
+        }
+        ul {
+            display: none;
+            text-decoration: none;
+            list-style-type: none;
+            li:hover {
+                color: white;
+            }
+        }
+    }
 }
 
 .nav-links,
 .logo {
     text-decoration: none;
     color: dark grey;
-}
-
-.main-nav li {
-    text-align: center;
-    margin: 25px auto;
-    font-weight: bold;
 }
 
 .logo {

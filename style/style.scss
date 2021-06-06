@@ -244,6 +244,16 @@
      }
      .main-nav li {
          margin: 0;
+         position: relative;
+         text-align: left;
+         ul {
+             position: absolute;
+             top: 3.3vh;
+             background-color: $yellow;
+             width: max-content;
+             line-height: 5vh;
+             padding: 0 5vh 2vh;
+         }
      }
      .nav-links {
          margin-left: 40px;
@@ -289,7 +299,7 @@
      .parentSectionPhoto {
          margin-bottom: 6vh;
          img {
-             width: 55%;
+             width: 50%;
              height: 50vh;
              border-radius: 50%;
          }
