@@ -226,6 +226,17 @@
          }
      }
  }
+ 
+ //footer
+ .footer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: $lightgrey;
+     a {
+         margin-right: 5vh;
+     }
+ }
  /*Mobile view*/
  
  @media screen and (max-width: 1191px) {

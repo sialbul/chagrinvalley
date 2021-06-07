@@ -1,6 +1,8 @@
 //upload navbar
 window.onload = function() {
         $(".navbarSection").load("./navbar.html");
+        $(".footer").load("./footer.html");
+
     }
     //navbar
 const mainNav = document.getElementById('js-menu');
