@@ -1,3 +1,10 @@
+//upload navbar
+
+$(document).ready(function() {
+    $(".navbarSection").load("./navbar.html");
+});
+
+
 //navbar
 let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
