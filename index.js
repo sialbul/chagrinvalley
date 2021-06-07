@@ -1,28 +1,42 @@
 //upload navbar
-
-$(document).ready(function() {
-    $(".navbarSection").load("./navbar.html");
-});
-
-
-//navbar
-let mainNav = document.getElementById('js-menu');
+window.onload = function() {
+        $(".navbarSection").load("./navbar.html");
+    }
+    //navbar
+const mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
+if (navBarToggle) {
+    navBarToggle.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
 
-navBarToggle.addEventListener('click', function() {
-    mainNav.classList.toggle('active');
+        const icon = this.querySelector('i');
 
-    const icon = this.querySelector('i');
+        if (icon.classList.contains('fa-bars')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
 
-    if (icon.classList.contains('fa-bars')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
+    });
+};
+
+//Header hide-when scroll down and display again
+
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+
+    // 20 is an arbitrary number here, just to make you think if you need the prevScrollpos variable:
+    if (currentScrollPos > 20) {
+        // I am using 'display' instead of 'top':
+        document.getElementById("topHeader").style.display = "none";
     } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
+        document.getElementById("topHeader").style.display = "flex";
     }
 
-});
+
+}
 
 /*animation*/
 AOS.init();

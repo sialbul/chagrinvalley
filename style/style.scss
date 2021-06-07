@@ -228,6 +228,13 @@
  }
  /*Mobile view*/
  
+ @media screen and (max-width: 1191px) {
+     .navbar {
+         justify-content: space-evenly;
+         font-size: 1.8vw;
+     }
+ }
+ 
  @media screen and (min-width: 769px) {
      .navbar {
          display: flex;
@@ -241,18 +248,18 @@
          flex-direction: row;
          justify-content: flex-end;
          padding: 0;
-     }
-     .main-nav li {
-         margin: 0;
-         position: relative;
-         text-align: left;
-         ul {
-             position: absolute;
-             top: 3.3vh;
-             background-color: $yellow;
-             width: max-content;
-             line-height: 6vh;
-             padding: 0 5vh 2vh;
+         li {
+             margin: 0;
+             position: relative;
+             text-align: left;
+             ul {
+                 position: absolute;
+                 top: 3.3vh;
+                 background-color: $yellow;
+                 width: max-content;
+                 line-height: 6vh;
+                 padding: 0 5vh 2vh;
+             }
          }
      }
      .nav-links {
