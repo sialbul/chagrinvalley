@@ -1,23 +1,30 @@
 header {
   background-color: white;
-  height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
+  padding: 1.5vh;
+  font-size: 1vw;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: gray;
+  color: #4a4141;
+  -webkit-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
 }
 
 header a {
   text-decoration: none;
-  color: gray;
+  color: #4a4141;
 }
 
 header a:hover {
   color: #0779E4;
+}
+
+#headerSocial {
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -29,6 +36,8 @@ header a:hover {
   width: 100%;
   z-index: 3;
   background-color: #ffE75E;
+  -webkit-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
 }
 
 .main-nav {
@@ -47,6 +56,11 @@ header a:hover {
 
 .main-nav li a {
   text-decoration: none;
+  color: #4a4141;
+}
+
+.main-nav li a:hover {
+  color: #0779E4;
 }
 
 .main-nav li:hover ul {
@@ -345,7 +359,33 @@ body {
   color: #0779E4;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(186, 180, 180, 0.476);
+}
+
+.footer a {
+  margin-right: 5vh;
+}
+
 /*Mobile view*/
+@media screen and (max-width: 1191px) {
+  .navbar {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 1.8vw;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .navbar {
     display: -webkit-box;
