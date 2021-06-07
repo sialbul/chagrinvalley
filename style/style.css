@@ -1,3 +1,25 @@
+header {
+  background-color: white;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: gray;
+}
+
+header a {
+  text-decoration: none;
+  color: gray;
+}
+
+header a:hover {
+  color: #0779E4;
+}
+
 .navbar {
   font-size: 18px;
   background-color: #ffE75E;
@@ -363,7 +385,7 @@ body {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    line-height: 5vh;
+    line-height: 6vh;
     padding: 0 5vh 2vh;
   }
   .nav-links {
