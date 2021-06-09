@@ -1,6 +1,7 @@
  @import "_navbar";
  @import "_variables";
  @import "_mediaquerry";
+ @import "_infants";
  * {
      box-sizing: border-box;
      padding: 0;
@@ -228,7 +229,8 @@
  }
  
  //footer
- .footer {
+ .footer,
+ footer {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -236,6 +238,13 @@
      a {
          margin-right: 5vh;
      }
+ }
+ 
+ #footerPage {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
  }
  /*Mobile view*/
  
