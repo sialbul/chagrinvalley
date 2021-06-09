@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../style/style.css";
 import Logo from "../images/chagrinvalley3.png";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
     //navbar
@@ -162,7 +163,7 @@ export default class Navbar extends Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="./buildingBridges.html">
+                                    <a component={Link} to="/buildingbridges">
                                         <i class="fas fa-archway"></i> Building
                                         Bridges
                                     </a>

@@ -1,5 +1,7 @@
 import Navbar from "./pages/Navbar";
 import Home from "./pages/Home";
+import Footer from "./pages/Footer";
+import BuildingBridges from "./pages/BuildingBridges";
 import {
     BrowserRouter as Router,
     Route,
@@ -11,20 +13,16 @@ function App() {
     return (
         <Router>
             <Navbar />
-            <Home />
-            {/* <div className="container">
+            <div>
                 <Switch>
-                    <Route exact path="/" component={home} />
-                    <AuthRoute exact path="/login" component={login} />
-                    <AuthRoute exact path="/signup" component={signup} />
-                    <Route exact path="/users/:handle" component={user} />
+                    <Route path="/" component={Home} />
                     <Route
-                        exact
-                        path="/users/:handle/scream/:screamId"
-                        component={user}
+                        path="/buildingbridges"
+                        component={BuildingBridges}
                     />
                 </Switch>
-            </div> */}
+            </div>
+            <Footer />
         </Router>
     );
 }

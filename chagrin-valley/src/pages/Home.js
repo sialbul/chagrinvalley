@@ -9,6 +9,7 @@ import Photo4 from "../images/preschool.png";
 import Photo5 from "../images/schoolage.png";
 import Art from "../images/art.jpg";
 import Toddler from "../images/toddler.jpg";
+import Footer from "./Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
