@@ -1,32 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from "react";
+import Logo from "../images/chagrinvalley3.png";
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+export default function footer() {
+    return (
+        <div>
+            <div className="contactSection">
+                <div
+                    className="phoneNumberSection"
+                    data-aos="fade-down"
+                    data-aos-delay="50">
+                    <div className="faPart">
+                        {" "}
+                        <i className="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div className=" infoPart ">
+                        <h2>CALL TODAY</h2>
+                        <h2>(440) 338 44 99</h2>
+                    </div>
+                </div>
+                <div
+                    className="adressSection"
+                    data-aos="fade-down"
+                    data-aos-delay="100">
+                    <div className="faPart">
+                        {" "}
+                        <i className="fa fa-map" aria-hidden="true"></i>
+                    </div>
+                    <div className="infoPart">
+                        <h2>OUR ADDRESS</h2>
+                        <h2>5188 Chillicothe Rd, Chagrin Falls, OH 44022</h2>
+                    </div>
+                </div>
+                <div
+                    className="emailSection"
+                    data-aos="fade-down"
+                    data-aos-delay="150">
+                    <div className="faPart">
+                        {" "}
+                        <i className="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div className="infoPart">
+                        <h2>EMAIL US</h2>
+                        <h2>
+                            {" "}
+                            <a href="mailto:info@cvelc.com">info@cvelc.com</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
 
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="icon" href="./images/chagrinvalley3.png" type="image/x-icon" />
-    <script src="https://use.fontawesome.com/5bb1f52388.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Chagrin Valley Early Learning Center</title>
-
-</head>
-
-<body>
-
-    <footer id="footerPage">
-        <a href="#" class="logo"><img src="../images/chagrinvalley3.png"></a>
-        <p>&#xA9; 2021 Sibel Baslamisli. All rights reserved.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src=" https://unpkg.com/aos@next/dist/aos.js "></script>
-
-    <script src="../index.js "></script>
-</body>
-
-</html>
+            <footer className="footer">
+                <a href="#" className="logo">
+                    <img src={Logo} />
+                </a>
+                <p>&#xA9; 2021 M.Sibel Baslamisli. All rights reserved.</p>
+            </footer>
+        </div>
+    );
+}
