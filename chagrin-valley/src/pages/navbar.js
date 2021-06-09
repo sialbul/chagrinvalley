@@ -18,7 +18,6 @@
 
 <body>
     <header id="topHeader">
-
         <div>
             <i class="fa fa-phone" aria-hidden="true"></i> (440) 338 44 99
         </div>
