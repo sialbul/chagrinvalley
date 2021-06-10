@@ -33,6 +33,7 @@ header {
     height: 13vh;
     background-color: $yellow;
     transition: top 0.5s ease-in-out;
+    margin-bottom: 15vh;
     ul li {
         text-align: center;
         font-weight: bold;
@@ -110,7 +111,7 @@ header {
     display: none;
 }
 
-@media (max-width: 648px) {
+@media (max-width: 769px) {
     /*Mobile View */
     .Navbar {
         padding: 0px 10px;

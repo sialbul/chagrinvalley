@@ -1,11 +1,45 @@
 @import "_variables";
-#InfantContainer {
+#infantContainer {
+    padding-top: 20vh;
     p {
         margin: auto;
         width: 80%;
+        line-height: 5vh;
+        font-weight: bold;
+        padding: 2vh;
     }
     img {
         margin: 5vh;
         width: 55vh;
+    }
+    #infantBaby2 {
+        width: 35vh;
+        background-image: url("../images/2.png");
+    }
+}
+
+.infantHeader {
+    font-size: 8vh;
+    color: $blue;
+    padding: 2vh;
+    margin: 2vh;
+    border: 1px solid $blue;
+    display: inline-block;
+}
+
+#infantContainer2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 5vh;
+    margin: 10vh 0;
+}
+
+@media (max-width: 769px) {
+    #infantContainer2 {
+        grid-template-columns: 1fr;
+    }
+    p {
+        width: auto;
     }
 }
