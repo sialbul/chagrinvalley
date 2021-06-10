@@ -1,14 +1,50 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><link rel="icon" href="../src/images/chagrinvalley3.png" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="theme-color" content="#000000" /><meta name="description" content="Web site created using create-react-app" /><script src="https://use.fontawesome.com/5bb1f52388.js"></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"><!-- manifest.json provides metadata used when your web app is installed on a user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
- --><!-- Notice the use of %PUBLIC_URL% in the tags above. It will be replaced with the URL of the `public` folder during the build. Only files inside the `public` folder can be referenced from the HTML. Unlike "/favicon.ico" or "favicon.ico",
-"%PUBLIC_URL%/favicon.ico" will work correctly both with client-side routing and a non-root public URL. Learn how to configure a non-root public URL by running `npm run build`. --><title>Chagrin Valley Early Learning Center</title></head><body><div id="root"></div><!-- This HTML file is a template. If you open it directly in the browser,
-you will see an empty page. You can add webfonts,
-meta tags,
-or analytics to this file. The build step will place the bundled scripts into the <body>tag. To begin the development,
-run `npm start` or `yarn start`. To create a production bundle,
-use `npm run build` or `yarn build`. --></body></html>ansform: translate(-50%, -50%);
-position: absolute;
-
+@import "_navbar";
+@import "_variables";
+@import "_mediaquerry";
+@import "_infants";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("../images/Chagrin-Valley.png");
+    text-align: center;
+}
+
+.sectionHeader {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+    font-weight: 900;
+    color: $blue;
+    margin-bottom: 5vh;
+}
+
+
+/*Top Picture Section*/
+
+.topPicture {
+    position: relative;
+}
+
+.mainphoto {
+    width: 100%;
+    max-height: 100vh;
+}
+
+.perfectphoto {
+    width: 35%;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
+
+/*Buttons*/
+
 .learnMoreButton,
 .learnMoreButton2 {
     font-family: 'Quicksand', sans-serif;
@@ -26,16 +62,20 @@ position: absolute;
         color: $white;
     }
 }
+
 .learnMoreButton2 {
     background-color: $yellow;
     color: $black;
     margin-top: 5vh;
 }
 
+
 /*About Us Section*/
+
 .aboutUs {
     padding-top: 6vh;
 }
+
 .aboutLink ul {
     display: flex;
     flex-direction: row;
@@ -56,11 +96,13 @@ position: absolute;
         }
     }
 }
+
 #aboutUsInfoPhotos {
     width: 90%;
     height: 40vh;
     border-radius: 10%;
 }
+
 #aboutUsInfo,
 .ourActivitiesInfo {
     display: grid;
@@ -68,21 +110,26 @@ position: absolute;
     margin: 5vh;
     line-height: 5vh;
 }
+
 .aboutUsInfoParargaf {
     text-align: center;
     margin: 5vh;
 }
 
+
 /*Our Activities Section*/
+
 .ourActivities {
     background-color: $turqoise;
     padding-top: 6vh;
 }
+
 .ourActivitiesInfo {
     display: grid;
     grid-template-columns: 1fr;
     padding: 6vh 0;
 }
+
 #ourActivitiesPhoto {
     width: 100%;
     height: 40vh;
@@ -90,6 +137,7 @@ position: absolute;
     margin-bottom: 6vh;
     border-radius: 10%;
 }
+
 .ourActivitiesLink {
     padding-bottom: 6vh;
     img {
@@ -98,14 +146,18 @@ position: absolute;
     }
 }
 
+
 /*Event Section*/
+
 .eventGallery {
     width: 50vh;
     height: 30vh;
     margin: 5vh;
 }
 
+
 /*Parent section*/
+
 .parentSection {
     background-color: #fff;
     background-size: 100% 1.2em;
@@ -118,12 +170,14 @@ position: absolute;
     //  behavior: url(/PIE.htc);
     margin: 6vh 0;
 }
+
 .parentSectionInfo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-items: center;
     text-align: center;
 }
+
 .parentSectionPhoto {
     margin-bottom: 6vh;
     img {
@@ -132,6 +186,7 @@ position: absolute;
         border-radius: 50%;
     }
 }
+
 .parentSectionText {
     margin-bottom: 6vh;
     p {
@@ -139,7 +194,9 @@ position: absolute;
     }
 }
 
+
 /*Contact Section*/
+
 .contactSection {
     display: grid;
     grid-template-columns: 1fr;
@@ -148,6 +205,7 @@ position: absolute;
         font-size: 5vw;
     }
 }
+
 .phoneNumberSection,
 .adressSection,
 .emailSection {
@@ -156,12 +214,15 @@ position: absolute;
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
+
 .phoneNumberSection {
     background-color: $darkturqoise;
 }
+
 .adressSection {
     background-color: $yellow;
 }
+
 .emailSection {
     background-color: $red;
     a {
@@ -172,6 +233,7 @@ position: absolute;
         }
     }
 }
+
 //footer
 .footer,
 footer {
@@ -184,6 +246,7 @@ footer {
         margin-right: 5vh;
     }
 }
+
 #footerPage {
     position: fixed;
     bottom: 0;
@@ -191,13 +254,16 @@ footer {
     width: 100%;
 }
 
+
 /*Mobile view*/
+
 @media screen and (max-width: 1191px) {
     .navbar {
         justify-content: space-evenly;
         font-size: 1.8vw;
     }
 }
+
 @media screen and (min-width: 769px) {
     .navbar {
         display: flex;
@@ -205,7 +271,6 @@ footer {
         padding-bottom: 0;
         align-items: center;
     }
-    
     .main-nav {
         display: flex;
         margin-right: 30px;
@@ -226,11 +291,9 @@ footer {
             }
         }
     }
-    
     .nav-links {
         margin-left: 40px;
     }
-    
     .logo {
         margin-top: 0;
         img {
@@ -239,45 +302,36 @@ footer {
             width: 15vh
         }
     }
-    
     .navbar-toggle {
         display: none;
     }
-    
     .logo:hover,
     .nav-links:hover {
         color: rgba(255, 255, 255, 1);
     }
-    
     .contactSection {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
     .ourActivitiesInfo {
         grid-template-columns: 1fr 2fr;
     }
-    
     #ourActivitiesPhoto {
         width: 70%;
     }
-    
     .contactSection i {
         font-size: 3vw;
     }
-    
     .phoneNumberSection,
     .adressSection,
     .emailSection {
         grid-template-columns: 1fr 3fr;
     }
-    
     .parentSectionText {
         width: 90%;
         p {
             font-size: 2vw;
         }
     }
-    
     .parentSectionPhoto {
         margin-bottom: 6vh;
         img {
@@ -286,32 +340,28 @@ footer {
             border-radius: 50%;
         }
     }
-    
     .sectionHeader {
         font-size: 3vw;
     }
 }
+
 @media screen and (max-width: 411px) {
     main {
         padding-top: 50px;
     }
-    
     .learnMoreButton {
         font-size: 1.8vw;
         padding: 0.8em 1.4em;
     }
-    
     .learnMoreButton2 {
         font-size: 1.8vw;
         padding: 1em 1.6em;
     }
-    
     .sectionHeader {
         font-size: 4vh;
         font-weight: 200;
         font-weight: bold;
     }
-    
     .aboutLink ul li {
         justify-content: space-evenly;
         margin-right: 1vh;
