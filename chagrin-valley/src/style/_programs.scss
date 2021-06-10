@@ -1,0 +1,94 @@
+@import "_variables";
+#infantContainer {
+    padding-top: 20vh;
+    p {
+        margin: auto;
+        width: 80%;
+        line-height: 5vh;
+        font-weight: bold;
+        padding: 2vh;
+    }
+    #infantBaby3 {
+        margin: 5vh;
+        width: 55vh;
+        background-image: url("../images/2.png");
+    }
+    #infantBaby2 {
+        width: 35vh;
+        background-image: url("../images/2.png");
+    }
+}
+
+#infantFirstPart {
+    background-image: url("../images/5.png");
+    width: 100%;
+}
+
+.infantHeaderToddler {
+    background-image: linear-gradient(90deg, #ffe75e 25%, #e6c4b3 25%, #e6c4b3 50%, #ffe75e 50%, #ffe75e 75%, #e6c4b3 75%, #e6c4b3 100%);
+}
+
+.infantHeaderSchool {
+    background-image: linear-gradient(90deg, #ffe75e 25%, #b3c1e6 25%, #b3c1e6 50%, #ffe75e 50%, #ffe75e 75%, #b3c1e6 75%, #b3c1e6 100%);
+}
+
+.infantHeader {
+    background-image: linear-gradient(90deg, #ffe75e 29.17%, #b3e6cd 29.17%, #b3e6cd 50%, #ffe75e 50%, #ffe75e 79.17%, #b3e6cd 79.17%, #b3e6cd 100%);
+}
+
+.infantHeaderSchoolAge {
+    background-image: linear-gradient(90deg, #ffe75e 25%, #b3e6b8 25%, #b3e6b8 50%, #ffe75e 50%, #ffe75e 75%, #b3e6b8 75%, #b3e6b8 100%);
+}
+
+.infantHeader,
+.infantHeaderSchool,
+.infantHeaderToddler,
+.infantHeaderSchoolAge {
+    font-size: 8vh;
+    color: $blue;
+    padding: 2vh;
+    margin: 2vh;
+    border: 1px solid $blue;
+    display: inline-block;
+}
+
+#infantContainer2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 5vh;
+    margin: 10vh 0;
+}
+
+#schedule {
+    width: 100%;
+    text-align: left;
+}
+
+#infantContainer2>div:nth-child(3),
+#infantContainer2>div:nth-child(6) {
+    width: 100%;
+}
+
+#headSmall {
+    font-size: 4vh;
+    color: $red;
+}
+
+@media screen and (max-width: 769px) {
+    #infantContainer2 {
+        grid-template-columns: 1fr;
+    }
+    p {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    #infantContainer {
+        #infantBaby2,
+        #infantBaby3 {
+            width: 80%;
+        }
+    }
+}

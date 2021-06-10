@@ -20,12 +20,11 @@ export default class Home extends Component {
         this.state = {
             header: document.getElementById("headerAboutUs"),
             parargaf: document.getElementById("parargafAboutUs"),
-            image: document.getElementById("aboutUsInfoPhotos"),
         };
-        this.changeImage1 = this.changeImage1.bind(this);
-        this.changeImage2 = this.changeImage2.bind(this);
-        this.changeImage3 = this.changeImage3.bind(this);
-        this.changeImage4 = this.changeImage4.bind(this);
+        this.changeText1 = this.changeText1.bind(this);
+        this.changeText2 = this.changeText2.bind(this);
+        this.changeText3 = this.changeText3.bind(this);
+        this.changeText4 = this.changeText4.bind(this);
     }
     //About us section
     componentDidMount() {
@@ -33,41 +32,36 @@ export default class Home extends Component {
             header: "Your Kids is Our Future ",
             parargaf:
                 "Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential.",
-            image: { AboutUsPhoto },
         });
     }
-    changeImage1 = () => {
+    changeText1 = () => {
         this.setState({
             header: "A-Your Kids is Our Future ",
             parargaf:
                 "Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential.",
-            image: { Photo1 },
         });
     };
 
-    changeImage2 = () => {
+    changeText2 = () => {
         this.setState({
             header: "1-Your Kids is Our Future ",
             parargaf:
                 "1-Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential.",
-            image: { Photo1 },
         });
     };
 
-    changeImage3 = () => {
+    changeText3 = () => {
         this.setState({
             header: "2-Your Kids is Our Future ",
             parargaf:
                 "2-Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential.",
-            image: { Photo2 },
         });
     };
-    changeImage4 = () => {
+    changeText4 = () => {
         this.setState({
             header: "3-Your Kids is Our Future ",
             parargaf:
                 "3-Cleveries envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential.",
-            image: { Photo3 },
         });
     };
 
@@ -83,7 +77,6 @@ export default class Home extends Component {
                         data-aos-delay="150"
                         src={MainPhoto}
                     />
-                    <button className="learnMoreButton">LEARN MORE</button>
                 </div>
                 <div className="aboutUs">
                     <p className="sectionHeader">Little More About Us</p>
@@ -91,22 +84,22 @@ export default class Home extends Component {
                         <ul>
                             <li
                                 className="aboutUsLink"
-                                onClick={this.changeImage1}>
+                                onClick={this.changeText1}>
                                 MISSION
                             </li>
                             <li
                                 className="aboutUsLink"
-                                onClick={this.changeImage2}>
+                                onClick={this.changeText2}>
                                 VISION
                             </li>
                             <li
                                 className="aboutUsLink"
-                                onClick={this.changeImage3}>
+                                onClick={this.changeText3}>
                                 GOALS
                             </li>
                             <li
                                 className="aboutUsLink"
-                                onClick={this.changeImage4}>
+                                onClick={this.changeText4}>
                                 BELIEFS
                             </li>
                         </ul>
@@ -120,10 +113,7 @@ export default class Home extends Component {
                             </button>
                         </div>
                         <div className="aboutUsInfoPicture">
-                            <img
-                                id="aboutUsInfoPhotos"
-                                src={this.state.image}
-                            />
+                            <img id="aboutUsInfoPhotos" src={AboutUsPhoto} />
                         </div>
                     </div>
                 </div>

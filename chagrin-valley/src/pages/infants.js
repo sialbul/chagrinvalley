@@ -11,6 +11,7 @@ export default function Infants() {
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
+                                id="infantBaby3"
                                 src={Baby}
                                 data-aos="fade-down"
                                 data-aos-duration="2000"
@@ -39,7 +40,13 @@ export default function Infants() {
                         </div>
                         <div>
                             <p data-aos="fade-down" data-aos-duration="2000">
-                                Sample of the Daily Schedule
+                                <span id="headSmall">
+                                    <i
+                                        class="fa fa-clock-o"
+                                        aria-hidden="true"
+                                        fa-lg></i>
+                                    Sample of the Daily Schedule
+                                </span>{" "}
                                 <br />
                                 <i class="fa fa-star" aria-hidden="true">
                                     {" "}

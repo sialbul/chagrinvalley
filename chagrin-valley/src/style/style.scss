@@ -1,7 +1,7 @@
 @import "_navbar";
 @import "_variables";
 @import "_mediaquerry";
-@import "_infants";
+@import "_programs";
 * {
     box-sizing: border-box;
     padding: 0;
@@ -45,8 +45,8 @@ body {
 
 /*Buttons*/
 
-.learnMoreButton,
-.learnMoreButton2 {
+.learnMoreButton2,
+#SummerFlyer {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     background-color: $red;
@@ -57,6 +57,10 @@ body {
     border-radius: 2em;
     border: none;
     cursor: pointer;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
     &:hover {
         background-color: $blue;
         color: $white;
@@ -98,7 +102,7 @@ body {
 }
 
 #aboutUsInfoPhotos {
-    width: 90%;
+    width: 70%;
     height: 40vh;
     border-radius: 10%;
 }
@@ -243,7 +247,13 @@ footer {
     justify-content: center;
     background-color: $lightgrey;
     a {
-        margin-right: 5vh;
+        margin: 0 1vh;
+        text-decoration: none;
+        color: $black;
+        &:hover {
+            font-weight: bold;
+            color: $blue;
+        }
     }
 }
 
@@ -348,10 +358,6 @@ footer {
 @media screen and (max-width: 411px) {
     main {
         padding-top: 50px;
-    }
-    .learnMoreButton {
-        font-size: 1.8vw;
-        padding: 0.8em 1.4em;
     }
     .learnMoreButton2 {
         font-size: 1.8vw;
