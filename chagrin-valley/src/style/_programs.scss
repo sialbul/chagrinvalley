@@ -8,13 +8,14 @@
         font-weight: bold;
         padding: 2vh;
     }
-    img {
+    #infantBaby3 {
         margin: 5vh;
         width: 55vh;
         background-image: url("../images/2.png");
     }
     #infantBaby2 {
         width: 35vh;
+        background-image: url("../images/2.png");
     }
 }
 
@@ -39,6 +40,21 @@
     justify-items: center;
     gap: 5vh;
     margin: 10vh 0;
+}
+
+#schedule {
+    width: 100%;
+    text-align: left;
+}
+
+#infantContainer2>div:nth-child(3),
+#infantContainer2>div:nth-child(6) {
+    width: 100%;
+}
+
+#headSmall {
+    font-size: 4vh;
+    color: $red;
 }
 
 @media screen and (max-width: 769px) {

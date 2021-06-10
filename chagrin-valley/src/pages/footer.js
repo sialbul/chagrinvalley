@@ -53,7 +53,14 @@ export default function footer() {
                 <a href="#" className="logo">
                     <img src={Logo} />
                 </a>
-                <p>&#xA9; 2021 M.Sibel Baslamisli. All rights reserved.</p>
+                <p>
+                    {" "}
+                    &#xA9; 2021
+                    <a href="mailto:sbaslamisli@yahoo.com">
+                        M.Sibel Baslamisli.
+                    </a>
+                    All rights reserved.
+                </p>
             </footer>
         </div>
     );

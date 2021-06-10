@@ -210,7 +210,7 @@ header a:hover {
   padding: 2vh;
 }
 
-#infantContainer img {
+#infantContainer #infantBaby3 {
   margin: 5vh;
   width: 55vh;
   background-image: url("../images/2.png");
@@ -218,6 +218,7 @@ header a:hover {
 
 #infantContainer #infantBaby2 {
   width: 35vh;
+  background-image: url("../images/2.png");
 }
 
 #infantFirstPart {
@@ -244,6 +245,21 @@ header a:hover {
   justify-items: center;
   gap: 5vh;
   margin: 10vh 0;
+}
+
+#schedule {
+  width: 100%;
+  text-align: left;
+}
+
+#infantContainer2 > div:nth-child(3),
+#infantContainer2 > div:nth-child(6) {
+  width: 100%;
+}
+
+#headSmall {
+  font-size: 4vh;
+  color: #F12D2D;
 }
 
 @media screen and (max-width: 769px) {
@@ -527,7 +543,9 @@ footer {
 
 .footer a,
 footer a {
-  margin-right: 5vh;
+  margin: 0 1vh;
+  text-decoration: none;
+  color: black;
 }
 
 #footerPage {

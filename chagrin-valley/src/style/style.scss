@@ -1,7 +1,7 @@
 @import "_navbar";
 @import "_variables";
 @import "_mediaquerry";
-@import "_infants";
+@import "_programs";
 * {
     box-sizing: border-box;
     padding: 0;
@@ -243,7 +243,9 @@ footer {
     justify-content: center;
     background-color: $lightgrey;
     a {
-        margin-right: 5vh;
+        margin: 0 1vh;
+        text-decoration: none;
+        color: $black;
     }
 }
 
