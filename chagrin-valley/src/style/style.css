@@ -28,59 +28,87 @@ header a:hover {
 }
 
 .navbar {
-  font-size: 18px;
-  background-color: #ffE75E;
-  border: 1px solid rgba(128, 92, 92, 0.2);
-  height: 13vh;
   position: fixed;
-  width: 100%;
   z-index: 3;
+  width: 100%;
+  border: 1px solid rgba(128, 92, 92, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 40px;
+  height: 13vh;
   background-color: #ffE75E;
   -webkit-transition: top 0.5s ease-in-out;
   transition: top 0.5s ease-in-out;
 }
 
-.main-nav {
-  list-style-type: none;
-  display: none;
-  background-color: #ffE75E;
-  padding: 6vh;
-  position: relative;
-}
-
-.main-nav li {
+.navbar ul li {
   text-align: center;
-  margin: 25px auto;
   font-weight: bold;
 }
 
-.main-nav li a {
+.navbar ul li a {
   text-decoration: none;
   color: #4a4141;
 }
 
-.main-nav li a:hover {
+.navbar ul li a:hover {
   color: #0779E4;
 }
 
-.main-nav li:hover ul {
+.navbar ul li:hover ul {
   display: block;
 }
 
-.main-nav li ul {
+.navbar ul li ul {
+  position: absolute;
   display: none;
   text-decoration: none;
   list-style-type: none;
+  background-color: #ffE75E;
+  text-align: left;
+  border: 1px solid rgba(128, 92, 92, 0.2);
 }
 
-.main-nav li ul li:hover {
+.navbar ul li ul li {
+  margin: 2vh;
+  text-align: left;
+}
+
+.navbar ul li ul li:hover {
   color: white;
 }
 
-.nav-links,
-.logo {
-  text-decoration: none;
-  color: dark grey;
+.logo-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logo {
@@ -88,28 +116,95 @@ header a:hover {
 }
 
 .logo img {
-  width: 12vh;
-  height: 12vh;
+  width: 10vh;
+  height: 10vh;
 }
 
-.navbar-toggle {
-  position: absolute;
-  top: 2vh;
-  right: 5vh;
-  cursor: pointer;
-  color: #0779E4;
-  font-size: 24px;
+.nav-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  list-style-type: none;
 }
 
-.active {
+.mobile-option {
+  display: none;
+}
+
+.option :hover {
+  color: white;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 648px) {
+  /*Mobile View */
+  .Navbar {
+    padding: 0px 10px;
+    width: 100%;
+  }
+  .nav-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 9vh;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+  }
+  .nav-options ul {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .nav-options.active {
+    background: #ffE75E;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 1;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-left: 0px;
+  }
+  .menu-icon {
+    width: 45px;
+    height: 45px;
+  }
+  .option {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vw;
+  }
+}
+
+.mobile-menu {
   display: block;
 }
 
-.container {
+#InfantContainer p {
   margin: auto;
   width: 80%;
-  color: red;
-  margin-top: 14vh;
+}
+
+#InfantContainer img {
+  margin: 5vh;
+  width: 55vh;
 }
 
 * {
@@ -366,6 +461,8 @@ body {
 
 .footer,
 footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

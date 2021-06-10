@@ -1,7 +1,11 @@
 @import "_variables";
-.container {
-    margin: auto;
-    width: 80%;
-    color: red;
-    margin-top: 14vh;
+#InfantContainer {
+    p {
+        margin: auto;
+        width: 80%;
+    }
+    img {
+        margin: 5vh;
+        width: 55vh;
+    }
 }
