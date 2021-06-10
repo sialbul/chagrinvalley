@@ -46,6 +46,7 @@ header a:hover {
   background-color: #ffE75E;
   -webkit-transition: top 0.5s ease-in-out;
   transition: top 0.5s ease-in-out;
+  margin-bottom: 15vh;
 }
 
 .navbar ul li {
@@ -142,7 +143,7 @@ header a:hover {
   display: none;
 }
 
-@media (max-width: 648px) {
+@media (max-width: 769px) {
   /*Mobile View */
   .Navbar {
     padding: 0px 10px;
@@ -197,14 +198,55 @@ header a:hover {
   display: block;
 }
 
-#InfantContainer p {
-  margin: auto;
-  width: 80%;
+#infantContainer {
+  padding-top: 20vh;
 }
 
-#InfantContainer img {
+#infantContainer p {
+  margin: auto;
+  width: 80%;
+  line-height: 5vh;
+  font-weight: bold;
+  padding: 2vh;
+}
+
+#infantContainer img {
   margin: 5vh;
   width: 55vh;
+}
+
+#infantContainer #infantBaby2 {
+  width: 35vh;
+  background-image: url("../images/2.png");
+}
+
+.infantHeader {
+  font-size: 8vh;
+  color: #0779E4;
+  padding: 2vh;
+  margin: 2vh;
+  border: 1px solid #0779E4;
+  display: inline-block;
+}
+
+#infantContainer2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 5vh;
+  margin: 10vh 0;
+}
+
+@media (max-width: 769px) {
+  #infantContainer2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  p {
+    width: auto;
+  }
 }
 
 * {
@@ -224,7 +266,6 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-size: 5vw;
-  font-weight: 900;
   color: #0779E4;
   margin-bottom: 5vh;
 }
