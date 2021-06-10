@@ -11,11 +11,16 @@
     img {
         margin: 5vh;
         width: 55vh;
+        background-image: url("../images/2.png");
     }
     #infantBaby2 {
         width: 35vh;
-        background-image: url("../images/2.png");
     }
+}
+
+#infantFirstPart {
+    background-image: url("../images/5.png");
+    width: 100%;
 }
 
 .infantHeader {
@@ -25,6 +30,7 @@
     margin: 2vh;
     border: 1px solid $blue;
     display: inline-block;
+    background-image: linear-gradient(90deg, #ffe75e 29.17%, #b3e6cd 29.17%, #b3e6cd 50%, #ffe75e 50%, #ffe75e 79.17%, #b3e6cd 79.17%, #b3e6cd 100%);
 }
 
 #infantContainer2 {
@@ -35,11 +41,22 @@
     margin: 10vh 0;
 }
 
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
     #infantContainer2 {
         grid-template-columns: 1fr;
     }
     p {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    #infantContainer {
+        img {
+            width: 80%;
+        }
+    }
+    #infantBaby2 {
+        width: 80%;
     }
 }

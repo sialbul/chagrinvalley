@@ -213,11 +213,16 @@ header a:hover {
 #infantContainer img {
   margin: 5vh;
   width: 55vh;
+  background-image: url("../images/2.png");
 }
 
 #infantContainer #infantBaby2 {
   width: 35vh;
-  background-image: url("../images/2.png");
+}
+
+#infantFirstPart {
+  background-image: url("../images/5.png");
+  width: 100%;
 }
 
 .infantHeader {
@@ -227,6 +232,8 @@ header a:hover {
   margin: 2vh;
   border: 1px solid #0779E4;
   display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(29.17%, #ffe75e), color-stop(29.17%, #b3e6cd), color-stop(50%, #b3e6cd), color-stop(50%, #ffe75e), color-stop(79.17%, #ffe75e), color-stop(79.17%, #b3e6cd), to(#b3e6cd));
+  background-image: linear-gradient(90deg, #ffe75e 29.17%, #b3e6cd 29.17%, #b3e6cd 50%, #ffe75e 50%, #ffe75e 79.17%, #b3e6cd 79.17%, #b3e6cd 100%);
 }
 
 #infantContainer2 {
@@ -239,13 +246,22 @@ header a:hover {
   margin: 10vh 0;
 }
 
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
   #infantContainer2 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   p {
     width: auto;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  #infantContainer img {
+    width: 80%;
+  }
+  #infantBaby2 {
+    width: 80%;
   }
 }
 
@@ -266,6 +282,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   font-size: 5vw;
+  font-weight: 900;
   color: #0779E4;
   margin-bottom: 5vh;
 }
@@ -288,14 +305,6 @@ body {
 }
 
 /*Buttons*/
-.learnMoreButton {
-  top: 80%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-}
-
 .learnMoreButton,
 .learnMoreButton2 {
   font-family: 'Quicksand', sans-serif;
