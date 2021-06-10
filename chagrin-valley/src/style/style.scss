@@ -45,7 +45,8 @@ body {
 
 /*Buttons*/
 
-.learnMoreButton2 {
+.learnMoreButton2,
+#SummerFlyer {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     background-color: $red;
@@ -56,6 +57,10 @@ body {
     border-radius: 2em;
     border: none;
     cursor: pointer;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
     &:hover {
         background-color: $blue;
         color: $white;

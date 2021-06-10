@@ -241,9 +241,15 @@ header a:hover {
   background-image: linear-gradient(90deg, #ffe75e 29.17%, #b3e6cd 29.17%, #b3e6cd 50%, #ffe75e 50%, #ffe75e 79.17%, #b3e6cd 79.17%, #b3e6cd 100%);
 }
 
+.infantHeaderSchoolAge {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #ffe75e), color-stop(25%, #b3e6b8), color-stop(50%, #b3e6b8), color-stop(50%, #ffe75e), color-stop(75%, #ffe75e), color-stop(75%, #b3e6b8), to(#b3e6b8));
+  background-image: linear-gradient(90deg, #ffe75e 25%, #b3e6b8 25%, #b3e6b8 50%, #ffe75e 50%, #ffe75e 75%, #b3e6b8 75%, #b3e6b8 100%);
+}
+
 .infantHeader,
 .infantHeaderSchool,
-.infantHeaderToddler {
+.infantHeaderToddler,
+.infantHeaderSchoolAge {
   font-size: 8vh;
   color: #0779E4;
   padding: 2vh;
@@ -334,7 +340,8 @@ body {
 }
 
 /*Buttons*/
-.learnMoreButton2 {
+.learnMoreButton2,
+#SummerFlyer {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   background-color: #F12D2D;
@@ -347,7 +354,14 @@ body {
   cursor: pointer;
 }
 
-.learnMoreButton2:hover {
+.learnMoreButton2 a,
+#SummerFlyer a {
+  text-decoration: none;
+  color: white;
+}
+
+.learnMoreButton2:hover,
+#SummerFlyer:hover {
   background-color: #0779E4;
   color: white;
 }

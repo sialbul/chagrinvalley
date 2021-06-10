@@ -36,9 +36,14 @@
     background-image: linear-gradient(90deg, #ffe75e 29.17%, #b3e6cd 29.17%, #b3e6cd 50%, #ffe75e 50%, #ffe75e 79.17%, #b3e6cd 79.17%, #b3e6cd 100%);
 }
 
+.infantHeaderSchoolAge {
+    background-image: linear-gradient(90deg, #ffe75e 25%, #b3e6b8 25%, #b3e6b8 50%, #ffe75e 50%, #ffe75e 75%, #b3e6b8 75%, #b3e6b8 100%);
+}
+
 .infantHeader,
 .infantHeaderSchool,
-.infantHeaderToddler {
+.infantHeaderToddler,
+.infantHeaderSchoolAge {
     font-size: 8vh;
     color: $blue;
     padding: 2vh;
