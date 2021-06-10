@@ -226,15 +226,30 @@ header a:hover {
   width: 100%;
 }
 
+.infantHeaderToddler {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #ffe75e), color-stop(25%, #e6c4b3), color-stop(50%, #e6c4b3), color-stop(50%, #ffe75e), color-stop(75%, #ffe75e), color-stop(75%, #e6c4b3), to(#e6c4b3));
+  background-image: linear-gradient(90deg, #ffe75e 25%, #e6c4b3 25%, #e6c4b3 50%, #ffe75e 50%, #ffe75e 75%, #e6c4b3 75%, #e6c4b3 100%);
+}
+
+.infantHeaderSchool {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #ffe75e), color-stop(25%, #b3c1e6), color-stop(50%, #b3c1e6), color-stop(50%, #ffe75e), color-stop(75%, #ffe75e), color-stop(75%, #b3c1e6), to(#b3c1e6));
+  background-image: linear-gradient(90deg, #ffe75e 25%, #b3c1e6 25%, #b3c1e6 50%, #ffe75e 50%, #ffe75e 75%, #b3c1e6 75%, #b3c1e6 100%);
+}
+
 .infantHeader {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(29.17%, #ffe75e), color-stop(29.17%, #b3e6cd), color-stop(50%, #b3e6cd), color-stop(50%, #ffe75e), color-stop(79.17%, #ffe75e), color-stop(79.17%, #b3e6cd), to(#b3e6cd));
+  background-image: linear-gradient(90deg, #ffe75e 29.17%, #b3e6cd 29.17%, #b3e6cd 50%, #ffe75e 50%, #ffe75e 79.17%, #b3e6cd 79.17%, #b3e6cd 100%);
+}
+
+.infantHeader,
+.infantHeaderSchool,
+.infantHeaderToddler {
   font-size: 8vh;
   color: #0779E4;
   padding: 2vh;
   margin: 2vh;
   border: 1px solid #0779E4;
   display: inline-block;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(29.17%, #ffe75e), color-stop(29.17%, #b3e6cd), color-stop(50%, #b3e6cd), color-stop(50%, #ffe75e), color-stop(79.17%, #ffe75e), color-stop(79.17%, #b3e6cd), to(#b3e6cd));
-  background-image: linear-gradient(90deg, #ffe75e 29.17%, #b3e6cd 29.17%, #b3e6cd 50%, #ffe75e 50%, #ffe75e 79.17%, #b3e6cd 79.17%, #b3e6cd 100%);
 }
 
 #infantContainer2 {
@@ -273,10 +288,8 @@ header a:hover {
 }
 
 @media screen and (max-width: 411px) {
-  #infantContainer img {
-    width: 80%;
-  }
-  #infantBaby2 {
+  #infantContainer #infantBaby2,
+  #infantContainer #infantBaby3 {
     width: 80%;
   }
 }
@@ -321,7 +334,6 @@ body {
 }
 
 /*Buttons*/
-.learnMoreButton,
 .learnMoreButton2 {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
@@ -335,7 +347,6 @@ body {
   cursor: pointer;
 }
 
-.learnMoreButton:hover,
 .learnMoreButton2:hover {
   background-color: #0779E4;
   color: white;
@@ -383,7 +394,7 @@ body {
 }
 
 #aboutUsInfoPhotos {
-  width: 90%;
+  width: 70%;
   height: 40vh;
   border-radius: 10%;
 }
@@ -548,6 +559,12 @@ footer a {
   color: black;
 }
 
+.footer a:hover,
+footer a:hover {
+  font-weight: bold;
+  color: #0779E4;
+}
+
 #footerPage {
   position: fixed;
   bottom: 0;
@@ -667,10 +684,6 @@ footer a {
 @media screen and (max-width: 411px) {
   main {
     padding-top: 50px;
-  }
-  .learnMoreButton {
-    font-size: 1.8vw;
-    padding: 0.8em 1.4em;
   }
   .learnMoreButton2 {
     font-size: 1.8vw;

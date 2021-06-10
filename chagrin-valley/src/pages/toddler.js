@@ -7,7 +7,7 @@ export default function Toddler() {
         <div>
             <container>
                 <div id="infantContainer">
-                    <p class="infantHeader"> Toddler </p>
+                    <p class="infantHeaderToddler"> Toddler </p>
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img

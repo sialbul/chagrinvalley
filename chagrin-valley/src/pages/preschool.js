@@ -8,7 +8,7 @@ export default function Preschool() {
         <div>
             <container>
                 <div id="infantContainer">
-                    <p class="infantHeader"> Pre-School </p>
+                    <p class="infantHeaderSchool"> Pre-School </p>
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
