@@ -24,7 +24,11 @@ import Toddler from "./pages/Toddler";
 import Tuition from "./pages/Tuition";
 import UpdateAgreement from "./pages/UpdateAgreement";
 import VirtualTour from "./pages/VirtualTour";
+import ScrollUpButton from "react-scroll-up-button";
 
+window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+};
 function App() {
     return (
         <Router>
@@ -69,6 +73,7 @@ function App() {
                 </Switch>
             </div>
             <Footer />
+            <ScrollUpButton />
         </Router>
     );
 }

@@ -135,7 +135,14 @@ header a:hover {
   display: none;
 }
 
-.option :hover {
+.option i {
+  margin-left: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.option:hover {
   color: white;
 }
 
@@ -516,6 +523,15 @@ body {
   font-size: 5vw;
 }
 
+.contactSection a {
+  text-decoration: none;
+  color: white;
+}
+
+.contactSection a:hover {
+  color: #0779E4;
+}
+
 .phoneNumberSection,
 .adressSection,
 .emailSection {
@@ -539,15 +555,6 @@ body {
 
 .emailSection {
   background-color: #F12D2D;
-}
-
-.emailSection a {
-  text-decoration: none;
-  color: white;
-}
-
-.emailSection a:hover {
-  color: #0779E4;
 }
 
 .footer,
@@ -592,7 +599,7 @@ footer a:hover {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    font-size: 1.8vw;
+    font-size: 1.3vw;
   }
 }
 
@@ -608,35 +615,6 @@ footer a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 30px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding: 0;
-  }
-  .main-nav li {
-    margin: 0;
-    position: relative;
-    text-align: left;
-  }
-  .main-nav li ul {
-    position: absolute;
-    top: 3.3vh;
-    background-color: #ffE75E;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    line-height: 6vh;
-    padding: 0 5vh 2vh;
   }
   .nav-links {
     margin-left: 40px;

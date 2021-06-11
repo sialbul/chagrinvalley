@@ -28,7 +28,14 @@ export default function footer() {
                     </div>
                     <div className="infoPart">
                         <h2>OUR ADDRESS</h2>
-                        <h2>5188 Chillicothe Rd, Chagrin Falls, OH 44022</h2>
+
+                        <a
+                            href="https://goo.gl/maps/zVDAv5Z19iRNArEi9"
+                            target="_blank">
+                            <h2>
+                                5188 Chillicothe Rd, Chagrin Falls, OH 44022
+                            </h2>
+                        </a>
                     </div>
                 </div>
                 <div

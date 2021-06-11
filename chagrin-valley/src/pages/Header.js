@@ -28,7 +28,10 @@ const Header = () => {
                             click ? "nav-options active" : "nav-options"
                         }>
                         <li className="option" onClick={closeMobileMenu}>
-                            <a className="nav-links">OUR CENTER</a>
+                            <a className="nav-links">
+                                OUR CENTER
+                                <i class="fa fa-sort-down"></i>
+                            </a>
                             <ul>
                                 <li
                                     className="option"
@@ -86,6 +89,7 @@ const Header = () => {
                         <li className="option" onClick={closeMobileMenu}>
                             <a href="#" className="nav-links">
                                 PROGRAMS
+                                <i class="fa fa-sort-down"></i>
                             </a>
                             <ul>
                                 <li
@@ -127,7 +131,10 @@ const Header = () => {
                             </ul>
                         </li>
                         <li className="option" onClick={closeMobileMenu}>
-                            <a className="nav-links">CURRICULUM</a>
+                            <a className="nav-links">
+                                CURRICULUM
+                                <i class="fa fa-sort-down"></i>
+                            </a>
                             <ul>
                                 <li
                                     className="option"
@@ -150,6 +157,7 @@ const Header = () => {
                         <li className="option" onClick={closeMobileMenu}>
                             <a href="#" className="nav-links">
                                 RESOURCES
+                                <i class="fa fa-sort-down"></i>
                             </a>
                             <ul>
                                 <li

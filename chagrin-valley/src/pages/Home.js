@@ -10,6 +10,8 @@ import Photo5 from "../images/schoolage.png";
 import Art from "../images/art.jpg";
 import Toddler from "../images/toddler.jpg";
 import AOS from "aos";
+import { NavLink } from "react-router-dom";
+
 import "aos/dist/aos.css";
 
 AOS.init();
@@ -122,30 +124,38 @@ export default class Home extends Component {
                     <div className="ourActivitiesInfo">
                         <img id="ourActivitiesPhoto" src={Photo1} alt="" />
                         <div className="ourActivitiesLink">
-                            <img
-                                data-aos="fade-down"
-                                data-aos-delay="50"
-                                src={Photo2}
-                                alt=""
-                            />
-                            <img
-                                data-aos="fade-down"
-                                data-aos-delay="100"
-                                src={Photo3}
-                                alt=""
-                            />
-                            <img
-                                data-aos="fade-down"
-                                data-aos-delay="150"
-                                src={Photo4}
-                                alt=""
-                            />
-                            <img
-                                data-aos="fade-down"
-                                data-aos-delay="200"
-                                src={Photo5}
-                                alt=""
-                            />
+                            <NavLink to="/infants">
+                                <img
+                                    data-aos="fade-down"
+                                    data-aos-delay="50"
+                                    src={Photo2}
+                                    alt=""
+                                />
+                            </NavLink>
+                            <NavLink to="/toddler">
+                                <img
+                                    data-aos="fade-down"
+                                    data-aos-delay="100"
+                                    src={Photo3}
+                                    alt=""
+                                />
+                            </NavLink>
+                            <NavLink to="/preschool">
+                                <img
+                                    data-aos="fade-down"
+                                    data-aos-delay="150"
+                                    src={Photo4}
+                                    alt=""
+                                />
+                            </NavLink>
+                            <NavLink to="/schoolage">
+                                <img
+                                    data-aos="fade-down"
+                                    data-aos-delay="200"
+                                    src={Photo5}
+                                    alt=""
+                                />
+                            </NavLink>
                         </div>
                     </div>
                 </div>
