@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../style/style.css";
-import { NavLink } from "react-router-dom";
 import Header from "./Header";
+import { Linking, Text } from "react-native";
 
 export default class Navbar extends Component {
     //Header hide-when scroll down and display again
@@ -27,17 +27,31 @@ export default class Navbar extends Component {
         return (
             <div>
                 <header id="topHeader">
-                    <div>
-                        <i className="fa fa-phone" aria-hidden="true"></i> (440)
-                        338 44 99
+                    <div id="navPhone">
+                        <Text
+                            onPress={() => {
+                                Linking.openURL("tel:4403384499");
+                            }}>
+                            <i className="fa fa-phone" aria-hidden="true">
+                                (440) 338 44 99
+                            </i>{" "}
+                        </Text>
                     </div>
                     <div>
-                        <i className="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:info@cvelc.com">info@cvelc.com</a>
+                        <a href="mailto:info@cvelc.com">
+                            <i
+                                className="fa fa-envelope"
+                                aria-hidden="true"></i>
+                            info@cvelc.com
+                        </a>
                     </div>
                     <div className="infoPart">
-                        <i className="fa fa-map" aria-hidden="true"></i> 5188
-                        Chillicothe Rd, Chagrin Falls, OH 44022
+                        <a
+                            href="https://goo.gl/maps/zVDAv5Z19iRNArEi9"
+                            target="_blank">
+                            <i className="fa fa-map" aria-hidden="true"></i>{" "}
+                            5188 Chillicothe Rd, Chagrin Falls, OH 44022
+                        </a>
                     </div>
 
                     <div>

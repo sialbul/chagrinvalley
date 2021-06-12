@@ -114,6 +114,19 @@ header {
     display: none;
 }
 
+#navPhone>div {
+    font-family: 'Quicksand', sans-serif;
+    color: $darkgrey;
+    cursor: pointer;
+    font-size: 1.1vw;
+    i {
+        color: $darkgrey;
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
 @media (max-width: 769px) {
     /*Mobile View */
     .Navbar {
@@ -152,6 +165,9 @@ header {
         display: block;
         align-items: center;
         height: 10vw;
+    }
+    #navPhone>div {
+        font-size: 1vw;
     }
 }
 
