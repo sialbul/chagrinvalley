@@ -24,8 +24,9 @@ import Toddler from "./pages/Toddler";
 import Tuition from "./pages/Tuition";
 import UpdateAgreement from "./pages/UpdateAgreement";
 import VirtualTour from "./pages/VirtualTour";
+import ScrollUpButton from "react-scroll-up-button";
 
-function App() {
+export default function App() {
     return (
         <Router>
             <Navbar />
@@ -69,8 +70,7 @@ function App() {
                 </Switch>
             </div>
             <Footer />
+            <ScrollUpButton />
         </Router>
     );
 }
-
-export default App;
