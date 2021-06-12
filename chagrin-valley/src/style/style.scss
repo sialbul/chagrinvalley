@@ -1,6 +1,5 @@
 @import "_navbar";
 @import "_variables";
-@import "_mediaquerry";
 @import "_programs";
 * {
     box-sizing: border-box;
@@ -51,7 +50,7 @@ body {
     font-weight: bold;
     background-color: $red;
     color: $white;
-    font-size: 1.2vw;
+    font-size: 2vw;
     padding: 0.6em 1.2em;
     margin: 0 0.3em 0.3em 0;
     border-radius: 2em;
@@ -337,8 +336,9 @@ footer {
     main {
         padding-top: 50px;
     }
-    .learnMoreButton2 {
-        font-size: 1.8vw;
+    .learnMoreButton2,
+    #SummerFlyer {
+        font-size: 4vw;
         padding: 1em 1.6em;
     }
     .sectionHeader {
