@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../style/style.css";
 import Header from "./Header";
-import { Linking, Text } from "react-native";
 
 export default class Navbar extends Component {
     //Header hide-when scroll down and display again
@@ -28,14 +27,9 @@ export default class Navbar extends Component {
             <div>
                 <header id="topHeader">
                     <div id="navPhone">
-                        <Text
-                            onPress={() => {
-                                Linking.openURL("tel:4403384499");
-                            }}>
-                            <i className="fa fa-phone" aria-hidden="true">
-                                (440) 338 44 99
-                            </i>{" "}
-                        </Text>
+                        <i className="fa fa-phone" aria-hidden="true">
+                            <a href="tel:440-338-4499">440-338-4499</a>
+                        </i>{" "}
                     </div>
                     <div>
                         <a href="mailto:info@cvelc.com">

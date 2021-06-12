@@ -25,7 +25,6 @@ import Tuition from "../src/pages/Tuition";
 import UpdateAgreement from "../src/pages/UpdateAgreement";
 import VirtualTour from "../src/pages/VirtualTour";
 import ScrollUpButton from "react-scroll-up-button";
-
 export default function App() {
     return (
         <Router>

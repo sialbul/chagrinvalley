@@ -8,6 +8,10 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   color: #4a4141;
   -webkit-transition: top 0.5s ease-in-out;
   transition: top 0.5s ease-in-out;
@@ -47,6 +51,7 @@ header a:hover {
   -webkit-transition: top 0.5s ease-in-out;
   transition: top 0.5s ease-in-out;
   margin-bottom: 15vh;
+  font-size: 1vw;
 }
 
 .navbar ul li {
@@ -125,10 +130,11 @@ header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style-type: none;
+  width: 80%;
 }
 
 .mobile-option {
@@ -213,9 +219,19 @@ header a:hover {
         -ms-flex-align: center;
             align-items: center;
     height: 10vw;
+    font-size: 2vw;
   }
   #navPhone > div {
-    font-size: 1vw;
+    font-size: 1.6vw;
+  }
+  header {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .option {
+    font-size: 3vw;
   }
 }
 
@@ -237,12 +253,12 @@ header a:hover {
 
 #infantContainer #infantBaby3 {
   margin: 5vh;
-  width: 55vh;
+  width: 80%;
   background-image: url("../images/2.png");
 }
 
 #infantContainer #infantBaby2 {
-  width: 35vh;
+  width: 80%;
   background-image: url("../images/2.png");
 }
 
@@ -488,7 +504,7 @@ body {
 
 /*Event Section*/
 .eventGallery {
-  width: 50vh;
+  width: 80%;
   height: 30vh;
   margin: 5vh;
 }
@@ -504,8 +520,8 @@ body {
 .parentSectionInfo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
   text-align: center;
 }
@@ -633,21 +649,6 @@ footer a:hover {
 }
 
 @media screen and (min-width: 769px) {
-  .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-bottom: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .nav-links {
-    margin-left: 40px;
-  }
   .logo {
     margin-top: 0;
   }
@@ -655,9 +656,6 @@ footer a:hover {
     margin-left: 2vh;
     height: 15vh;
     width: 15vh;
-  }
-  .navbar-toggle {
-    display: none;
   }
   .logo:hover,
   .nav-links:hover {
@@ -721,6 +719,13 @@ footer a:hover {
             justify-content: space-evenly;
     margin-right: 1vh;
     padding: 1vh;
+  }
+  .topPicture {
+    padding-top: 14vh;
+  }
+  .perfectphoto {
+    top: 40%;
+    left: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
