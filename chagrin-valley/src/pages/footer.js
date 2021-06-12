@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../images/chagrinvalley3.png";
-import { Linking, Text } from "react-native";
 
 export default function footer() {
     return (
@@ -17,12 +16,7 @@ export default function footer() {
                     <div className=" infoPart ">
                         <h2>CALL TODAY</h2>
                         <h2>
-                            <Text
-                                onPress={() => {
-                                    Linking.openURL("tel:4403384499");
-                                }}>
-                                (440) 338 44 99
-                            </Text>
+                            <a href="tel:440-338-4499">440-338-4499</a>
                         </h2>
                     </div>
                 </div>

@@ -5,6 +5,8 @@ header {
     padding: 1.5vh;
     font-size: 1vw;
     justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     color: $darkgrey;
     transition: top 0.5s ease-in-out;
     a {
@@ -34,6 +36,7 @@ header {
     background-color: $yellow;
     transition: top 0.5s ease-in-out;
     margin-bottom: 15vh;
+    font-size: 1vw;
     ul li {
         text-align: center;
         font-weight: bold;
@@ -92,8 +95,9 @@ header {
 
 .nav-options {
     display: flex;
-    justify-content: end;
+    justify-content: space-evenly;
     list-style-type: none;
+    width: 80%;
 }
 
 .mobile-option {
@@ -165,9 +169,19 @@ header {
         display: block;
         align-items: center;
         height: 10vw;
+        font-size: 2vw;
     }
     #navPhone>div {
-        font-size: 1vw;
+        font-size: 1.6vw;
+    }
+    header {
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .option {
+        font-size: 3vw;
     }
 }
 
