@@ -26,10 +26,7 @@ import UpdateAgreement from "./pages/UpdateAgreement";
 import VirtualTour from "./pages/VirtualTour";
 import ScrollUpButton from "react-scroll-up-button";
 
-window.onbeforeunload = () => {
-    window.scrollTo(0, 0);
-};
-function App() {
+export default function App() {
     return (
         <Router>
             <Navbar />
@@ -77,5 +74,3 @@ function App() {
         </Router>
     );
 }
-
-export default App;
