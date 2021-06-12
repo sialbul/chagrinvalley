@@ -264,6 +264,16 @@ footer {
     width: 100%;
 }
 
+#root>div:nth-child(3)>div>div.phoneNumberSection.aos-init.aos-animate>div.infoPart>h2:nth-child(2)>div {
+    font-family: 'Quicksand', sans-serif;
+    color: $white;
+    font-size: 3vh;
+    font-weight: bold;
+    &:hover {
+        color: $blue;
+    }
+}
+
 
 /*Mobile view*/
 
