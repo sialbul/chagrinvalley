@@ -4,26 +4,26 @@ import {
     Switch,
     Redirect,
 } from "react-router-dom";
-import Navbar from "./pages/Navbar";
-import Home from "./pages/Home";
-import Footer from "./pages/Footer";
-import BuildingBridges from "./pages/BuildingBridges";
-import CenterClosure from "./pages/CenterClosure";
-import ChildCare from "./pages/ChildCare";
-import Community from "./pages/Community";
-import Curriculum from "./pages/Curriculum";
-import Food from "./pages/Food";
-import Gallery from "./pages/Gallery";
-import HowToEnroll from "./pages/HowToEnroll";
-import Infants from "./pages/Infants";
-import OurApproach from "./pages/OurApproach";
-import Preschool from "./pages/Preschool";
-import Schoolage from "./pages/Schoolage";
-import TeacherParent from "./pages/TeacherParent";
-import Toddler from "./pages/Toddler";
-import Tuition from "./pages/Tuition";
-import UpdateAgreement from "./pages/UpdateAgreement";
-import VirtualTour from "./pages/VirtualTour";
+import Navbar from "../src/pages/Navbar";
+import Home from "../src/pages/Home";
+import Footer from "../src/pages/Footer";
+import BuildingBridges from "../src/pages/BuildingBridges";
+import CenterClosure from "../src/pages/CenterClosure";
+import ChildCare from "../src/pages/ChildCare";
+import Community from "../src/pages/Community";
+import Curriculum from "../src/pages/Curriculum";
+import Food from "../src/pages/Food";
+import Gallery from "../src/pages/Gallery";
+import HowToEnroll from "../src/pages/HowToEnroll";
+import Infants from "../src/pages/Infants";
+import OurApproach from "../src/pages/OurApproach";
+import Preschool from "../src/pages/Preschool";
+import Schoolage from "../src/pages/Schoolage";
+import TeacherParent from "../src/pages/TeacherParent";
+import Toddler from "../src/pages/Toddler";
+import Tuition from "../src/pages/Tuition";
+import UpdateAgreement from "../src/pages/UpdateAgreement";
+import VirtualTour from "../src/pages/VirtualTour";
 import ScrollUpButton from "react-scroll-up-button";
 
 export default function App() {
