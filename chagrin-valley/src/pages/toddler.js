@@ -1,6 +1,7 @@
 import React from "react";
 import ToddlerPhoto from "../images/books.jpg";
 import ToddlerPhoto2 from "../images/toddlers.png";
+import { NavLink } from "react-router-dom";
 
 export default function Toddler() {
     return (
@@ -81,6 +82,17 @@ export default function Toddler() {
                                 data-aos-duration="2000"
                             />
                         </div>
+                    </div>
+                    <div>
+                        <p className="sectionHeaderPrograms">
+                            <NavLink to="/preschool">
+                                {" "}
+                                Pre-School
+                                <i
+                                    class="fa fa-angle-double-right"
+                                    aria-hidden="true"></i>
+                            </NavLink>
+                        </p>
                     </div>
                 </div>
             </container>

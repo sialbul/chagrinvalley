@@ -22,6 +22,21 @@ body {
     margin-bottom: 5vh;
 }
 
+.sectionHeaderPrograms {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    font-weight: 900;
+    margin-bottom: 5vh;
+    a {
+        color: $blue;
+        text-decoration: none;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
 
 /*Top Picture Section*/
 
@@ -354,6 +369,9 @@ footer {
             height: 30vh;
         }
     }
+    .sectionHeaderPrograms {
+        font-size: 4vw;
+    }
 }
 
 @media screen and (max-width: 411px) {
@@ -370,6 +388,9 @@ footer {
         font-weight: 200;
         font-weight: bold;
     }
+    .sectionHeaderPrograms {
+        font-size: 5vw;
+    }
     .aboutLink ul li {
         justify-content: space-evenly;
         margin-right: 1vh;
@@ -379,7 +400,7 @@ footer {
         padding-top: 12vh;
     }
     .perfectphoto {
-        top: 40%;
+        top: 50%;
         left: 30%;
     }
     .eventGalleryCards {

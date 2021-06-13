@@ -142,7 +142,7 @@ header a:hover {
 }
 
 .option i {
-  margin-left: 2px;
+  margin-left: 1vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -193,10 +193,8 @@ header a:hover {
             flex-direction: column;
     list-style-type: none;
   }
-  .nav-options ul {
+  .nav-options ul li ul li {
     position: relative;
-    top: 0;
-    right: 0;
   }
   .nav-options.active {
     background: #ffE75E;
@@ -231,7 +229,7 @@ header a:hover {
 
 @media screen and (max-width: 411px) {
   .option {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
@@ -367,6 +365,23 @@ body {
   font-weight: 900;
   color: #0779E4;
   margin-bottom: 5vh;
+}
+
+.sectionHeaderPrograms {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 2vw;
+  font-weight: 900;
+  margin-bottom: 5vh;
+}
+
+.sectionHeaderPrograms a {
+  color: #0779E4;
+  text-decoration: none;
+}
+
+.sectionHeaderPrograms a:hover {
+  color: #F12D2D;
 }
 
 /*Top Picture Section*/
@@ -725,6 +740,9 @@ footer a:hover {
     width: 80%;
     height: 30vh;
   }
+  .sectionHeaderPrograms {
+    font-size: 4vw;
+  }
 }
 
 @media screen and (max-width: 411px) {
@@ -741,6 +759,9 @@ footer a:hover {
     font-weight: 200;
     font-weight: bold;
   }
+  .sectionHeaderPrograms {
+    font-size: 5vw;
+  }
   .aboutLink ul li {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -752,7 +773,7 @@ footer a:hover {
     padding-top: 12vh;
   }
   .perfectphoto {
-    top: 40%;
+    top: 50%;
     left: 30%;
   }
   .eventGalleryCards {

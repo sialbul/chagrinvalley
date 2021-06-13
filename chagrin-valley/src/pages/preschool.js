@@ -2,6 +2,7 @@ import React from "react";
 import PreschoolPhoto from "../images/preschool.png";
 import PreschoolPhoto2 from "../images/paintkid.jpg";
 import PreschoolPhoto3 from "../images/outside.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function Preschool() {
     return (
@@ -110,6 +111,17 @@ export default function Preschool() {
                                 </div>
                             </p>{" "}
                         </div>
+                    </div>
+                    <div>
+                        <p className="sectionHeaderPrograms">
+                            <NavLink to="/schoolage">
+                                {" "}
+                                School Age
+                                <i
+                                    class="fa fa-angle-double-right"
+                                    aria-hidden="true"></i>
+                            </NavLink>
+                        </p>
                     </div>
                 </div>
             </container>
