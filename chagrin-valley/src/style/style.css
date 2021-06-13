@@ -484,16 +484,17 @@ body {
 }
 
 #ourActivitiesPhoto {
-  width: 100%;
-  height: 40vh;
+  width: 60%;
+  height: 30vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 6vh;
   border-radius: 10%;
+  margin: auto;
 }
 
 .ourActivitiesLink {
+  margin-top: 5vh;
   padding-bottom: 6vh;
 }
 
@@ -503,6 +504,13 @@ body {
 }
 
 /*Event Section*/
+.eventGalleryCards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
 .eventGallery {
   width: 80%;
   height: 30vh;
@@ -531,8 +539,8 @@ body {
 }
 
 .parentSectionPhoto img {
-  width: 80%;
-  height: 35vh;
+  width: 50%;
+  height: 45vh;
   border-radius: 50%;
 }
 
@@ -639,12 +647,20 @@ footer a:hover {
 }
 
 /*Mobile view*/
-@media screen and (max-width: 1191px) {
+@media screen and (max-width: 1281px) {
   .navbar {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     font-size: 1.3vw;
+  }
+  .eventGalleryCards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .parentSectionPhoto img {
+    height: 40vh;
+    width: 60%;
   }
 }
 
@@ -687,16 +703,21 @@ footer a:hover {
   .parentSectionText p {
     font-size: 2vw;
   }
-  .parentSectionPhoto {
-    margin-bottom: 6vh;
-  }
-  .parentSectionPhoto img {
-    width: 50%;
-    height: 50vh;
-    border-radius: 50%;
-  }
   .sectionHeader {
     font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .topPicture {
+    padding-top: 13vh;
+  }
+  .parentSectionText p {
+    font-size: 3vw;
+  }
+  .parentSectionPhoto img {
+    width: 80%;
+    height: 30vh;
   }
 }
 
@@ -722,11 +743,19 @@ footer a:hover {
     padding: 1vh;
   }
   .topPicture {
-    padding-top: 14vh;
+    padding-top: 12vh;
   }
   .perfectphoto {
     top: 40%;
     left: 30%;
+  }
+  .eventGalleryCards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .parentSectionPhoto img {
+    width: 60%;
+    height: 30vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
