@@ -4,26 +4,31 @@ export default function HowToEnroll() {
     return (
         <div>
             <div id="pageContainer">
-                <span class="sectionHeader"> Take a tour </span>
+                <span class="sectionHeader"> Take a Tour </span>
 
                 <p>
-                    Come see our center! In-person tours are available. Reach
-                    out directly to the center director, She can give you
-                    information about our program, tuition, and enrollment
-                    options.
+                    Come see our center!
+                    <br /> In-person tours are available. Reach out directly to
+                    the center director, She can give you information about our
+                    program, tuition, and enrollment options.{" "}
+                    <a href="tel:440-338-4499">
+                        {" "}
+                        <i className="fa fa-phone" aria-hidden="true"></i>
+                        440-338-4499
+                    </a>{" "}
                     <br /> Or take a virtual tour
                 </p>
                 <br />
                 <span className="sectionHeader3">
                     {" "}
-                    Begin the Enrollment process
+                    Begin the Enrollment Process
                 </span>
                 <p>
                     You must complete and sign all forms and have the Center
                     Director’s signature on your Enrollment papers before your
                     child can attend. Below you will find all links to your
                     documents needed for a Perfect Start. Fill them out, either
-                    print or save and send them to our email address
+                    print or save and send them to our email address.
                     <a
                         id="emailAdress"
                         href="mailto:chagrinvalleyelc@gmail.com">

@@ -20,16 +20,19 @@ import Infants from "../src/pages/Infants";
 import OurApproach from "../src/pages/OurApproach";
 import Preschool from "../src/pages/Preschool";
 import Schoolage from "../src/pages/Schoolage";
-import TeacherParent from "../src/pages/TeacherParent";
+import Testimonials from "./pages/Testimonials";
 import Toddler from "../src/pages/Toddler";
 import Tuition from "../src/pages/Tuition";
 import UpdateAgreement from "../src/pages/UpdateAgreement";
 import VirtualTour from "../src/pages/VirtualTour";
 import ScrollUpButton from "react-scroll-up-button";
+import ScrollToTop from "../src/components/scrollToTop";
 
 export default function App() {
     return (
         <Router>
+            <ScrollToTop />
+
             <Navbar />
             <div>
                 <Switch>
@@ -57,8 +60,8 @@ export default function App() {
                     <Route exact path="/schoolage" component={Schoolage} />
                     <Route
                         exact
-                        path="/teacherparent"
-                        component={TeacherParent}
+                        path="/testimonials"
+                        component={Testimonials}
                     />
                     <Route exact path="/toddler" component={Toddler} />
                     <Route exact path="/tuition" component={Tuition} />

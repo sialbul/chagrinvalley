@@ -45,7 +45,7 @@ const Header = () => {
                                 <li
                                     className="option"
                                     onClick={closeMobileMenu}>
-                                    <NavLink to="/teacherparent">
+                                    <NavLink to="/testimonials">
                                         {" "}
                                         <i className="fas fa-chalkboard-teacher"></i>{" "}
                                         Teacher parent testimonials

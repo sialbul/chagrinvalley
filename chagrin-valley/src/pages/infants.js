@@ -12,7 +12,7 @@ export default function Infants() {
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
-                                id="infantBaby3"
+                                id="programsPagePhoto3"
                                 src={Baby}
                                 data-aos="fade-down"
                                 data-aos-duration="2000"
@@ -83,7 +83,7 @@ export default function Infants() {
                         </div>
                         <div>
                             <img
-                                id="infantBaby2"
+                                id="programsPagePhoto2"
                                 src={Baby2}
                                 data-aos="fade-down"
                                 data-aos-duration="2000"

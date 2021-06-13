@@ -12,7 +12,7 @@ export default function Schoolage() {
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
-                                id="infantBaby3"
+                                id="programsPagePhoto3"
                                 src={PreschoolPhoto2}
                                 data-aos="fade-down"
                                 data-aos-duration="2000"
@@ -66,7 +66,7 @@ export default function Schoolage() {
                         </div>
                         <div id="infantFirstPart">
                             <img
-                                id="infantBaby3"
+                                id="programsPagePhoto1"
                                 src={PreschoolPhoto3}
                                 data-aos="fade-down"
                                 data-aos-duration="2000"

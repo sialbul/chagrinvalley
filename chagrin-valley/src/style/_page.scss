@@ -11,12 +11,12 @@
     }
     a {
         text-decoration: none;
-        color: $black;
+        color: $blue;
         i {
             margin-right: 5px;
         }
         &:hover {
-            color: $blue;
+            color: $red;
         }
     }
 }
@@ -39,14 +39,36 @@
     margin-bottom: 5vh;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    text-align: center;
+    margin: 5vh 5vh;
+    i {
+        margin-top: 2vh;
+    }
+}
+
+#cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
 @media screen and (max-width: 768px) {
     #enrollForm {
+        grid-template-columns: 1fr 1fr;
+    }
+    #cardContainer {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 411px) {
     #enrollForm {
+        grid-template-columns: 1fr;
+    }
+    #cardContainer {
         grid-template-columns: 1fr;
     }
 }

@@ -249,13 +249,18 @@ header a:hover {
   padding: 2vh;
 }
 
-#infantContainer #infantBaby3 {
+#infantContainer #programsPagePhoto1 {
   margin: 5vh;
   width: 80%;
   background-image: url("../images/2.png");
 }
 
-#infantContainer #infantBaby2 {
+#infantContainer #programsPagePhoto3 {
+  margin: 5vh;
+  width: 80%;
+}
+
+#infantContainer #programsPagePhoto2 {
   width: 80%;
   background-image: url("../images/2.png");
 }
@@ -360,7 +365,7 @@ header a:hover {
 
 #pageContainer a {
   text-decoration: none;
-  color: black;
+  color: #0779E4;
 }
 
 #pageContainer a i {
@@ -368,7 +373,7 @@ header a:hover {
 }
 
 #pageContainer a:hover {
-  color: #0779E4;
+  color: #F12D2D;
 }
 
 #emailAdress {
@@ -391,8 +396,34 @@ header a:hover {
   margin-bottom: 5vh;
 }
 
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 80%;
+  text-align: center;
+  margin: 5vh 5vh;
+}
+
+.card i {
+  margin-top: 2vh;
+}
+
+#cardContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 @media screen and (max-width: 768px) {
   #enrollForm {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #cardContainer {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
@@ -400,6 +431,10 @@ header a:hover {
 
 @media screen and (max-width: 411px) {
   #enrollForm {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #cardContainer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -414,7 +449,6 @@ header a:hover {
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-image: url("../images/Chagrin-Valley.png");
   text-align: center;
 }
 
