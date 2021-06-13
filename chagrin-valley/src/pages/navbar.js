@@ -32,11 +32,11 @@ export default class Navbar extends Component {
                         </i>{" "}
                     </div>
                     <div>
-                        <a href="mailto:info@cvelc.com">
+                        <a href="mailto:chagrinvalleyelc@gmail.com">
                             <i
                                 className="fa fa-envelope"
                                 aria-hidden="true"></i>
-                            info@cvelc.com
+                            chagrinvalleyelc@gmail.com{" "}
                         </a>
                     </div>
                     <div className="infoPart">

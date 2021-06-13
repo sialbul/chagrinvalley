@@ -345,6 +345,66 @@ header a:hover {
   }
 }
 
+#pageContainer {
+  padding-top: 20vh;
+}
+
+#pageContainer p {
+  font-size: 18px;
+  margin: auto;
+  width: 80%;
+  line-height: 5vh;
+  font-weight: bold;
+  padding: 2vh;
+}
+
+#pageContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+#pageContainer a i {
+  margin-right: 5px;
+}
+
+#pageContainer a:hover {
+  color: #0779E4;
+}
+
+#emailAdress {
+  margin-left: 5px;
+}
+
+#enrollForm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sectionHeader3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 2.5vw;
+  font-weight: 900;
+  color: #0779E4;
+  margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 768px) {
+  #enrollForm {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  #enrollForm {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

@@ -203,9 +203,9 @@ const Header = () => {
                         </li>
 
                         <li className="option" onClick={closeMobileMenu}>
-                            <NavLink to="/tuition" className="nav-links">
+                            <a href="https://alis.care" target="_blank">
                                 PAY TUITION
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                     <div className="mobile-menu" onClick={handleClick}>
