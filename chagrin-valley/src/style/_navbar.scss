@@ -106,7 +106,7 @@ header {
 
 .option {
     i {
-        margin-left: 2px;
+        margin-left: 1vh;
         align-items: center;
     }
     &:hover {
@@ -146,10 +146,10 @@ header {
         transition: all 0.5s ease;
         flex-direction: column;
         list-style-type: none;
-        ul {
+        ul li ul li {
             position: relative;
-            top: 0;
-            right: 0;
+            // top: 0;
+            // right: 0;
         }
     }
     .nav-options.active {
@@ -181,7 +181,7 @@ header {
 
 @media screen and (max-width: 411px) {
     .option {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
 

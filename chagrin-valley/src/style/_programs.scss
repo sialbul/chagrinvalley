@@ -82,6 +82,12 @@
     p {
         width: auto;
     }
+    .infantHeader,
+    .infantHeaderSchool,
+    .infantHeaderToddler,
+    .infantHeaderSchoolAge {
+        font-size: 4vh;
+    }
 }
 
 @media screen and (max-width: 411px) {

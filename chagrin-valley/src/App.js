@@ -4,6 +4,7 @@ import {
     Switch,
     Redirect,
 } from "react-router-dom";
+
 import Navbar from "../src/pages/Navbar";
 import Home from "../src/pages/Home";
 import Footer from "../src/pages/Footer";
@@ -25,6 +26,7 @@ import Tuition from "../src/pages/Tuition";
 import UpdateAgreement from "../src/pages/UpdateAgreement";
 import VirtualTour from "../src/pages/VirtualTour";
 import ScrollUpButton from "react-scroll-up-button";
+
 export default function App() {
     return (
         <Router>

@@ -161,13 +161,14 @@ export default class Home extends Component {
                 </div>
                 <div className="ourEventGallery">
                     <p className="sectionHeader">Our Event Gallery</p>
-
-                    <img className="eventGallery" src={Art} alt="" />
-                    <img className="eventGallery" src={Art} alt="" />
-                    <img className="eventGallery" src={Art} alt="" />
-                    <img className="eventGallery" src={Art} alt="" />
-                    <img className="eventGallery" src={Art} alt="" />
-                    <img className="eventGallery" src={Art} alt="" />
+                    <div className="eventGalleryCards">
+                        <img className="eventGallery" src={Art} alt="" />
+                        <img className="eventGallery" src={Art} alt="" />
+                        <img className="eventGallery" src={Art} alt="" />
+                        <img className="eventGallery" src={Art} alt="" />
+                        <img className="eventGallery" src={Art} alt="" />
+                        <img className="eventGallery" src={Art} alt="" />
+                    </div>
                 </div>
 
                 <div className="parentSection">

@@ -1,5 +1,103 @@
 import React from "react";
 
 export default function HowToEnroll() {
-    return <div>How to enroll</div>;
+    return (
+        <div>
+            <div id="pageContainer">
+                <span class="sectionHeader"> Take a tour </span>
+
+                <p>
+                    Come see our center! In-person tours are available. Reach
+                    out directly to the center director, She can give you
+                    information about our program, tuition, and enrollment
+                    options.
+                    <br /> Or take a virtual tour
+                </p>
+                <br />
+                <span className="sectionHeader3">
+                    {" "}
+                    Begin the Enrollment process
+                </span>
+                <p>
+                    You must complete and sign all forms and have the Center
+                    Director’s signature on your Enrollment papers before your
+                    child can attend. Below you will find all links to your
+                    documents needed for a Perfect Start. Fill them out, either
+                    print or save and send them to our email address
+                    <a
+                        id="emailAdress"
+                        href="mailto:chagrinvalleyelc@gmail.com">
+                        <i className="fa fa-envelope" aria-hidden="true"></i>
+                        chagrinvalleyelc@gmail.com.
+                    </a>
+                    <br />
+                    <br />
+                    Throughout your child’s enrollment, please be sure to update
+                    emergency information as needed, including your address,
+                    telephone numbers, email address, any changes in your
+                    child’s medical information, and individuals authorized to
+                    pick up your child
+                </p>
+                <div id="enrollForm">
+                    <p>
+                        <a
+                            href="http://www.odjfs.state.oh.us/forms/num/JFS01234/pdf/"
+                            target="_blank">
+                            <i class="fas fa-file-signature"></i>
+                            Enrollment
+                        </a>
+                    </p>
+                    <p>
+                        <a
+                            href="http://www.odjfs.state.oh.us/forms/num/JFS01305/pdf/"
+                            target="_blank">
+                            <i class="fas fa-syringe"></i>
+                            Child Medical
+                        </a>
+                    </p>
+                    <p>
+                        <a
+                            href="http://www.odjfs.state.oh.us/forms/num/JFS01511/pdf/"
+                            target="_blank">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            SUTQ Family Information{" "}
+                        </a>
+                    </p>
+                    <p>
+                        <a
+                            href="http://www.odjfs.state.oh.us/forms/num/JFS01218/pdf/ "
+                            target="_blank">
+                            <i className="fas fa-baby"> </i>
+                            Infant Information{" "}
+                        </a>
+                    </p>
+
+                    <p>
+                        <a
+                            href="http://www.odjfs.state.oh.us/forms/num/JFS01235/pdf/ "
+                            target="_blank">
+                            <i class="fa fa-bed" aria-hidden="true"></i>
+                            Sleep Waiver{" "}
+                        </a>
+                    </p>
+                    <p>
+                        <a
+                            href="http://www.odjfs.state.oh.us/forms/num/JFS01236/pdf/  "
+                            target="_blank">
+                            <i class="fa fa-heart"></i>
+                            Medical Care Plan{" "}
+                        </a>
+                    </p>
+                    <p>
+                        <a
+                            href="http://www.odjfs.state.oh.us/forms/num/JFS01217/pdf/ "
+                            target="_blank">
+                            <i class="fa fa-heart"></i>
+                            Request of Medication{" "}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
 }

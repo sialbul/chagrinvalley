@@ -52,7 +52,9 @@ export default function footer() {
                         <h2>EMAIL US</h2>
                         <h2>
                             {" "}
-                            <a href="mailto:info@cvelc.com">info@cvelc.com</a>
+                            <a href="mailto:chagrinvalleyelc@gmail.com">
+                                chagrinvalleyelc@gmail.com
+                            </a>
                         </h2>
                     </div>
                 </div>
