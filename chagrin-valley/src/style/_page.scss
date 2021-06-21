@@ -64,11 +64,14 @@
     }
 }
 
-@media screen and (max-width: 411px) {
-    #enrollForm {
+@media screen and (max-width: 541px) {
+    #cardContainer {
         grid-template-columns: 1fr;
     }
-    #cardContainer {
+}
+
+@media screen and (max-width: 411px) {
+    #enrollForm {
         grid-template-columns: 1fr;
     }
 }

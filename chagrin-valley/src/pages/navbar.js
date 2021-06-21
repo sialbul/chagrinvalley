@@ -27,9 +27,12 @@ export default class Navbar extends Component {
             <div>
                 <header id="topHeader">
                     <div id="navPhone">
-                        <i className="fa fa-phone" aria-hidden="true">
-                            <a href="tel:440-338-4499">440-338-4499</a>
-                        </i>{" "}
+                        <a href="tel:440-338-4499">
+                            {" "}
+                            <i className="fa fa-phone" aria-hidden="true">
+                                440-338-4499{" "}
+                            </i>{" "}
+                        </a>
                     </div>
                     <div>
                         <a href="mailto:chagrinvalleyelc@gmail.com">

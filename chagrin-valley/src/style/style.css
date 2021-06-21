@@ -429,12 +429,15 @@ header a:hover {
   }
 }
 
-@media screen and (max-width: 411px) {
-  #enrollForm {
+@media screen and (max-width: 541px) {
+  #cardContainer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  #cardContainer {
+}
+
+@media screen and (max-width: 411px) {
+  #enrollForm {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
