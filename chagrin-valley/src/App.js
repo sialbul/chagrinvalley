@@ -14,7 +14,7 @@ import ChildCare from "../src/pages/ChildCare";
 import Community from "../src/pages/Community";
 import Curriculum from "../src/pages/Curriculum";
 import Food from "../src/pages/Food";
-import Gallery from "../src/pages/Gallery";
+import PhotoGallery from "../src/pages/Gallery";
 import HowToEnroll from "../src/pages/HowToEnroll";
 import Infants from "../src/pages/Infants";
 import OurApproach from "../src/pages/OurApproach";
@@ -52,7 +52,7 @@ export default function App() {
                     <Route exact path="/curriculum" component={Curriculum} />
                     <Route exact path="/food" component={Food} />
                     <Route exact path="/footer" component={Footer} />
-                    <Route exact path="/gallery" component={Gallery} />
+                    <Route exact path="/gallery" component={PhotoGallery} />
                     <Route exact path="/howtoenroll" component={HowToEnroll} />
                     <Route exact path="/infants" component={Infants} />
                     <Route exact path="/ourapproach" component={OurApproach} />
