@@ -12,6 +12,7 @@ export default function Curriculum() {
                 our youngest learners during the most critical and formative
                 years of development.
                 <br />
+                <br />
                 <span id="parHeader">The Creative Curriculum® is…</span>
                 <br /> <span id="parHeader">Innovative:</span> delivering
                 cutting-edge resources that are unique, effective, and based on

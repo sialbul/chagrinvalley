@@ -87,7 +87,11 @@ export default class Home extends Component {
                     <p className="sectionHeader">What Parents Says</p>
                     <div className="parentSectionInfo">
                         <div className="parentSectionPhoto">
-                            <img src={Toddler} alt="" />
+                            <img
+                                src={Toddler}
+                                class="circular--square"
+                                alt=""
+                            />
                         </div>
                         <div className="parentSectionText">
                             <p>
