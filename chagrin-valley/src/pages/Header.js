@@ -147,9 +147,9 @@ const Header = () => {
                                 <li
                                     className="option"
                                     onClick={closeMobileMenu}>
-                                    <NavLink to="/buildingbridges">
-                                        <i className="fas fa-archway"></i>{" "}
-                                        Building Bridges
+                                    <NavLink to="/cincyafterschool">
+                                        <i className="fas fa-school"></i> Cincy
+                                        After School{" "}
                                     </NavLink>
                                 </li>
                             </ul>

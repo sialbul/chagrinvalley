@@ -252,7 +252,7 @@ header a:hover {
 #infantContainer #programsPagePhoto1 {
   margin: 5vh;
   width: 80%;
-  background-image: url("../images/2.png");
+  background-image: url("../images/5.png");
 }
 
 #infantContainer #programsPagePhoto3 {
@@ -262,7 +262,7 @@ header a:hover {
 
 #infantContainer #programsPagePhoto2 {
   width: 80%;
-  background-image: url("../images/2.png");
+  background-image: url("../images/5.png");
 }
 
 #infantFirstPart {
@@ -418,6 +418,12 @@ header a:hover {
           justify-content: space-evenly;
 }
 
+#parHeader {
+  font-weight: bold;
+  font-size: larger;
+  color: #F12D2D;
+}
+
 @media screen and (max-width: 768px) {
   #enrollForm {
     -ms-grid-columns: 1fr 1fr;
@@ -456,6 +462,7 @@ header a:hover {
 
 body {
   font-family: 'Quicksand', sans-serif;
+  background-image: url("../images/Chagrin-Valley.png");
   text-align: center;
 }
 
@@ -466,6 +473,10 @@ body {
   font-weight: 900;
   color: #0779E4;
   margin-bottom: 5vh;
+  border: 2px dotted #0779E4;
+  padding: 2vh;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .sectionHeaderPrograms {
@@ -572,7 +583,6 @@ body {
 
 #aboutUsInfoPhotos {
   width: 70%;
-  height: 40vh;
   border-radius: 10%;
 }
 
@@ -580,10 +590,18 @@ body {
 .ourActivitiesInfo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   margin: 5vh;
   line-height: 5vh;
+}
+
+.ourActivitiesInfo {
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#aboutUsInfo {
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .aboutUsInfoParargaf {
@@ -661,9 +679,9 @@ body {
 }
 
 .parentSectionPhoto img {
-  width: 50%;
-  height: 45vh;
   border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
 }
 
 .parentSectionText {
@@ -834,6 +852,9 @@ footer a:hover {
   .topPicture {
     padding-top: 13vh;
   }
+  .parentSectionText {
+    width: 90%;
+  }
   .parentSectionText p {
     font-size: 3vw;
   }
@@ -882,8 +903,47 @@ footer a:hover {
         grid-template-columns: 1fr;
   }
   .parentSectionPhoto img {
-    width: 60%;
-    height: 30vh;
+    width: 60vw;
+    height: 60vw;
+  }
+  .contactSection {
+    font-size: 3vw;
+  }
+  .ourActivities {
+    width: 100%;
+  }
+  .parentSectionText p {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .aboutLink ul {
+    font-size: 3.5vw;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+  #aboutUsInfo {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  #aboutUsInfo h2 {
+    font-size: 4vw;
+  }
+  #aboutUsInfo p {
+    font-size: 3vw;
+  }
+  .aboutUsInfoParargaf {
+    margin: 0px auto;
+    padding: 10px;
+  }
+  .learnMoreButton2 {
+    font-size: 2vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

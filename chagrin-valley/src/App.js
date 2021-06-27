@@ -8,7 +8,7 @@ import {
 import Navbar from "../src/pages/Navbar";
 import Home from "../src/pages/Home";
 import Footer from "../src/pages/Footer";
-import BuildingBridges from "../src/pages/BuildingBridges";
+import CincyAfterSchool from "./pages/CincyAfterSchool";
 import CenterClosure from "../src/pages/CenterClosure";
 import ChildCare from "../src/pages/ChildCare";
 import Community from "../src/pages/Community";
@@ -39,8 +39,8 @@ export default function App() {
                     <Route exact path="/" component={Home} />
                     <Route
                         exact
-                        path="/buildingbridges"
-                        component={BuildingBridges}
+                        path="/cindyafterschool"
+                        component={CincyAfterSchool}
                     />
                     <Route
                         exact

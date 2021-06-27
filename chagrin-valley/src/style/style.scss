@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    // background-image: url("../images/Chagrin-Valley.png");
+    background-image: url("../images/Chagrin-Valley.png");
     text-align: center;
 }
 
@@ -22,6 +22,10 @@ body {
     font-weight: 900;
     color: $blue;
     margin-bottom: 5vh;
+    border: 2px dotted $blue;
+    padding: 2vh;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .sectionHeaderPrograms {
@@ -119,16 +123,22 @@ body {
 
 #aboutUsInfoPhotos {
     width: 70%;
-    height: 40vh;
     border-radius: 10%;
 }
 
 #aboutUsInfo,
 .ourActivitiesInfo {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: 5vh;
     line-height: 5vh;
+}
+
+.ourActivitiesInfo {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+#aboutUsInfo {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .aboutUsInfoParargaf {
@@ -207,9 +217,9 @@ body {
 .parentSectionPhoto {
     margin-bottom: 6vh;
     img {
-        width: 50%;
-        height: 45vh;
         border-radius: 50%;
+        width: 20vw;
+        height: 20vw;
     }
 }
 
@@ -361,6 +371,7 @@ footer {
         padding-top: 13vh;
     }
     .parentSectionText {
+        width: 90%;
         p {
             font-size: 3vw;
         }
@@ -410,8 +421,49 @@ footer {
     }
     .parentSectionPhoto {
         img {
-            width: 60%;
-            height: 30vh;
+            width: 60vw;
+            height: 60vw;
         }
+    }
+    .contactSection {
+        font-size: 3vw;
+    }
+    .ourActivities {
+        width: 100%;
+    }
+    .parentSectionText {
+        p {
+            font-size: 5vw;
+        }
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .aboutLink ul {
+        font-size: 3.5vw;
+    }
+    h2 {
+        font-size: 3vw;
+    }
+    p {
+        font-size: 2vw;
+    }
+    #aboutUsInfo {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        h2 {
+            font-size: 4vw;
+        }
+        p {
+            font-size: 3vw;
+        }
+    }
+    .aboutUsInfoParargaf {
+        margin: 0px auto;
+        padding: 10px;
+    }
+    .learnMoreButton2 {
+        font-size: 2vw;
     }
 }
