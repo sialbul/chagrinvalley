@@ -418,6 +418,12 @@ header a:hover {
           justify-content: space-evenly;
 }
 
+#parHeader {
+  font-weight: bold;
+  font-size: larger;
+  color: #F12D2D;
+}
+
 @media screen and (max-width: 768px) {
   #enrollForm {
     -ms-grid-columns: 1fr 1fr;
@@ -456,6 +462,7 @@ header a:hover {
 
 body {
   font-family: 'Quicksand', sans-serif;
+  background-image: url("../images/Chagrin-Valley.png");
   text-align: center;
 }
 
