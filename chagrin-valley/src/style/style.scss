@@ -22,6 +22,10 @@ body {
     font-weight: 900;
     color: $blue;
     margin-bottom: 5vh;
+    border: 2px dotted $blue;
+    padding: 2vh;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .sectionHeaderPrograms {

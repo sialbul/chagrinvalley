@@ -19,7 +19,7 @@ const PhotoGallery = () => {
 
     return (
         <div id="galleryContainer">
-            <h1>Gallery</h1>
+            <p className="sectionHeader">Gallery</p>
             <Gallery photos={photos} onClick={openLightbox} />
             <ModalGateway>
                 {viewerIsOpen ? (
