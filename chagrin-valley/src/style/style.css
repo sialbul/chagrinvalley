@@ -456,6 +456,15 @@ td {
   padding: 15px;
 }
 
+td:first-child {
+  font-weight: bold;
+}
+
+#rateExplanation {
+  text-align: left;
+  line-height: 4;
+}
+
 @media screen and (max-width: 768px) {
   #enrollForm {
     -ms-grid-columns: 1fr 1fr;

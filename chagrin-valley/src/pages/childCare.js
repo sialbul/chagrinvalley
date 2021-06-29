@@ -155,14 +155,49 @@ export default function ChildCare() {
                         <td></td>
                     </tr>
                 </table>
+                <br />
                 <h2>RATE WILL VERY BASED ON TRANSPORTATION NEEDS</h2>
-                <p>
+                <p id="rateExplanation">
                     <span id="parHeader"> Registration Fee: </span>
                     $50.00 per family *Due upon registration & any lengthy
                     withdraw and re-enroll *non-refundable <br />
                     <span id="parHeader"> Preschool: </span> 3 years old and
                     Potty trained.
+                    <br />
+                    <span id="parHeader"> Full-Time: </span> 4 or 5 days of
+                    child care Monday-Friday consisting of 5 or more hours per
+                    day
+                    <br />
+                    <span id="parHeader"> Part-Time: </span> Children who
+                    receive 5 or less hours of child care per day or are
+                    enrolled 3 days a week
+                    <br />
+                    <span id="parHeader"> Daily Rate: </span>minimum of 2 full
+                    days
+                    <br />
+                    <span id="parHeader"> Snow Days:</span> As a courtesy to our
+                    families, you may drop off your school aged child (up to the
+                    age of 12) and be charged the daily rate. This service has
+                    limited enrollment. PLEASE ALWAYS CALL AHEAD FOR
+                    CONFIRMATION. For Families already enrolled in our Before &
+                    After care Program the fee is $21.00 a day.
+                    <br />
+                    <span id="parHeader"> Late Pick Up Fee: </span>$5 per child
+                    every minute here past 6:45 pm.
+                    <br />
+                    <span id="parHeader"> Transportation: </span>
+                    We provide transportation to Gurney, Kenston if needed for
+                    special programs.
+                    <br />
+                    <span id="parHeader"> **2 ½ Hour Preschool: </span>
+                    Monday thru Friday 9-11:30 am. Toddler $85 Preschool $73
                 </p>
+                <br />
+                <h2>
+                    ***Hours of Operation: Monday thru Thursday 6am—5:30pm
+                    Friday 6am—5pm***effective 6/1/20
+                </h2>
+                <br />
             </div>
         </div>
     );
