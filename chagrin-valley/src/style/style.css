@@ -453,6 +453,24 @@ header a:hover {
   padding: 10vw;
 }
 
+@media screen and (max-width: 1280px) {
+  #galleryContainer {
+    padding: 14vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #galleryContainer {
+    padding-top: 25vw;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  #galleryContainer {
+    padding-top: 32vw;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
