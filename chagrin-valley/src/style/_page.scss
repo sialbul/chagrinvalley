@@ -1,6 +1,7 @@
 @import "_variables";
 #pageContainer {
     padding-top: 20vh;
+    padding-bottom: 10vh;
     p {
         font-size: 18px;
         margin: auto;
@@ -8,6 +9,7 @@
         line-height: 5vh;
         font-weight: bold;
         padding: 2vh;
+        background-color: $white;
     }
     a {
         text-decoration: none;
@@ -58,6 +60,11 @@
 #parHeader {
     font-weight: bold;
     font-size: larger;
+    color: $red;
+}
+
+#parHeader2 {
+    font-weight: bold;
     color: $red;
 }
 

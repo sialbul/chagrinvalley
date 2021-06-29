@@ -352,6 +352,7 @@ header a:hover {
 
 #pageContainer {
   padding-top: 20vh;
+  padding-bottom: 10vh;
 }
 
 #pageContainer p {
@@ -361,6 +362,7 @@ header a:hover {
   line-height: 5vh;
   font-weight: bold;
   padding: 2vh;
+  background-color: white;
 }
 
 #pageContainer a {
@@ -421,6 +423,11 @@ header a:hover {
 #parHeader {
   font-weight: bold;
   font-size: larger;
+  color: #F12D2D;
+}
+
+#parHeader2 {
+  font-weight: bold;
   color: #F12D2D;
 }
 
@@ -498,6 +505,10 @@ td:first-child {
 
 #galleryContainer {
   padding: 10vw;
+}
+
+#centerClosureList {
+  background-color: white;
 }
 
 @media screen and (max-width: 1280px) {
