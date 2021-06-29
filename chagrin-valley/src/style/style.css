@@ -436,6 +436,26 @@ header a:hover {
   margin-right: 10px;
 }
 
+table {
+  margin-top: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  background-color: white;
+}
+
+table,
+th,
+td {
+  border: 2px solid #0779E4;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
 @media screen and (max-width: 768px) {
   #enrollForm {
     -ms-grid-columns: 1fr 1fr;
@@ -458,6 +478,12 @@ header a:hover {
   #enrollForm {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  #galleryContainer h2 {
+    font-size: 22px;
   }
 }
 
