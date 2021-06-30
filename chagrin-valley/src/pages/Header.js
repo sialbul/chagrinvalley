@@ -1,224 +1,193 @@
-import React, { useState } from "react";
+import React from "react";
 import { ReactComponent as CloseMenu } from "../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../assets/menu.svg";
 import Logo from "../images/chagrinvalley3.png";
 import { NavLink } from "react-router-dom";
 
 import "../style/style.css";
+class Header extends React.Component {
+    myFunction() {
+        let x = document.getElementById("myTopnav");
+        let navFas = document.getElementById("iconNavFas");
 
-const Header = () => {
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
-
-    return (
-        <div>
-            <div className="navbar">
-                <div className="logo-nav">
-                    <div className="logo-container">
-                        <a className="logo">
-                            <NavLink to="/">
+        if (x.className === "topnav") {
+            x.className += " responsive";
+            navFas.classList = "fas fa-times";
+        } else {
+            x.className = "topnav";
+            navFas.classList = "fas fa-bars";
+        }
+    }
+    render() {
+        return (
+            <div className="topnav" id="myTopnav">
+                <div className="logo">
+                    {" "}
+                    <NavLink to="/">
+                        {" "}
+                        <img src={Logo} />
+                    </NavLink>
+                </div>
+                <div className="navLinks">
+                    <div className="dropdown">
+                        <button className="dropbtn">
+                            OUR CENTER <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <a>
+                                <NavLink to="/howtoenroll">
+                                    {" "}
+                                    <i className="fas fa-edit"></i> How to
+                                    Enroll
+                                </NavLink>
+                            </a>
+                            <a>
+                                <NavLink to="/testimonials">
+                                    {" "}
+                                    <i className="fas fa-chalkboard-teacher"></i>{" "}
+                                    Teacher parent testimonials
+                                </NavLink>
+                            </a>
+                            <a>
                                 {" "}
-                                <img src={Logo} />
-                            </NavLink>
-                        </a>
+                                <NavLink to="/virtualtour">
+                                    <i className="fas fa-video"></i> Take a
+                                    virtual tour
+                                </NavLink>
+                            </a>
+                            <a>
+                                <NavLink to="/food">
+                                    <i className="fas fa-apple-alt"></i> Food
+                                    and nutrition
+                                </NavLink>
+                            </a>
+                            <a>
+                                <NavLink to="/ourapproach">
+                                    {" "}
+                                    <i className="fas fa-pencil-ruler"></i> Our
+                                    approach to education
+                                </NavLink>
+                            </a>
+                            <a>
+                                <NavLink to="/community">
+                                    <i className="fas fa-user-friends"></i>{" "}
+                                    Community involvement
+                                </NavLink>
+                            </a>
+                        </div>
                     </div>
-                    <ul
-                        className={
-                            click ? "nav-options active" : "nav-options"
-                        }>
-                        <li className="option" onClick={closeMobileMenu}>
-                            <a className="nav-links">
-                                OUR CENTER
-                                <i class="fa fa-sort-down"></i>
+                    <div className="dropdown">
+                        <button className="dropbtn">
+                            {" "}
+                            PROGRAMS
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <a>
+                                <NavLink to="/infants">
+                                    <i className="fas fa-baby"> </i> Infants
+                                </NavLink>
                             </a>
-                            <ul>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/howtoenroll">
-                                        {" "}
-                                        <i className="fas fa-edit"></i> How to
-                                        Enroll
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/testimonials">
-                                        {" "}
-                                        <i className="fas fa-chalkboard-teacher"></i>{" "}
-                                        Teacher parent testimonials
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/virtualtour">
-                                        <i className="fas fa-video"></i> Take a
-                                        virtual tour
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/food">
-                                        <i className="fas fa-apple-alt"></i>{" "}
-                                        Food and nutrition
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/ourapproach">
-                                        {" "}
-                                        <i className="fas fa-pencil-ruler"></i>{" "}
-                                        Our approach to education
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/community">
-                                        <i className="fas fa-user-friends"></i>{" "}
-                                        Community involvement
-                                    </NavLink>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="option" onClick={closeMobileMenu}>
-                            <a href="#" className="nav-links">
-                                PROGRAMS
-                                <i class="fa fa-sort-down"></i>
-                            </a>
-                            <ul>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/infants">
-                                        {" "}
-                                        <i className="fas fa-baby"> </i> Infants
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/toddler">
-                                        {" "}
-                                        <i className="fa fa-child"> </i>{" "}
-                                        Toddlers
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/preschool">
-                                        {" "}
-                                        <i className="fas fa-book-reader">
-                                            {" "}
-                                        </i>{" "}
-                                        Pre-School
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/schoolage">
-                                        <i className="fas fa-graduation-cap"></i>{" "}
-                                        School Age
-                                    </NavLink>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="option" onClick={closeMobileMenu}>
-                            <a className="nav-links">
-                                CURRICULUM
-                                <i class="fa fa-sort-down"></i>
-                            </a>
-                            <ul>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/curriculum">
-                                        <i className="fas fa-book"></i> Creative
-                                        Curriculum
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/cincyafterschool">
-                                        <i className="fas fa-school"></i> Cincy
-                                        After School{" "}
-                                    </NavLink>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="option" onClick={closeMobileMenu}>
-                            <a href="#" className="nav-links">
-                                RESOURCES
-                                <i class="fa fa-sort-down"></i>
-                            </a>
-                            <ul>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/childcare">
-                                        <i className="fas fa-dollar-sign"></i>{" "}
-                                        Child Care Cost
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/tuition">
-                                        <i className="fas fa-money-bill-wave"></i>{" "}
-                                        How to Pay Tuition
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/updateagreement">
-                                        {" "}
-                                        <i className="fas fa-handshake"></i>{" "}
-                                        Update Your Agreement
-                                    </NavLink>
-                                </li>
-                                <li
-                                    className="option"
-                                    onClick={closeMobileMenu}>
-                                    <NavLink to="/centerclosure">
-                                        <i className="fas fa-school"></i> Center
-                                        Closure
-                                    </NavLink>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="option" onClick={closeMobileMenu}>
-                            <NavLink to="/gallery" className="nav-links">
+                            <a>
                                 {" "}
-                                GALLERY
-                            </NavLink>
-                        </li>
-
-                        <li className="option" onClick={closeMobileMenu}>
-                            <a href="https://alis.care" target="_blank">
-                                PAY TUITION
+                                <NavLink to="/toddler">
+                                    {" "}
+                                    <i className="fa fa-child"> </i> Toddlers
+                                </NavLink>
                             </a>
-                        </li>
-                    </ul>
-                    <div className="mobile-menu" onClick={handleClick}>
-                        {click ? (
-                            <CloseMenu className="menu-icon" />
-                        ) : (
-                            <MenuIcon className="menu-icon" />
-                        )}
+                            <a>
+                                {" "}
+                                <NavLink to="/preschool">
+                                    {" "}
+                                    <i className="fas fa-book-reader"> </i>{" "}
+                                    Pre-School
+                                </NavLink>
+                            </a>
+                            <a>
+                                <NavLink to="/schoolage">
+                                    <i className="fas fa-graduation-cap"></i>{" "}
+                                    School Age
+                                </NavLink>
+                            </a>
+                        </div>
                     </div>
+                    <div className="dropdown">
+                        <button className="dropbtn">
+                            {" "}
+                            CURRICULUM
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <a>
+                                <NavLink to="/curriculum">
+                                    <i className="fas fa-book"></i> Creative
+                                    Curriculum
+                                </NavLink>
+                            </a>
+                            <a>
+                                {" "}
+                                <NavLink to="/cincyafterschool">
+                                    <i className="fas fa-school"></i> Cincy
+                                    After School{" "}
+                                </NavLink>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="dropdown">
+                        <button className="dropbtn">
+                            {" "}
+                            RESOURCES
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <a>
+                                <NavLink to="/childcare">
+                                    <i className="fas fa-dollar-sign"></i> Child
+                                    Care Cost
+                                </NavLink>
+                            </a>
+                            <a>
+                                {" "}
+                                <NavLink to="/tuition">
+                                    <i className="fas fa-money-bill-wave"></i>{" "}
+                                    How to Pay Tuition
+                                </NavLink>
+                            </a>
+                            <a>
+                                {" "}
+                                <NavLink to="/updateagreement">
+                                    {" "}
+                                    <i className="fas fa-handshake"></i> Update
+                                    Your Agreement
+                                </NavLink>
+                            </a>
+                            <a>
+                                {" "}
+                                <NavLink to="/centerclosure">
+                                    <i className="fas fa-school"></i> Center
+                                    Closure
+                                </NavLink>
+                            </a>
+                        </div>
+                    </div>
+
+                    <NavLink to="/gallery" className="nav-links">
+                        GALLERY
+                    </NavLink>
+
+                    <a href="https://alis.care" target="_blank">
+                        PAY TUITION
+                    </a>
+                    <a
+                        href="javascript:void(0);"
+                        className="iconNav"
+                        onClick={this.myFunction}>
+                        <i id="iconNavFas" className="fas fa-bars"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    );
-};
+        );
+    }
+}
 
 export default Header;

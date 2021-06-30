@@ -7,6 +7,7 @@ import Santa from "../images/santaclaus.png";
 import Christmas from "../images/christmas.png";
 import Newyear from "../images/newyear.png";
 import Flag from "../images/usa-flag.png";
+import { NavLink } from "react-router-dom";
 
 export default function CenterClosure() {
     return (
@@ -42,6 +43,17 @@ export default function CenterClosure() {
                 Christmas Day <br />
                 Inclement weather closures will be announced through the REMIND
                 app and also posted on FOX 8 News.
+            </div>
+            <div>
+                <p className="sectionHeaderPrograms">
+                    <NavLink to="/gallery">
+                        {" "}
+                        Gallery{" "}
+                        <i
+                            class="fa fa-angle-double-right"
+                            aria-hidden="true"></i>
+                    </NavLink>
+                </p>
             </div>
         </div>
     );

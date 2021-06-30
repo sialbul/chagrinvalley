@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function CincyAfterSchool() {
     return (
@@ -15,7 +16,8 @@ export default function CincyAfterSchool() {
                 activities aligned with Ohio Academic Standards.
                 <br />
                 <br />
-                <h3>Ohio Academic Standards</h3>
+                <span id="parHeader">Ohio Academic Standards</span>
+                <br />
                 Each activity has been designed with the Ohio Academic Standards
                 in mind. Homework extensions, alternative programming lessons
                 and activities, as well as the choice time stations have all
@@ -23,7 +25,8 @@ export default function CincyAfterSchool() {
                 activity clearly document which standards are being addressed.
                 <br />
                 <br />
-                <h3>40 Developmental Assets</h3>
+                <span id="parHeader">40 Developmental Assets</span>
+                <br />
                 The design of the program reflects the 40 Developmental Assets
                 for Elemen- tary-Age Children based on research of the Search
                 Institute. In 1999 the publication{" "}
@@ -57,6 +60,20 @@ export default function CincyAfterSchool() {
                 Program creates a foundation for meeting the academic and
                 behavioral goals of the program .
             </p>
+            <div>
+                <p className="sectionHeaderPrograms">
+                    <NavLink to="/childcare">
+                        {" "}
+                        <h2>
+                            {" "}
+                            Child Care Cost{" "}
+                            <i
+                                class="fa fa-angle-double-right"
+                                aria-hidden="true"></i>
+                        </h2>
+                    </NavLink>
+                </p>
+            </div>
         </div>
     );
 }

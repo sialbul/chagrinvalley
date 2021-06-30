@@ -109,6 +109,11 @@ td:first-child {
     line-height: 4;
 }
 
+#galleryContainer>div:nth-child(7),
+#pageContainer>div {
+    margin-top: 5vw;
+}
+
 @media screen and (max-width: 768px) {
     #enrollForm {
         grid-template-columns: 1fr 1fr;

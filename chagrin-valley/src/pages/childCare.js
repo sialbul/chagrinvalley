@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function ChildCare() {
     return (
@@ -198,6 +199,17 @@ export default function ChildCare() {
                     Friday 6am—5pm***effective 6/1/20
                 </h2>
                 <br />
+            </div>
+            <div>
+                <p className="sectionHeaderPrograms">
+                    <NavLink to="/tuition">
+                        {" "}
+                        How to Pay Tuition
+                        <i
+                            class="fa fa-angle-double-right"
+                            aria-hidden="true"></i>
+                    </NavLink>
+                </p>
             </div>
         </div>
     );
