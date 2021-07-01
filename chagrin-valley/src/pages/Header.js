@@ -18,6 +18,14 @@ class Header extends React.Component {
             navFas.classList = "fas fa-bars";
         }
     }
+
+    closeNavBar() {
+        let x = document.getElementById("myTopnav");
+        let navFas = document.getElementById("iconNavFas");
+        x.className = "topnav";
+        navFas.classList = "fas fa-bars";
+    }
+
     render() {
         return (
             <div className="topnav" id="myTopnav">
@@ -35,14 +43,18 @@ class Header extends React.Component {
                         </button>
                         <div className="dropdown-content">
                             <a>
-                                <NavLink to="/howtoenroll">
+                                <NavLink
+                                    to="/howtoenroll"
+                                    onClick={this.closeNavBar}>
                                     {" "}
                                     <i className="fas fa-edit"></i> How to
                                     Enroll
                                 </NavLink>
                             </a>
                             <a>
-                                <NavLink to="/testimonials">
+                                <NavLink
+                                    to="/testimonials"
+                                    onClick={this.closeNavBar}>
                                     {" "}
                                     <i className="fas fa-chalkboard-teacher"></i>{" "}
                                     Teacher parent testimonials
@@ -50,26 +62,32 @@ class Header extends React.Component {
                             </a>
                             <a>
                                 {" "}
-                                <NavLink to="/virtualtour">
+                                <NavLink
+                                    to="/virtualtour"
+                                    onClick={this.closeNavBar}>
                                     <i className="fas fa-video"></i> Take a
                                     virtual tour
                                 </NavLink>
                             </a>
                             <a>
-                                <NavLink to="/food">
+                                <NavLink to="/food" onClick={this.closeNavBar}>
                                     <i className="fas fa-apple-alt"></i> Food
                                     and nutrition
                                 </NavLink>
                             </a>
                             <a>
-                                <NavLink to="/ourapproach">
+                                <NavLink
+                                    to="/ourapproach"
+                                    onClick={this.closeNavBar}>
                                     {" "}
                                     <i className="fas fa-pencil-ruler"></i> Our
                                     approach to education
                                 </NavLink>
                             </a>
                             <a>
-                                <NavLink to="/community">
+                                <NavLink
+                                    to="/community"
+                                    onClick={this.closeNavBar}>
                                     <i className="fas fa-user-friends"></i>{" "}
                                     Community involvement
                                 </NavLink>
@@ -84,27 +102,35 @@ class Header extends React.Component {
                         </button>
                         <div className="dropdown-content">
                             <a>
-                                <NavLink to="/infants">
+                                <NavLink
+                                    to="/infants"
+                                    onClick={this.closeNavBar}>
                                     <i className="fas fa-baby"> </i> Infants
                                 </NavLink>
                             </a>
                             <a>
                                 {" "}
-                                <NavLink to="/toddler">
+                                <NavLink
+                                    to="/toddler"
+                                    onClick={this.closeNavBar}>
                                     {" "}
                                     <i className="fa fa-child"> </i> Toddlers
                                 </NavLink>
                             </a>
                             <a>
                                 {" "}
-                                <NavLink to="/preschool">
+                                <NavLink
+                                    to="/preschool"
+                                    onClick={this.closeNavBar}>
                                     {" "}
                                     <i className="fas fa-book-reader"> </i>{" "}
                                     Pre-School
                                 </NavLink>
                             </a>
                             <a>
-                                <NavLink to="/schoolage">
+                                <NavLink
+                                    to="/schoolage"
+                                    onClick={this.closeNavBar}>
                                     <i className="fas fa-graduation-cap"></i>{" "}
                                     School Age
                                 </NavLink>
@@ -119,14 +145,18 @@ class Header extends React.Component {
                         </button>
                         <div className="dropdown-content">
                             <a>
-                                <NavLink to="/curriculum">
+                                <NavLink
+                                    to="/curriculum"
+                                    onClick={this.closeNavBar}>
                                     <i className="fas fa-book"></i> Creative
                                     Curriculum
                                 </NavLink>
                             </a>
                             <a>
                                 {" "}
-                                <NavLink to="/cincyafterschool">
+                                <NavLink
+                                    to="/cincyafterschool"
+                                    onClick={this.closeNavBar}>
                                     <i className="fas fa-school"></i> Cincy
                                     After School{" "}
                                 </NavLink>
@@ -141,21 +171,27 @@ class Header extends React.Component {
                         </button>
                         <div className="dropdown-content">
                             <a>
-                                <NavLink to="/childcare">
+                                <NavLink
+                                    to="/childcare"
+                                    onClick={this.closeNavBar}>
                                     <i className="fas fa-dollar-sign"></i> Child
                                     Care Cost
                                 </NavLink>
                             </a>
                             <a>
                                 {" "}
-                                <NavLink to="/tuition">
+                                <NavLink
+                                    to="/tuition"
+                                    onClick={this.closeNavBar}>
                                     <i className="fas fa-money-bill-wave"></i>{" "}
                                     How to Pay Tuition
                                 </NavLink>
                             </a>
                             <a>
                                 {" "}
-                                <NavLink to="/updateagreement">
+                                <NavLink
+                                    to="/updateagreement"
+                                    onClick={this.closeNavBar}>
                                     {" "}
                                     <i className="fas fa-handshake"></i> Update
                                     Your Agreement
@@ -163,7 +199,9 @@ class Header extends React.Component {
                             </a>
                             <a>
                                 {" "}
-                                <NavLink to="/centerclosure">
+                                <NavLink
+                                    to="/centerclosure"
+                                    onClick={this.closeNavBar}>
                                     <i className="fas fa-school"></i> Center
                                     Closure
                                 </NavLink>
@@ -171,11 +209,17 @@ class Header extends React.Component {
                         </div>
                     </div>
 
-                    <NavLink to="/gallery" className="nav-links">
+                    <NavLink
+                        to="/gallery"
+                        className="nav-links"
+                        onClick={this.closeNavBar}>
                         GALLERY
                     </NavLink>
 
-                    <a href="https://alis.care" target="_blank">
+                    <a
+                        href="https://alis.care"
+                        target="_blank"
+                        onClick={this.closeNavBar}>
                         PAY TUITION
                     </a>
                     <a
