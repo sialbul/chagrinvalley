@@ -216,20 +216,18 @@ header a:hover {
   padding: 2vh;
 }
 
-#infantContainer #programsPagePhoto1 {
-  margin: 5vh;
-  width: 80%;
-  background-image: url("../images/5.png");
-}
-
-#infantContainer #programsPagePhoto3 {
+#programsPagePhoto1 {
   margin: 5vh;
   width: 80%;
 }
 
-#infantContainer #programsPagePhoto2 {
+#programsPagePhoto3 {
+  margin: 5vh;
   width: 80%;
-  background-image: url("../images/5.png");
+}
+
+#programsPagePhoto2 {
+  width: 50%;
 }
 
 #infantFirstPart {

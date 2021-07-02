@@ -59,7 +59,7 @@ export default function Preschool() {
                                 data-aos-duration="2000"
                             />
                         </div>
-                        <div>
+                        <div id="infantFirstPart">
                             <img
                                 id="programsPagePhoto2"
                                 src={PreschoolPhoto}
