@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function HowToEnroll() {
     return (
@@ -102,6 +103,17 @@ export default function HowToEnroll() {
                         </a>
                     </p>
                 </div>
+            </div>
+            <div>
+                <p className="sectionHeaderPrograms">
+                    <NavLink to="/testimonials">
+                        {" "}
+                        Teacher parent testimonials
+                        <i
+                            class="fa fa-angle-double-right"
+                            aria-hidden="true"></i>
+                    </NavLink>
+                </p>
             </div>
         </div>
     );

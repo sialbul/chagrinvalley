@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Curriculum() {
     return (
@@ -33,6 +34,20 @@ export default function Curriculum() {
                 flexibly tailored to each child’s needs with high-quality,
                 research-based resources.
             </p>
+            <div>
+                <p className="sectionHeaderPrograms">
+                    <NavLink to="/cincyafterschool">
+                        {" "}
+                        <h2>
+                            {" "}
+                            Cincy After School{" "}
+                            <i
+                                class="fa fa-angle-double-right"
+                                aria-hidden="true"></i>
+                        </h2>
+                    </NavLink>
+                </p>
+            </div>
         </div>
     );
 }

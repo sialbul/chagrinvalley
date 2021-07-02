@@ -1,159 +1,164 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function ChildCare() {
     return (
         <div>
             <div id="pageContainer">
                 <span class="sectionHeader"> Tuition and Fees </span>
-                <table>
-                    <tr>
-                        <th></th>
-                        <th>1st Child</th>
-                        <th>2nd Child</th>
-                        <th>3rd Child</th>
-                        <th>Part Time</th>
-                        <th>Daily</th>
-                        <th>12.5hr a week</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            INFANTS
-                            <br />6 weeks- 21months
-                        </td>
-                        <td>232.00</td>
-                        <td>208.80 </td>
-                        <td>185.60</td>
-                        <td>168.00</td>
-                        <td>56.00</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            INFANTS with
-                            <br />
-                            Diaper and Wipes
-                        </td>
-                        <td>250.00</td>
-                        <td>225.00 </td>
-                        <td>200.00</td>
-                        <td>177.00</td>
-                        <td>59.00</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            TODDLER <br />
-                            21 months-3 years{" "}
-                        </td>
-                        <td>205.00</td>
-                        <td>184.50 </td>
-                        <td>164.00</td>
-                        <td>153.00</td>
-                        <td>51.00</td>
-                        <td>85.00**</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            TODDLER <br />
-                            Pullups and Wipes{" "}
-                        </td>
-                        <td>223.00</td>
-                        <td>200.70 </td>
-                        <td>178.40</td>
-                        <td>162.00</td>
-                        <td>54.00</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            PRESCHOOL <br />3 years-5 years{" "}
-                        </td>
-                        <td>187.00</td>
-                        <td>168.30 </td>
-                        <td>149.60</td>
-                        <td>135.00</td>
-                        <td>45.00</td>
-                        <td>73.00**</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            SCHOOL AGE <br />
-                        </td>
-                        <td>177.00</td>
-                        <td>159.30 </td>
-                        <td>141.60</td>
-                        <td>126.00</td>
-                        <td>42.00</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Before and After</td>
-                        <td>93.00</td>
-                        <td>83.70 </td>
-                        <td>74.40</td>
-                        <td>83.70</td>
-                        <td>28.00</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Before </td>
-                        <td>48.00</td>
-                        <td>43.20 </td>
-                        <td>38.40</td>
-                        <td>43.20</td>
-                        <td>15.00</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>After </td>
-                        <td>75.00</td>
-                        <td>67.50 </td>
-                        <td>60.00</td>
-                        <td>67.50</td>
-                        <td>23.00</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            CHAGRIN FALLS
-                            <br /> Before OR After
-                        </td>
-                        <td>93.00</td>
-                        <td>83.70 </td>
-                        <td>74.40</td>
-                        <td>83.70</td>
-                        <td>28.00</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            CHAGRIN FALLS
-                            <br /> Before AND After
-                        </td>
-                        <td>118.00</td>
-                        <td>106.20 </td>
-                        <td>94.40</td>
-                        <td>99.00</td>
-                        <td>33.00</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Transportation to <br /> surrounding schools
-                        </td>
-                        <td>
-                            25.00
-                            <br />+ weekly
-                        </td>
-                        <td> </td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            10.00
-                            <br />+ daily
-                        </td>
-                        <td></td>
-                    </tr>
+                <table role="table">
+                    <thead role="rowgroup">
+                        <tr role="row">
+                            <th role="columnheader"></th>
+                            <th role="columnheader">1st Child</th>
+                            <th role="columnheader">2nd Child</th>
+                            <th role="columnheader">3rd Child</th>
+                            <th role="columnheader">Part Time</th>
+                            <th role="columnheader">Daily</th>
+                            <th role="columnheader">12.5hr a week</th>
+                        </tr>
+                    </thead>
+                    <tbody role="rowgroup">
+                        <tr>
+                            <td role="cell">
+                                INFANTS
+                                <br />6 weeks- 21months
+                            </td>
+                            <td role="cell">232.00</td>
+                            <td role="cell">208.80 </td>
+                            <td role="cell">185.60</td>
+                            <td role="cell">168.00</td>
+                            <td role="cell">56.00</td>
+                            <td role="cell"></td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">
+                                INFANTS with
+                                <br />
+                                Diaper and Wipes
+                            </td>
+                            <td role="cell">250.00</td>
+                            <td role="cell">225.00 </td>
+                            <td role="cell">200.00</td>
+                            <td role="cell">177.00</td>
+                            <td role="cell">59.00</td>
+                            <td role="cell"></td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">
+                                TODDLER <br />
+                                21 months-3 years{" "}
+                            </td>
+                            <td role="cell">205.00</td>
+                            <td role="cell">184.50 </td>
+                            <td role="cell">164.00</td>
+                            <td role="cell">153.00</td>
+                            <td role="cell">51.00</td>
+                            <td role="cell">85.00**</td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">
+                                TODDLER <br />
+                                Pullups and Wipes{" "}
+                            </td>
+                            <td role="cell">223.00</td>
+                            <td role="cell">200.70 </td>
+                            <td role="cell">178.40</td>
+                            <td role="cell">162.00</td>
+                            <td role="cell">54.00</td>
+                            <td role="cell"></td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">
+                                PRESCHOOL <br />3 years-5 years{" "}
+                            </td>
+                            <td role="cell">187.00</td>
+                            <td role="cell">168.30 </td>
+                            <td role="cell">149.60</td>
+                            <td role="cell">135.00</td>
+                            <td role="cell">45.00</td>
+                            <td role="cell">73.00**</td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">
+                                SCHOOL AGE <br />
+                            </td>
+                            <td role="cell">177.00</td>
+                            <td role="cell">159.30 </td>
+                            <td role="cell">141.60</td>
+                            <td role="cell">126.00</td>
+                            <td role="cell">42.00</td>
+                            <td role="cell"></td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">Before and After</td>
+                            <td role="cell">93.00</td>
+                            <td role="cell">83.70 </td>
+                            <td role="cell">74.40</td>
+                            <td role="cell">83.70</td>
+                            <td role="cell">28.00</td>
+                            <td role="cell"></td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">Before </td>
+                            <td role="cell">48.00</td>
+                            <td role="cell">43.20 </td>
+                            <td role="cell">38.40</td>
+                            <td role="cell">43.20</td>
+                            <td role="cell">15.00</td>
+                            <td role="cell"></td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">After </td>
+                            <td role="cell">75.00</td>
+                            <td role="cell">67.50 </td>
+                            <td role="cell">60.00</td>
+                            <td role="cell">67.50</td>
+                            <td role="cell">23.00</td>
+                            <td role="cell"></td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">
+                                CHAGRIN FALLS
+                                <br /> Before OR After
+                            </td>
+                            <td role="cell">93.00</td>
+                            <td role="cell">83.70 </td>
+                            <td role="cell">74.40</td>
+                            <td role="cell">83.70</td>
+                            <td role="cell">28.00</td>
+                            <td role="cell"></td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">
+                                CHAGRIN FALLS
+                                <br /> Before AND After
+                            </td>
+                            <td role="cell">118.00</td>
+                            <td role="cell">106.20 </td>
+                            <td role="cell">94.40</td>
+                            <td role="cell">99.00</td>
+                            <td role="cell">33.00</td>
+                            <td role="cell"></td>
+                        </tr>
+                        <tr role="row">
+                            <td role="cell">
+                                Transportation to <br /> surrounding schools
+                            </td>
+                            <td role="cell">
+                                25.00
+                                <br />+ weekly
+                            </td>
+                            <td role="cell"> </td>
+                            <td role="cell"></td>
+                            <td role="cell"></td>
+                            <td role="cell">
+                                10.00
+                                <br />+ daily
+                            </td>
+                            <td role="cell"></td>
+                        </tr>
+                    </tbody>
                 </table>
                 <br />
                 <h2>RATE WILL VERY BASED ON TRANSPORTATION NEEDS</h2>
@@ -198,6 +203,17 @@ export default function ChildCare() {
                     Friday 6am—5pm***effective 6/1/20
                 </h2>
                 <br />
+            </div>
+            <div>
+                <p className="sectionHeaderPrograms">
+                    <NavLink to="/tuition">
+                        {" "}
+                        How to Pay Tuition
+                        <i
+                            class="fa fa-angle-double-right"
+                            aria-hidden="true"></i>
+                    </NavLink>
+                </p>
             </div>
         </div>
     );

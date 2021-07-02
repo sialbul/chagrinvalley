@@ -2,6 +2,7 @@ import React from "react";
 import PreschoolPhoto3 from "../images/letters.jpg";
 import PreschoolPhoto2 from "../images/crayon.jpg";
 import SummerFlyer from "../images/summerFlyer.pdf";
+import { NavLink } from "react-router-dom";
 
 export default function Schoolage() {
     return (
@@ -72,6 +73,17 @@ export default function Schoolage() {
                                 data-aos-duration="2000"
                             />
                         </div>
+                    </div>
+                    <div>
+                        <p className="sectionHeaderPrograms">
+                            <NavLink to="/curriculum">
+                                {" "}
+                                Creative Curriculum
+                                <i
+                                    class="fa fa-angle-double-right"
+                                    aria-hidden="true"></i>
+                            </NavLink>
+                        </p>
                     </div>
                 </div>
             </container>

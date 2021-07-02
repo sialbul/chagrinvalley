@@ -31,210 +31,177 @@ header a:hover {
   cursor: pointer;
 }
 
-.navbar {
+/*****/
+.topnav {
+  background-color: #ffE75E;
   position: fixed;
-  z-index: 3;
+  height: 13vh;
   width: 100%;
-  border: 1px solid rgba(128, 92, 92, 0.2);
+  padding: 0 3vh;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px 40px;
-  height: 13vh;
-  background-color: #ffE75E;
-  -webkit-transition: top 0.5s ease-in-out;
-  transition: top 0.5s ease-in-out;
-  margin-bottom: 15vh;
-  font-size: 1vw;
 }
 
-.navbar ul li {
-  text-align: center;
-  font-weight: bold;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #4a4141;
-}
-
-.navbar ul li a:hover {
-  color: #0779E4;
-}
-
-.navbar ul li:hover ul {
+.topnav a {
   display: block;
-}
-
-.navbar ul li ul {
-  position: absolute;
-  display: none;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  list-style-type: none;
+  font-size: 17px;
   background-color: #ffE75E;
-  text-align: left;
-  border: 1px solid rgba(128, 92, 92, 0.2);
 }
 
-.navbar ul li ul li {
-  margin: 2vh;
-  text-align: left;
-}
-
-.navbar ul li ul li:hover {
+.logo a {
+  margin: 0;
+  padding: 0;
   color: white;
 }
 
-.logo-nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-}
-
-.logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.logo a img {
+  height: 12vh;
+  width: 12vh;
 }
 
 .logo {
-  display: inline-block;
+  background-color: transparent;
 }
 
-.logo img {
-  width: 10vh;
-  height: 10vh;
-}
-
-.nav-options {
+.navLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  list-style-type: none;
-  width: 80%;
-}
-
-.mobile-option {
-  display: none;
-}
-
-.option i {
-  margin-left: 1vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.option:hover {
+.active {
   color: white;
 }
 
-.mobile-menu {
+.topnav .iconNav {
   display: none;
 }
 
-#navPhone > div {
-  font-family: 'Quicksand', sans-serif;
-  color: #4a4141;
-  cursor: pointer;
-  font-size: 1.1vw;
+.dropdown {
+  display: inline;
+  background-color: #ffE75E;
 }
 
-#navPhone > div i {
-  color: #4a4141;
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
-#navPhone > div i:hover {
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  color: #0779E4;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
   color: #0779E4;
 }
 
-@media (max-width: 769px) {
-  /*Mobile View */
-  .Navbar {
-    padding: 0px 10px;
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#myTopnav > div.navLinks > a:nth-child(5) {
+  padding: 0;
+}
+
+@media screen and (max-width: 798px) {
+  .insideNav {
+    position: fixed;
     width: 100%;
+    z-index: 3;
   }
-  .nav-options {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
+  .topnav {
+    padding: 0;
+  }
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.iconNav {
+    display: block;
+  }
+  .navLinks {
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  .topnav.responsive .iconNav {
     position: absolute;
-    top: 9vh;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    list-style-type: none;
+    right: 0;
+    top: 0;
   }
-  .nav-options ul li ul li {
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
     position: relative;
   }
-  .nav-options.active {
-    background: #ffE75E;
-    left: 0;
-    opacity: 1;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: 1;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    padding-left: 0px;
-  }
-  .menu-icon {
-    width: 45px;
-    height: 45px;
-  }
-  .option {
+  .topnav.responsive .dropdown .dropbtn {
     display: block;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 10vw;
-    font-size: 2vw;
+    width: 100%;
+    text-align: left;
   }
-  #navPhone > div {
-    font-size: 1.6vw;
+  #myTopnav > div.navLinks > a:nth-child(5) {
+    padding: 5px 15px;
   }
   header {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-}
-
-@media screen and (max-width: 411px) {
-  .option {
-    font-size: 4vw;
+  header div {
+    padding-bottom: 2vh;
   }
-}
-
-.mobile-menu {
-  display: block;
+  .logo a img {
+    margin-left: 5vh;
+  }
 }
 
 #infantContainer {
@@ -341,6 +308,9 @@ header a:hover {
   .infantHeaderSchoolAge {
     font-size: 4vh;
   }
+  #infantContainer #programsPagePhoto2 {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 411px) {
@@ -348,10 +318,14 @@ header a:hover {
   #infantContainer #infantBaby3 {
     width: 80%;
   }
+  #infantContainer2 p {
+    font-size: 4vw;
+  }
 }
 
 #pageContainer {
   padding-top: 20vh;
+  padding-bottom: 10vh;
 }
 
 #pageContainer p {
@@ -361,6 +335,7 @@ header a:hover {
   line-height: 5vh;
   font-weight: bold;
   padding: 2vh;
+  background-color: white;
 }
 
 #pageContainer a {
@@ -390,7 +365,7 @@ header a:hover {
 .sectionHeader3 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 4vw;
   font-weight: 900;
   color: #0779E4;
   margin-bottom: 5vh;
@@ -421,6 +396,11 @@ header a:hover {
 #parHeader {
   font-weight: bold;
   font-size: larger;
+  color: #F12D2D;
+}
+
+#parHeader2 {
+  font-weight: bold;
   color: #F12D2D;
 }
 
@@ -465,6 +445,11 @@ td:first-child {
   line-height: 4;
 }
 
+#galleryContainer > div:nth-child(7),
+#pageContainer > div {
+  margin-top: 5vw;
+}
+
 @media screen and (max-width: 768px) {
   #enrollForm {
     -ms-grid-columns: 1fr 1fr;
@@ -496,8 +481,81 @@ td:first-child {
   }
 }
 
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table {
+    width: 90%;
+  }
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    margin: 0 0 1rem 0;
+  }
+  tr:nth-child(odd) {
+    background: #ccc;
+  }
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #ccc2c2;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /*
+		Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+  td:nth-of-type(1):before {
+    content: "";
+  }
+  td:nth-of-type(2):before {
+    content: "1st Child";
+  }
+  td:nth-of-type(3):before {
+    content: "2nd Child";
+  }
+  td:nth-of-type(4):before {
+    content: "3rd Child";
+  }
+  td:nth-of-type(5):before {
+    content: "Part Time";
+  }
+  td:nth-of-type(6):before {
+    content: "Daily";
+  }
+  td:nth-of-type(7):before {
+    content: "12.5hr a week";
+  }
+}
+
 #galleryContainer {
   padding: 10vw;
+}
+
+#centerClosureList {
+  background-color: white;
 }
 
 @media screen and (max-width: 1280px) {
@@ -548,7 +606,7 @@ body {
 .sectionHeaderPrograms {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 900;
   margin-bottom: 5vh;
 }
@@ -931,9 +989,12 @@ footer a:hover {
   .sectionHeaderPrograms {
     font-size: 4vw;
   }
+  .footer a img {
+    width: 10vh;
+  }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 415px) {
   main {
     padding-top: 50px;
   }
@@ -961,7 +1022,7 @@ footer a:hover {
     padding-top: 12vh;
   }
   .perfectphoto {
-    top: 50%;
+    top: 40%;
     left: 30%;
   }
   .eventGalleryCards {

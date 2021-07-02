@@ -32,7 +32,7 @@ body {
 .sectionHeaderPrograms {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 900;
     margin-bottom: 5vh;
     a {
@@ -386,9 +386,12 @@ footer {
     .sectionHeaderPrograms {
         font-size: 4vw;
     }
+    .footer a img {
+        width: 10vh;
+    }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 415px) {
     main {
         padding-top: 50px;
     }
@@ -414,7 +417,7 @@ footer {
         padding-top: 12vh;
     }
     .perfectphoto {
-        top: 50%;
+        top: 40%;
         left: 30%;
     }
     .eventGalleryCards {
