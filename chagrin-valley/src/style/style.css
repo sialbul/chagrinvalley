@@ -37,6 +37,7 @@ header a:hover {
   position: fixed;
   height: 13vh;
   width: 100%;
+  padding: 0 3vh;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +145,14 @@ header a:hover {
 }
 
 @media screen and (max-width: 798px) {
+  .insideNav {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  .topnav {
+    padding: 0;
+  }
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
@@ -299,12 +308,18 @@ header a:hover {
   .infantHeaderSchoolAge {
     font-size: 4vh;
   }
+  #infantContainer #programsPagePhoto2 {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 411px) {
   #infantContainer #infantBaby2,
   #infantContainer #infantBaby3 {
     width: 80%;
+  }
+  #infantContainer2 p {
+    font-size: 4vw;
   }
 }
 
@@ -350,7 +365,7 @@ header a:hover {
 .sectionHeader3 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
-  font-size: 2.5vw;
+  font-size: 4vw;
   font-weight: 900;
   color: #0779E4;
   margin-bottom: 5vh;
@@ -468,6 +483,9 @@ td:first-child {
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Force table to not be like tables anymore */
+  table {
+    width: 90%;
+  }
   table,
   thead,
   tbody,
@@ -484,6 +502,9 @@ td:first-child {
   }
   tr {
     margin: 0 0 1rem 0;
+  }
+  tr:nth-child(odd) {
+    background: #ccc;
   }
   td {
     /* Behave  like a "row" */
@@ -591,12 +612,12 @@ body {
 }
 
 .sectionHeaderPrograms a {
-  color: black;
+  color: #0779E4;
   text-decoration: none;
 }
 
 .sectionHeaderPrograms a:hover {
-  color: #0779E4;
+  color: #F12D2D;
 }
 
 /*Top Picture Section*/

@@ -7,7 +7,7 @@ export default function footer() {
             <div className="contactSection">
                 <div
                     className="phoneNumberSection"
-                    data-aos="fade-down"
+                    data-aos="fade-right"
                     data-aos-delay="50">
                     <div className="faPart">
                         {" "}
@@ -22,7 +22,7 @@ export default function footer() {
                 </div>
                 <div
                     className="adressSection"
-                    data-aos="fade-down"
+                    data-aos="fade-right"
                     data-aos-delay="100">
                     <div className="faPart">
                         {" "}
@@ -42,7 +42,7 @@ export default function footer() {
                 </div>
                 <div
                     className="emailSection"
-                    data-aos="fade-down"
+                    data-aos="fade-right"
                     data-aos-delay="150">
                     <div className="faPart">
                         {" "}

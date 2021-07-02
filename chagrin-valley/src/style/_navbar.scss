@@ -31,6 +31,7 @@ header {
     position: fixed;
     height: 13vh;
     width: 100%;
+    padding: 0 3vh;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -126,6 +127,14 @@ header {
 }
 
 @media screen and (max-width: 798px) {
+    .insideNav {
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    .topnav {
+        padding: 0;
+    }
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
         display: none;
