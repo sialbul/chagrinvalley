@@ -22,7 +22,7 @@ class Header extends React.Component {
     closeNavBar() {
         let x = document.getElementById("myTopnav");
         let navFas = document.getElementById("iconNavFas");
-        x.className = "topnav";
+        x.className = "topnav a.iconNav ";
         navFas.classList = "fas fa-bars";
     }
 

@@ -74,7 +74,7 @@ export default function Toddler() {
                                 </div>
                             </p>{" "}
                         </div>
-                        <div>
+                        <div id="infantFirstPart">
                             <img
                                 id="programsPagePhoto2"
                                 src={ToddlerPhoto2}
