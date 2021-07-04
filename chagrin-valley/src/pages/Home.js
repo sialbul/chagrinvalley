@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import InfantPhoto from "../images/infant.jpg";
 import MainPhoto from "../images/Perfect.png";
-import Photo1 from "../images/schoolage3.jpg";
+import Photo1 from "../images/playdogh.jpg";
 import Photo2 from "../images/infants.png";
 import Photo3 from "../images/toddlers.png";
 import Photo4 from "../images/preschool.png";

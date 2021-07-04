@@ -132,14 +132,7 @@ body {
     display: grid;
     margin: 5vh;
     line-height: 5vh;
-}
-
-.ourActivitiesInfo {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
-
-#aboutUsInfo {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .aboutUsInfoParargaf {
@@ -165,8 +158,8 @@ body {
     width: 60%;
     height: 30vh;
     align-items: center;
-    border-radius: 10%;
     margin: auto;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .ourActivitiesLink {
