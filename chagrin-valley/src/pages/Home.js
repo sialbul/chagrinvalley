@@ -6,11 +6,11 @@ import Photo2 from "../images/infants.png";
 import Photo3 from "../images/toddlers.png";
 import Photo4 from "../images/preschool.png";
 import Photo5 from "../images/schoolage.png";
-import Art from "../images/art.jpg";
 import Toddler from "../images/toddler.jpg";
 import AOS from "aos";
 import { NavLink } from "react-router-dom";
 import AboutUs from "../components/AboutUs";
+import EventGallery from "../components/EventGallery";
 
 import "aos/dist/aos.css";
 
@@ -71,17 +71,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="ourEventGallery">
-                    <p className="sectionHeader">Our Event Gallery</p>
-                    <div className="eventGalleryCards">
-                        <img className="eventGallery" src={Art} alt="" />
-                        <img className="eventGallery" src={Art} alt="" />
-                        <img className="eventGallery" src={Art} alt="" />
-                        <img className="eventGallery" src={Art} alt="" />
-                        <img className="eventGallery" src={Art} alt="" />
-                        <img className="eventGallery" src={Art} alt="" />
-                    </div>
-                </div>
+                <EventGallery />
 
                 <div className="parentSection">
                     <p className="sectionHeader">What Parents Says</p>
