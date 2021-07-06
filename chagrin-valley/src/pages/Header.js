@@ -9,7 +9,6 @@ class Header extends React.Component {
     myFunction() {
         let x = document.getElementById("myTopnav");
         let navFas = document.getElementById("iconNavFas");
-
         if (x.className === "topnav") {
             x.className += " responsive";
             navFas.classList = "fas fa-times";
@@ -19,13 +18,16 @@ class Header extends React.Component {
         }
     }
 
+    componentDidMount() {
+        this.closeNavBar();
+    }
+
     closeNavBar() {
         let x = document.getElementById("myTopnav");
         let navFas = document.getElementById("iconNavFas");
-        x.className = "topnav a.iconNav ";
+        x.className = "topnav a.iconNav";
         navFas.classList = "fas fa-bars";
     }
-
     render() {
         return (
             <div className="insideNav">
