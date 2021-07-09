@@ -117,30 +117,7 @@ export default function ChildCare() {
                             <td role="cell">23.00</td>
                             <td role="cell"></td>
                         </tr>
-                        <tr role="row">
-                            <td role="cell">
-                                CHAGRIN FALLS
-                                <br /> Before OR After
-                            </td>
-                            <td role="cell">93.00</td>
-                            <td role="cell">83.70 </td>
-                            <td role="cell">74.40</td>
-                            <td role="cell">83.70</td>
-                            <td role="cell">28.00</td>
-                            <td role="cell"></td>
-                        </tr>
-                        <tr role="row">
-                            <td role="cell">
-                                CHAGRIN FALLS
-                                <br /> Before AND After
-                            </td>
-                            <td role="cell">118.00</td>
-                            <td role="cell">106.20 </td>
-                            <td role="cell">94.40</td>
-                            <td role="cell">99.00</td>
-                            <td role="cell">33.00</td>
-                            <td role="cell"></td>
-                        </tr>
+
                         <tr role="row">
                             <td role="cell">
                                 Transportation to <br /> surrounding schools

@@ -7,27 +7,27 @@ export default function EventGallery() {
             <div className="ourEventGallery">
                 <p className="sectionHeader">Our Event Gallery</p>
                 <div className="eventGalleryCards">
-                    <div className="card">
+                    <div className="cardEvent">
                         <img className="eventGallery" src={Art} alt="" />
                         <h2>Event1</h2>
                     </div>
-                    <div className="card">
+                    <div className="cardEvent">
                         <img className="eventGallery" src={Art} alt="" />
                         <h2>Event2</h2>
                     </div>
-                    <div className="card">
+                    <div className="cardEvent">
                         <img className="eventGallery" src={Art} alt="" />
                         <h2>Event3</h2>
                     </div>
-                    <div className="card">
+                    <div className="cardEvent">
                         <img className="eventGallery" src={Art} alt="" />
                         <h2>Event4</h2>
                     </div>
-                    <div className="card">
+                    <div className="cardEvent">
                         <img className="eventGallery" src={Art} alt="" />
                         <h2>Event5</h2>
                     </div>
-                    <div className="card">
+                    <div className="cardEvent">
                         <img className="eventGallery" src={Art} alt="" />
                         <h2>Event6</h2>
                     </div>

@@ -114,6 +114,11 @@ td:first-child {
     margin-top: 5vw;
 }
 
+.schoolAgeHeader {
+    color: red;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
     #enrollForm {
         grid-template-columns: 1fr 1fr;
