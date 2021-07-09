@@ -371,11 +371,12 @@ header a:hover {
 }
 
 .card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 80%;
   text-align: center;
   margin: 5vh 5vh;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .card i {
@@ -710,8 +711,14 @@ body {
 }
 
 #aboutUsInfoPhotos {
-  width: 70%;
+  width: 55%;
   border-radius: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #aboutUsInfo,
@@ -744,8 +751,7 @@ body {
 }
 
 #ourActivitiesPhoto {
-  width: 60%;
-  height: 30vh;
+  width: 80%;
   border-radius: 10%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -984,9 +990,6 @@ footer a:hover {
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
   }
-  #ourActivitiesPhoto {
-    width: 70%;
-  }
   .contactSection i {
     font-size: 3vw;
   }
@@ -1020,6 +1023,12 @@ footer a:hover {
   }
   .footer a img {
     width: 10vh;
+  }
+  #ourActivitiesPhoto {
+    width: 80%;
+  }
+  #aboutUsInfoPhotos {
+    width: 80%;
   }
 }
 

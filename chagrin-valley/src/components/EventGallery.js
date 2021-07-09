@@ -50,7 +50,7 @@ export default function EventGallery() {
                     </div>
                     <div className="cardEvent">
                         <img className="eventGallery" src={Lego} alt="" />
-                        <h2>Lego</h2>
+                        <h2>Lego Robotics</h2>
                     </div>
                 </div>
             </div>
