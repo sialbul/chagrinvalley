@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactComponent as CloseMenu } from "../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../assets/menu.svg";
-import Logo from "../images/chagrinvalley3.png";
+import Logo from "../assets/photo-gallery/chagrinvalley3.png";
 import { NavLink } from "react-router-dom";
 
 import "../style/style.css";

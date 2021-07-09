@@ -1,7 +1,7 @@
 import React from "react";
-import PreschoolPhoto from "../images/preschool.png";
-import PreschoolPhoto2 from "../images/paintkid.jpg";
-import PreschoolPhoto3 from "../images/outside.jpg";
+import PreschoolPhoto from "../assets/photo-gallery/preschool.png";
+import PreschoolPhoto2 from "../assets/photo-gallery/paintkid.jpg";
+import PreschoolPhoto3 from "../assets/photo-gallery/outside.jpg";
 import { NavLink } from "react-router-dom";
 
 export default function Preschool() {
@@ -78,36 +78,41 @@ export default function Preschool() {
                                 </span>
                                 <br />
                                 <div id="schedule">
-                                    6-7 Quiet play
+                                    6-7 Arrival, quiet play free choice
+                                    activities
                                     <br />
-                                    7-8:30 Breakfast/Quiet Free Play
+                                    7-8:30 Breakfast/ Quiet Free Play
                                     <br />
-                                    8:30-9:35 Centers- choice time
+                                    8:30-9:00 Table toys/ Partner play
                                     <br />
-                                    9:35-9:55 Snack
+                                    9:00-9:15 Circle/ Group time activities
+                                    including calendar, attendance
                                     <br />
-                                    9:55-10:20 Circle Time Activities- including
-                                    music & movement
+                                    9:15-10:45 Center: Choice time/ small group
+                                    activities/ arts & crafts
                                     <br />
-                                    10:20-11 Centers- choice time & small groups
+                                    10:45-11 Group time/ potty time/ books
                                     <br />
-                                    11-11:45 Outside / Gross Motor
+                                    11-11:55 Outside/ Gross Motor
                                     <br />
-                                    11:45-12:15 Lunch
+                                    11:55-12:30 Handwashing & Lunch
                                     <br />
-                                    12:15-2:30 Quiet Cot Play/Rest time
+                                    12:30-2:45 Potty/ Quiet Cot Play/ Rest time
                                     <br />
-                                    2:30-3 Wake up/Quiet play
+                                    2:45-3:15 Wake up/ Afternoon readiness
+                                    activity
                                     <br />
-                                    3-4 Centers-choice time / snack
+                                    3:15-3:35 Handwashing & snack
                                     <br />
-                                    4-4:45 Outside / Gross Motor
+                                    3:35-4:00 Puzzles / Group time
                                     <br />
-                                    4:45-5:15 Story time
+                                    4:00-4:30 Outside / Gross motor
                                     <br />
-                                    5:15-6:15 Centers-choice time
+                                    4:30-5:15 Centers-choice time
                                     <br />
-                                    6:15-6:45 Table toys/Get ready to go home
+                                    5:15-5:45 Table toys/ Coloring
+                                    <br />
+                                    6:15-6:45 Table toys/ Get ready to go home
                                 </div>
                             </p>{" "}
                         </div>

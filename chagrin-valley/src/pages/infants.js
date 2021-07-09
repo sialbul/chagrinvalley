@@ -1,6 +1,6 @@
 import React from "react";
-import Baby from "../images/infant.jpg";
-import Baby2 from "../images/infants.png";
+import Baby from "../assets/photo-gallery/infant.jpg";
+import Baby2 from "../assets/photo-gallery/infants.png";
 import { NavLink } from "react-router-dom";
 
 export default function Infants() {

@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../images/chagrinvalley3.png";
+import Logo from "../assets/photo-gallery/chagrinvalley3.png";
 
 export default function footer() {
     return (

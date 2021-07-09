@@ -1,6 +1,6 @@
 import React from "react";
-import ToddlerPhoto from "../images/books.jpg";
-import ToddlerPhoto2 from "../images/toddlers.png";
+import ToddlerPhoto from "../assets/photo-gallery/books.jpg";
+import ToddlerPhoto2 from "../assets/photo-gallery/toddlers.png";
 import { NavLink } from "react-router-dom";
 
 export default function Toddler() {

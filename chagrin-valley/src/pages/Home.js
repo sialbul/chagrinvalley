@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import InfantPhoto from "../images/infant.jpg";
-import MainPhoto from "../images/Perfect.png";
-import Photo1 from "../images/playdogh.jpg";
-import Photo2 from "../images/infants.png";
-import Photo3 from "../images/toddlers.png";
-import Photo4 from "../images/preschool.png";
-import Photo5 from "../images/schoolage.png";
-import Toddler from "../images/toddler.jpg";
+import InfantPhoto from "../assets/photo-gallery/infant.jpg";
+import MainPhoto from "../assets/photo-gallery/Perfect.png";
+import Photo1 from "../assets/photo-gallery/playdogh.jpg";
+import Photo2 from "../assets/photo-gallery/infants.png";
+import Photo3 from "../assets/photo-gallery/toddlers.png";
+import Photo4 from "../assets/photo-gallery/preschool.png";
+import Photo5 from "../assets/photo-gallery/schoolage.png";
+import Toddler from "../assets/photo-gallery/toddler1.jpg";
 import AOS from "aos";
 import { NavLink } from "react-router-dom";
 import AboutUs from "../components/AboutUs";
@@ -85,14 +85,18 @@ export default class Home extends Component {
                         </div>
                         <div className="parentSectionText">
                             <p>
-                                Cleveries has everything for making productive
-                                and interesting educational environment for
-                                kids. The school follows innovational approaches
-                                in education. High-quality books and classroom
-                                equipment promote effective work of pupils.
-                                Teachers are very kind and careful. <br />
+                                Chagrin Valley Early Learning Center is great!
+                                The rooms are bright and clean. They offer
+                                excellent activities for the kids and the
+                                outdoor space is huge! All of the teachers are
+                                kind and really care about the children. My kids
+                                look forward to going to Chagrin Valley Early
+                                Center everyday and I know they are well taken
+                                care of and learn a lot while they are there.{" "}
                                 <br />
-                                KIM ADAMS <br />
+                                <br />
+                                Tara Klevay
+                                <br />
                                 Mother{" "}
                             </p>
                         </div>
