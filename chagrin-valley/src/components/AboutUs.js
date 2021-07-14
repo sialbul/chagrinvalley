@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AboutUsPhoto from "../images/schoolage.jpg";
+import AboutUsPhoto from "../assets/photo-gallery/schoolage.jpg";
 
 export default class AboutUs extends Component {
     constructor() {
@@ -55,44 +55,44 @@ export default class AboutUs extends Component {
         return (
             <div>
                 <div className="aboutUs">
-                    <p className="sectionHeader">Little More About Us</p>
+                    <p className="sectionHeader"> Little More About Us </p>{" "}
                     <div className="aboutLink">
                         <ul>
                             <li
                                 className="aboutUsLink"
                                 onClick={this.changeText1}>
-                                MISSION
-                            </li>
+                                MISSION{" "}
+                            </li>{" "}
                             <li
                                 className="aboutUsLink"
                                 onClick={this.changeText2}>
-                                VISION
-                            </li>
+                                VISION{" "}
+                            </li>{" "}
                             <li
                                 className="aboutUsLink"
                                 onClick={this.changeText3}>
-                                GOALS
-                            </li>
+                                GOALS{" "}
+                            </li>{" "}
                             <li
                                 className="aboutUsLink"
                                 onClick={this.changeText4}>
-                                BELIEFS
-                            </li>
-                        </ul>
-                    </div>
+                                BELIEFS{" "}
+                            </li>{" "}
+                        </ul>{" "}
+                    </div>{" "}
                     <div id="aboutUsInfo">
                         <div className="aboutUsInfoParargaf">
-                            <h2 id="headerAboutUs">{this.state.header}</h2>
-                            <p id="parargafAboutUs">{this.state.parargaf}</p>
+                            <h2 id="headerAboutUs"> {this.state.header} </h2>{" "}
+                            <p id="parargafAboutUs"> {this.state.parargaf} </p>{" "}
                             <button className="learnMoreButton2">
-                                LEARN MORE
-                            </button>
-                        </div>
+                                LEARN MORE{" "}
+                            </button>{" "}
+                        </div>{" "}
                         <div className="aboutUsInfoPicture">
-                            <img id="aboutUsInfoPhotos" src={AboutUsPhoto} />
-                        </div>
-                    </div>
-                </div>
+                            <img id="aboutUsInfoPhotos" src={AboutUsPhoto} />{" "}
+                        </div>{" "}
+                    </div>{" "}
+                </div>{" "}
             </div>
         );
     }

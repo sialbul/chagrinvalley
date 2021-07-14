@@ -1,8 +1,9 @@
 import React from "react";
-import PreschoolPhoto3 from "../images/letters.jpg";
-import PreschoolPhoto2 from "../images/crayon.jpg";
-import PreschoolPhoto4 from "../images/schoolage.jpg";
-import SummerFlyer from "../images/summerFlyer.pdf";
+import PreschoolPhoto3 from "../assets/photo-gallery/letters.jpg";
+import PreschoolPhoto2 from "../assets/photo-gallery/crayon.jpg";
+import PreschoolPhoto4 from "../assets/photo-gallery/schoolage.jpg";
+import PreschoolPhoto5 from "../assets/photo-gallery/schoolage.png";
+import SummerFlyer from "../assets/photo-gallery/summerFlyer.pdf";
 import { NavLink } from "react-router-dom";
 
 export default function Schoolage() {
@@ -47,7 +48,8 @@ export default function Schoolage() {
                                 help. This is no ordinary after school program.
                             </p>{" "}
                         </div>
-
+                    </div>
+                    <div id="infantContainer2">
                         <div>
                             <p data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
@@ -96,6 +98,8 @@ export default function Schoolage() {
                                 data-aos-duration="2000"
                             />
                         </div>
+                    </div>
+                    <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
                                 id="programsPagePhoto1"
@@ -124,6 +128,8 @@ export default function Schoolage() {
                                 </a>
                             </button>
                         </div>
+                    </div>
+                    <div id="infantContainer2">
                         <div>
                             <p data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
@@ -182,24 +188,23 @@ export default function Schoolage() {
                         <div id="infantFirstPart">
                             <img
                                 id="programsPagePhoto2"
-                                src={PreschoolPhoto4}
+                                src={PreschoolPhoto5}
                                 data-aos="fade-down"
                                 data-aos-duration="2000"
                             />
                         </div>
                     </div>
-
-                    <div>
-                        <p className="sectionHeaderPrograms">
-                            <NavLink to="/curriculum">
-                                {" "}
-                                Creative Curriculum
-                                <i
-                                    class="fa fa-angle-double-right"
-                                    aria-hidden="true"></i>
-                            </NavLink>
-                        </p>
-                    </div>
+                </div>
+                <div>
+                    <p className="sectionHeaderPrograms">
+                        <NavLink to="/curriculum">
+                            {" "}
+                            Creative Curriculum
+                            <i
+                                class="fa fa-angle-double-right"
+                                aria-hidden="true"></i>
+                        </NavLink>
+                    </p>
                 </div>
             </container>
         </div>

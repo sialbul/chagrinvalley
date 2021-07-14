@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: url("../images/Chagrin-Valley.png");
+    background-image: url("../assets/photo-gallery/Chagrin-Valley.png");
     text-align: center;
 }
 
@@ -123,8 +123,11 @@ body {
 }
 
 #aboutUsInfoPhotos {
-    width: 70%;
-    border-radius: 10%;
+    width: 55%;
+    border-radius: 0 20% 0 0;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #aboutUsInfo,
@@ -155,8 +158,8 @@ body {
 }
 
 #ourActivitiesPhoto {
-    width: 60%;
-    height: 30vh;
+    width: 80%;
+    border-radius: 0 20% 0 0;
     align-items: center;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -176,7 +179,7 @@ body {
 
 .eventGalleryCards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 5vh 0;
 }
 
@@ -192,12 +195,20 @@ body {
     margin: auto;
     margin-bottom: 5vh;
     text-align: center;
-    background-color: $yellow;
+    background-color: $lightgrey;
     transition: transform .2s;
+    overflow: hidden;
+    border-radius: 0 20% 0 0;
     /* Animation */
-    &:hover {
-        transform: scale(1.2);
-        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    img {
+        object-fit: cover;
+        border: 2px solid $blue;
+        border-radius: 0 20% 0 0;
+        box-shadow: 0 4px 8px 0 rgba(21, 15, 196, 0.2), 0 6px 20px 0 rgba(12, 30, 231, 0.19);
+        &:hover {
+            transform: scale(1.8);
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
     }
 }
 
@@ -222,21 +233,24 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center;
     text-align: center;
+    padding: 6vh 0vh;
 }
 
 .parentSectionPhoto {
     margin-bottom: 6vh;
     img {
-        border-radius: 50%;
+        border-radius: 0 20% 0 0;
         width: 20vw;
         height: 20vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
 
 .parentSectionText {
-    margin-bottom: 6vh;
+    width: 90%;
     p {
-        font-size: 4vw;
+        font-size: 1.5vw;
+        line-height: 35px;
     }
 }
 
@@ -354,9 +368,6 @@ footer {
     .ourActivitiesInfo {
         grid-template-columns: 1fr 2fr;
     }
-    #ourActivitiesPhoto {
-        width: 70%;
-    }
     .contactSection i {
         font-size: 3vw;
     }
@@ -364,12 +375,6 @@ footer {
     .adressSection,
     .emailSection {
         grid-template-columns: 1fr 3fr;
-    }
-    .parentSectionText {
-        width: 90%;
-        p {
-            font-size: 2vw;
-        }
     }
     .sectionHeader {
         font-size: 3vw;
@@ -397,6 +402,12 @@ footer {
     }
     .footer a img {
         width: 10vh;
+    }
+    #ourActivitiesPhoto {
+        width: 80%;
+    }
+    #aboutUsInfoPhotos {
+        width: 80%;
     }
 }
 

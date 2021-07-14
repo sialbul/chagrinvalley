@@ -11,19 +11,23 @@
     #programsPagePhoto1 {
         margin: 5vh;
         width: 80%;
+        border-radius: 0 20% 0 0;
     }
     #programsPagePhoto3 {
         margin: 5vh;
         width: 80%;
+        border-radius: 0 20% 0 0;
     }
     #programsPagePhoto2 {
         width: 50%;
+        border-radius: 0 20% 0 0;
     }
 }
 
 #infantFirstPart {
-    background-image: url("../images/5.png");
+    background-image: url("../assets/photo-gallery/5.png");
     width: 100%;
+    background-repeat: no-repeat;
 }
 
 .infantHeaderToddler {
