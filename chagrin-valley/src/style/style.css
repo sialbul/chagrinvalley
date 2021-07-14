@@ -219,15 +219,18 @@ header a:hover {
 #infantContainer #programsPagePhoto1 {
   margin: 5vh;
   width: 80%;
+  border-radius: 0 20% 0 0;
 }
 
 #infantContainer #programsPagePhoto3 {
   margin: 5vh;
   width: 80%;
+  border-radius: 0 20% 0 0;
 }
 
 #infantContainer #programsPagePhoto2 {
   width: 50%;
+  border-radius: 0 20% 0 0;
 }
 
 #infantFirstPart {
@@ -712,7 +715,7 @@ body {
 
 #aboutUsInfoPhotos {
   width: 55%;
-  border-radius: 10%;
+  border-radius: 0 20% 0 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -752,7 +755,7 @@ body {
 
 #ourActivitiesPhoto {
   width: 80%;
-  border-radius: 10%;
+  border-radius: 0 20% 0 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -799,7 +802,7 @@ body {
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   overflow: hidden;
-  border-radius: 10%;
+  border-radius: 0 20% 0 0;
   /* Animation */
 }
 
@@ -807,7 +810,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border: 2px solid #0779E4;
-  border-radius: 10%;
+  border-radius: 0 20% 0 0;
   -webkit-box-shadow: 0 4px 8px 0 rgba(21, 15, 196, 0.2), 0 6px 20px 0 rgba(12, 30, 231, 0.19);
           box-shadow: 0 4px 8px 0 rgba(21, 15, 196, 0.2), 0 6px 20px 0 rgba(12, 30, 231, 0.19);
 }
@@ -841,7 +844,7 @@ body {
 }
 
 .parentSectionPhoto img {
-  border-radius: 20%;
+  border-radius: 0 20% 0 0;
   width: 20vw;
   height: 20vw;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

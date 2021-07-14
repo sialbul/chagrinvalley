@@ -124,7 +124,7 @@ body {
 
 #aboutUsInfoPhotos {
     width: 55%;
-    border-radius: 10%;
+    border-radius: 0 20% 0 0;
     align-items: center;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -159,7 +159,7 @@ body {
 
 #ourActivitiesPhoto {
     width: 80%;
-    border-radius: 10%;
+    border-radius: 0 20% 0 0;
     align-items: center;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -198,12 +198,12 @@ body {
     background-color: $lightgrey;
     transition: transform .2s;
     overflow: hidden;
-    border-radius: 10%;
+    border-radius: 0 20% 0 0;
     /* Animation */
     img {
         object-fit: cover;
         border: 2px solid $blue;
-        border-radius: 10%;
+        border-radius: 0 20% 0 0;
         box-shadow: 0 4px 8px 0 rgba(21, 15, 196, 0.2), 0 6px 20px 0 rgba(12, 30, 231, 0.19);
         &:hover {
             transform: scale(1.8);
@@ -239,7 +239,7 @@ body {
 .parentSectionPhoto {
     margin-bottom: 6vh;
     img {
-        border-radius: 20%;
+        border-radius: 0 20% 0 0;
         width: 20vw;
         height: 20vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
