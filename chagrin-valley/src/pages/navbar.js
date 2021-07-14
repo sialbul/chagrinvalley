@@ -52,8 +52,21 @@ export default class Navbar extends Component {
                     </div>
 
                     <div>
-                        <i className="fab fa-instagram" id="headerSocial"></i>
-                        <i className="fab fa-facebook" id="headerSocial"></i>
+                        <a
+                            href="https://www.instagram.com/chagrinvelc/"
+                            target="_blank">
+                            {" "}
+                            <i
+                                className="fab fa-instagram"
+                                id="headerSocial"></i>{" "}
+                        </a>
+                        <a
+                            href="https://www.facebook.com/CVELC"
+                            target="_blank">
+                            <i
+                                className="fab fa-facebook"
+                                id="headerSocial"></i>
+                        </a>
                         <i className="fab fa-linkedin-in" id="headerSocial"></i>
                     </div>
                 </header>

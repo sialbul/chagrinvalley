@@ -195,16 +195,17 @@ body {
     margin: auto;
     margin-bottom: 5vh;
     text-align: center;
-    background-color: $lightgrey;
+    background-color: $eventgrey;
     transition: transform .2s;
     overflow: hidden;
-    border-radius: 0 20% 0 0;
+    border-radius: 10%;
+    padding-bottom: 1vw;
     /* Animation */
     img {
         object-fit: cover;
-        border: 2px solid $blue;
-        border-radius: 0 20% 0 0;
-        box-shadow: 0 4px 8px 0 rgba(21, 15, 196, 0.2), 0 6px 20px 0 rgba(12, 30, 231, 0.19);
+        border: 2px solid $black;
+        border-radius: 10%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         &:hover {
             transform: scale(1.8);
             /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */

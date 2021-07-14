@@ -796,23 +796,24 @@ body {
   margin: auto;
   margin-bottom: 5vh;
   text-align: center;
-  background-color: rgba(186, 180, 180, 0.476);
+  background-color: rgba(186, 180, 180, 0.898);
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   overflow: hidden;
-  border-radius: 0 20% 0 0;
+  border-radius: 10%;
+  padding-bottom: 1vw;
   /* Animation */
 }
 
 .cardEvent img {
   -o-object-fit: cover;
      object-fit: cover;
-  border: 2px solid #0779E4;
-  border-radius: 0 20% 0 0;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(21, 15, 196, 0.2), 0 6px 20px 0 rgba(12, 30, 231, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(21, 15, 196, 0.2), 0 6px 20px 0 rgba(12, 30, 231, 0.19);
+  border: 2px solid black;
+  border-radius: 10%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cardEvent img:hover {
