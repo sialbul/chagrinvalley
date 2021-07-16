@@ -221,6 +221,12 @@ class Header extends React.Component {
                             onClick={this.closeNavBar}>
                             GALLERY
                         </NavLink>
+                        <NavLink
+                            to="/career"
+                            className="nav-links"
+                            onClick={this.closeNavBar}>
+                            CAREER
+                        </NavLink>
 
                         <a
                             href="https://alis.care"
