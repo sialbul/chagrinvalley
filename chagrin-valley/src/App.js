@@ -23,6 +23,7 @@ import Schoolage from "../src/pages/Schoolage";
 import Testimonials from "./pages/Testimonials";
 import Toddler from "../src/pages/Toddler";
 import Tuition from "../src/pages/Tuition";
+import Career from "../src/pages/Career";
 import UpdateAgreement from "../src/pages/UpdateAgreement";
 import VirtualTour from "../src/pages/VirtualTour";
 import ScrollUpButton from "react-scroll-up-button";
@@ -65,6 +66,7 @@ export default function App() {
                     />
                     <Route exact path="/toddler" component={Toddler} />
                     <Route exact path="/tuition" component={Tuition} />
+                    <Route exact path="/career" component={Career} />
                     <Route
                         exact
                         path="/updateagreement"
