@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 
 export default class Career extends Component {
+    addFunction() {
+        let x = document.getElementById("area").options;
+        let y = document.getElementById("area").selectedIndex;
+        let selectedArea = document.getElementById("selectedArea");
+        selectedArea.innerHTML = x[y].text;
+    }
+
     render() {
         return (
             <div id="pageContainer">
@@ -13,16 +20,16 @@ export default class Career extends Component {
                     leadership, we are committed to being an employer of choice
                     in Ohio. Come grow with us!
                 </p>
-                <form>
-                    <label for="name">Name:</label>
+                <form id="careerForm">
+                    <label for="name">Name & Surname</label>
                     <input type="name" placeholder="Name"></input>
                     <br />
-                    <label for="surname">Surname:</label>
-                    <input type="surname" placeholder="Surname"></input>
                     <br />
                     <label for="emails">Email addresses:</label>
                     <input type="email" placeholder="Email address"></input>
                     <br />
+                    <br />
+
                     <label for="phone">Phone number:</label>
                     <input
                         type="tel"
@@ -31,25 +38,46 @@ export default class Career extends Component {
                         placeholder="123-456-78-90"
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"></input>
                     <br />
-                    <label for="myfile">Select a file:</label>
+                    <br />
+
+                    <label for="myfile">Upload your resume</label>
+                    <br />
                     <input type="file" id="myfile" name="myfile"></input>
                     <br />
                     <br />
+
                     <label for="area">Please specify an Area of Interest</label>
+                    <br />
+
                     <select name="area" id="area">
                         <option value="assistant">Assistant Teacher</option>
                         <option value="cook">Cook</option>
                         <option value="driver">Driver</option>
                         <option value="lead">Lead Teacher</option>
                         <option value="manager">School Management</option>
+                        <option value="general">General</option>
                     </select>
+                    <button
+                        id="formButton2"
+                        type="button"
+                        onClick={this.addFunction}>
+                        Add
+                    </button>
+
+                    <div id="selectedArea"></div>
+                    <br />
+                    <label for="message">Your message</label>
+                    <br />
+
+                    <textarea
+                        rows="4"
+                        cols="50"
+                        name="comment"
+                        form="usform"
+                        placeholder="Your message"></textarea>
                     <br />
                     <br />
-                    <textarea rows="4" cols="50" name="comment" form="usrform">
-                        Enter text here...
-                    </textarea>
-                    <br />
-                    <input type="submit"></input>
+                    <input id="formButton" type="submit"></input>
                 </form>
             </div>
         );
