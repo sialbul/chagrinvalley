@@ -2,7 +2,7 @@ import {
     BrowserRouter as Router,
     Route,
     Switch,
-    Redirect,
+    Redirect
 } from "react-router-dom";
 
 import Navbar from "../src/pages/Navbar";
@@ -23,6 +23,7 @@ import Schoolage from "../src/pages/Schoolage";
 import Testimonials from "./pages/Testimonials";
 import Toddler from "../src/pages/Toddler";
 import Tuition from "../src/pages/Tuition";
+import ThankYou from "../src/pages/ThankYou";
 import Career from "../src/pages/Career";
 import UpdateAgreement from "../src/pages/UpdateAgreement";
 import VirtualTour from "../src/pages/VirtualTour";
@@ -73,6 +74,7 @@ export default function App() {
                         component={UpdateAgreement}
                     />
                     <Route exact path="/virtualtour" component={VirtualTour} />
+                    <Route exact path="/thankyou" component={ThankYou} />
                 </Switch>
             </div>
             <Footer />

@@ -57,3 +57,17 @@ select {
 #myfile {
     width: 70%;
 }
+
+#invisibleText {
+    display: none;
+}
+
+@media screen and (max-width: 415px) {
+    #careerForm {
+        width: 90%;
+        border-radius: 2%;
+    }
+    textarea {
+        width: 95%;
+    }
+}
