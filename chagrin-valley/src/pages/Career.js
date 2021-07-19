@@ -89,14 +89,13 @@ export default function Career() {
                 <input
                     type="hidden"
                     name="_next"
-                    value="http://localhost:3000/thankyou"
+                    value="https://chagrinvalley.herokuapp.com/thankyou"
                 />
 
                 <input id="formButton" type="submit"></input>
                 <input id="invisibleText" type="text" name="_honey"></input>
                 <input type="hidden" name="_template" value="table"></input>
                 <input type="hidden" name="_captcha" value="false"></input>
-
                 <input
                     type="hidden"
                     name="_autoresponse"
