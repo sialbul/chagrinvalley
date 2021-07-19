@@ -75,7 +75,7 @@ export default function Career() {
 
                 <div id="selectedArea"></div>
                 <br />
-                <label for="message">Your message</label>
+                <label for="messageSection">Your message</label>
                 <br />
 
                 <textarea
@@ -95,6 +95,8 @@ export default function Career() {
                 <input id="formButton" type="submit"></input>
                 <input id="invisibleText" type="text" name="_honey"></input>
                 <input type="hidden" name="_template" value="table"></input>
+                <input type="hidden" name="_captcha" value="false"></input>
+
                 <input
                     type="hidden"
                     name="_autoresponse"

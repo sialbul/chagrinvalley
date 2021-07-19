@@ -653,6 +653,75 @@ select {
   display: none;
 }
 
+#heart {
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: #F12D2D;
+  margin-top: 11vh;
+}
+
+@-webkit-keyframes example {
+  0% {
+    color: #ffE75E;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: #0779E4;
+    left: 50px;
+    top: 0px;
+    scale: 1.5;
+  }
+  50% {
+    color: #52de97;
+    left: 100px;
+    top: 0px;
+  }
+  75% {
+    color: pink;
+    left: 150px;
+    top: 0px;
+  }
+  100% {
+    color: orange;
+    left: 200px;
+    top: 0px;
+  }
+}
+
+@keyframes example {
+  0% {
+    color: #ffE75E;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: #0779E4;
+    left: 50px;
+    top: 0px;
+    scale: 1.5;
+  }
+  50% {
+    color: #52de97;
+    left: 100px;
+    top: 0px;
+  }
+  75% {
+    color: pink;
+    left: 150px;
+    top: 0px;
+  }
+  100% {
+    color: orange;
+    left: 200px;
+    top: 0px;
+  }
+}
+
 @media screen and (max-width: 415px) {
   #careerForm {
     width: 90%;
