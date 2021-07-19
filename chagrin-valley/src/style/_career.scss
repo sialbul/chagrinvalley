@@ -62,6 +62,43 @@ select {
     display: none;
 }
 
+#heart {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: $red;
+    margin-top: 11vh;
+}
+
+@keyframes example {
+    0% {
+        color: $yellow;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        color: $blue;
+        left: 50px;
+        top: 0px;
+        scale: 1.5
+    }
+    50% {
+        color: $green;
+        left: 100px;
+        top: 0px;
+    }
+    75% {
+        color: $pink;
+        left: 150px;
+        top: 0px;
+    }
+    100% {
+        color: $orange;
+        left: 200px;
+        top: 0px;
+    }
+}
+
 @media screen and (max-width: 415px) {
     #careerForm {
         width: 90%;
