@@ -367,7 +367,7 @@ header a:hover {
 .sectionHeader3 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 900;
   color: #0779E4;
   margin-bottom: 5vh;
@@ -619,30 +619,29 @@ select {
 }
 
 #formButton {
-  background-color: #F12D2D;
-  color: white;
   font-size: large;
-  font-family: 'Quicksand', sans-serif;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   padding: 5px;
-  padding: 0.2em 1em;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 2em;
 }
 
-#formButton2,
+#myfile::-webkit-file-upload-button {
+  padding: 3px;
+}
+
+#formButton,
 #myfile::-webkit-file-upload-button {
   background-color: #F12D2D;
   color: white;
   font-family: 'Quicksand', sans-serif;
   width: -webkit-fit-content;
   width: fit-content;
-  padding: 3px;
   padding: 0.2em 1em;
   margin: 0 0.3em 0.3em 0;
   border-radius: 2em;
+}
+
+#formButton:hover,
+#myfile::-webkit-file-upload-button:hover {
+  background-color: #0779E4;
 }
 
 #myfile {
@@ -729,6 +728,10 @@ select {
   }
   textarea {
     width: 95%;
+  }
+  #formButton,
+  #myfile::-webkit-file-upload-button {
+    color: black;
   }
 }
 

@@ -31,27 +31,26 @@ select {
 }
 
 #formButton {
-    background-color: $red;
-    color: $white;
     font-size: large;
-    font-family: 'Quicksand', sans-serif;
-    width: fit-content;
     padding: 5px;
-    padding: 0.2em 1em;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 2em;
 }
 
-#formButton2,
+#myfile::-webkit-file-upload-button {
+    padding: 3px;
+}
+
+#formButton,
 #myfile::-webkit-file-upload-button {
     background-color: $red;
     color: $white;
     font-family: 'Quicksand', sans-serif;
     width: fit-content;
-    padding: 3px;
     padding: 0.2em 1em;
     margin: 0 0.3em 0.3em 0;
     border-radius: 2em;
+    &:hover {
+        background-color: $blue;
+    }
 }
 
 #myfile {
@@ -106,5 +105,9 @@ select {
     }
     textarea {
         width: 95%;
+    }
+    #formButton,
+    #myfile::-webkit-file-upload-button {
+        color: $black;
     }
 }
