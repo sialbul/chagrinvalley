@@ -6,30 +6,31 @@ import { NavLink } from "react-router-dom";
 
 import "../style/style.css";
 class Header extends React.Component {
-    myFunction() {
-        let x = document.getElementById("myTopnav");
-        let navFas = document.getElementById("iconNavFas");
+    constructor(props) {
+        super(props);
+        this.x = React.createRef();
+        this.navFas = React.createRef();
+    }
 
-        if (x.className === "topnav") {
-            x.className += " responsive";
-            navFas.classList = "fas fa-times";
+    myFunction = () => {
+        if (this.x.current.className === "topnav") {
+            this.x.current.className += " responsive";
+            this.navFas.current.classList = "fas fa-times";
         } else {
-            x.className = "topnav";
-            navFas.classList = "fas fa-bars";
+            this.x.current.className = "topnav";
+            this.navFas.current.classList = "fas fa-bars";
         }
-    }
+    };
 
-    closeNavBar() {
-        let x = document.getElementById("myTopnav");
-        let navFas = document.getElementById("iconNavFas");
-        x.className = "topnav a.iconNav ";
-        navFas.classList = "fas fa-bars";
-    }
+    closeNavBar = () => {
+        this.x.current.className = "topnav a.iconNav ";
+        this.navFas.current.classList = "fas fa-bars";
+    };
 
     render() {
         return (
             <div className="insideNav">
-                <div className="topnav" id="myTopnav">
+                <div ref={this.x} className="topnav" id="myTopnav">
                     <div className="logo">
                         {" "}
                         <NavLink to="/">
@@ -238,7 +239,10 @@ class Header extends React.Component {
                             href="javascript:void(0);"
                             className="iconNav"
                             onClick={this.myFunction}>
-                            <i id="iconNavFas" className="fas fa-bars"></i>
+                            <i
+                                ref={this.navFas}
+                                id="iconNavFas"
+                                className="fas fa-bars"></i>
                         </a>
                     </div>
                 </div>
