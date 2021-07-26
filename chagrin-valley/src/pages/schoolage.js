@@ -11,7 +11,7 @@ export default function Schoolage() {
         <div>
             <container>
                 <div id="infantContainer">
-                    <p class="infantHeaderSchoolAge"> School Age </p>
+                    <span className="infantHeaderSchoolAge"> School Age </span>
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
@@ -54,7 +54,7 @@ export default function Schoolage() {
                             <p data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
                                     <i
-                                        class="fa fa-clock-o"
+                                        className="fa fa-clock-o"
                                         aria-hidden="true"
                                         fa-lg></i>
                                     Sample of the Daily Schedule
@@ -134,7 +134,7 @@ export default function Schoolage() {
                             <p data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
                                     <i
-                                        class="fa fa-clock-o"
+                                        className="fa fa-clock-o"
                                         aria-hidden="true"
                                         fa-lg></i>
                                     Sample of the Daily Summer School Schedule
@@ -201,7 +201,7 @@ export default function Schoolage() {
                             {" "}
                             Creative Curriculum
                             <i
-                                class="fa fa-angle-double-right"
+                                className="fa fa-angle-double-right"
                                 aria-hidden="true"></i>
                         </NavLink>
                     </p>

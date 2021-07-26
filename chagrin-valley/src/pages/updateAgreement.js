@@ -13,7 +13,7 @@ export default function UpdateAgreement() {
                             {" "}
                             Center Closure{" "}
                             <i
-                                class="fa fa-angle-double-right"
+                                className="fa fa-angle-double-right"
                                 aria-hidden="true"></i>
                         </h2>
                     </NavLink>

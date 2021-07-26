@@ -5,7 +5,7 @@ export default function ChildCare() {
     return (
         <div>
             <div id="pageContainer">
-                <span class="sectionHeader"> Tuition and Fees </span>
+                <span className="sectionHeader"> Tuition and Fees </span>
                 <table role="table">
                     <thead role="rowgroup">
                         <tr role="row">
@@ -187,7 +187,7 @@ export default function ChildCare() {
                         {" "}
                         How to Pay Tuition
                         <i
-                            class="fa fa-angle-double-right"
+                            className="fa fa-angle-double-right"
                             aria-hidden="true"></i>
                     </NavLink>
                 </p>

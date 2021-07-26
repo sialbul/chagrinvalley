@@ -8,7 +8,7 @@ export default function Toddler() {
         <div>
             <container>
                 <div id="infantContainer">
-                    <p class="infantHeaderToddler"> Toddler </p>
+                    <p className="infantHeaderToddler"> Toddler </p>
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
@@ -39,7 +39,7 @@ export default function Toddler() {
                             <p data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
                                     <i
-                                        class="fa fa-clock-o"
+                                        className="fa fa-clock-o"
                                         aria-hidden="true"
                                         fa-lg></i>
                                     Sample of the Daily Schedule
@@ -89,7 +89,7 @@ export default function Toddler() {
                                 {" "}
                                 Pre-School
                                 <i
-                                    class="fa fa-angle-double-right"
+                                    className="fa fa-angle-double-right"
                                     aria-hidden="true"></i>
                             </NavLink>
                         </p>

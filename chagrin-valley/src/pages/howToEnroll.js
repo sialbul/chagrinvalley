@@ -5,7 +5,7 @@ export default function HowToEnroll() {
     return (
         <div>
             <div id="pageContainer">
-                <span class="sectionHeader"> Take a Tour </span>
+                <span className="sectionHeader"> Take a Tour </span>
 
                 <p>
                     Come see our center!
@@ -49,7 +49,7 @@ export default function HowToEnroll() {
                         <a
                             href="http://www.odjfs.state.oh.us/forms/num/JFS01234/pdf/"
                             target="_blank">
-                            <i class="fas fa-file-signature"></i>
+                            <i className="fas fa-file-signature"></i>
                             Enrollment
                         </a>
                     </p>
@@ -57,7 +57,7 @@ export default function HowToEnroll() {
                         <a
                             href="http://www.odjfs.state.oh.us/forms/num/JFS01305/pdf/"
                             target="_blank">
-                            <i class="fas fa-syringe"></i>
+                            <i className="fas fa-syringe"></i>
                             Child Medical
                         </a>
                     </p>
@@ -65,7 +65,7 @@ export default function HowToEnroll() {
                         <a
                             href="http://www.odjfs.state.oh.us/forms/num/JFS01511/pdf/"
                             target="_blank">
-                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <i className="fa fa-users" aria-hidden="true"></i>
                             SUTQ Family Information{" "}
                         </a>
                     </p>
@@ -82,7 +82,7 @@ export default function HowToEnroll() {
                         <a
                             href="http://www.odjfs.state.oh.us/forms/num/JFS01235/pdf/ "
                             target="_blank">
-                            <i class="fa fa-bed" aria-hidden="true"></i>
+                            <i className="fa fa-bed" aria-hidden="true"></i>
                             Sleep Waiver{" "}
                         </a>
                     </p>
@@ -90,7 +90,7 @@ export default function HowToEnroll() {
                         <a
                             href="http://www.odjfs.state.oh.us/forms/num/JFS01236/pdf/  "
                             target="_blank">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                             Medical Care Plan{" "}
                         </a>
                     </p>
@@ -98,7 +98,7 @@ export default function HowToEnroll() {
                         <a
                             href="http://www.odjfs.state.oh.us/forms/num/JFS01217/pdf/ "
                             target="_blank">
-                            <i class="fa fa-heart"></i>
+                            <i className="fa fa-heart"></i>
                             Request of Medication{" "}
                         </a>
                     </p>
@@ -110,7 +110,7 @@ export default function HowToEnroll() {
                         {" "}
                         Teacher parent testimonials
                         <i
-                            class="fa fa-angle-double-right"
+                            className="fa fa-angle-double-right"
                             aria-hidden="true"></i>
                     </NavLink>
                 </p>
