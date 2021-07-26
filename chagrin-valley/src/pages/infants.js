@@ -8,7 +8,7 @@ export default function Infants() {
         <div>
             <container>
                 <div id="infantContainer">
-                    <p class="infantHeader"> Infants </p>
+                    <p className="infantHeader"> Infants </p>
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
@@ -43,13 +43,13 @@ export default function Infants() {
                             <p data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
                                     <i
-                                        class="fa fa-clock-o"
+                                        className="fa fa-clock-o"
                                         aria-hidden="true"
                                         fa-lg></i>
                                     Sample of the Daily Schedule
                                 </span>{" "}
                                 <br />
-                                <i class="fa fa-star" aria-hidden="true">
+                                <i className="fa fa-star" aria-hidden="true">
                                     {" "}
                                 </i>
                                 We do not have an infant schedule because we
@@ -58,7 +58,7 @@ export default function Infants() {
                                 16 months old infants on cots and once a day
                                 naps to prepare them for the Toddler room.
                                 <br />
-                                <i class="fa fa-star" aria-hidden="true">
+                                <i className="fa fa-star" aria-hidden="true">
                                     {" "}
                                 </i>
                                 We feel that infants should be fed when they are
@@ -67,14 +67,14 @@ export default function Infants() {
                                 rocked, held, sung to, and read to when they are
                                 awake.
                                 <br />
-                                <i class="fa fa-star" aria-hidden="true">
+                                <i className="fa fa-star" aria-hidden="true">
                                     {" "}
                                 </i>
                                 Infants need words, songs, rhymes, language
                                 development, exercise / stimulation, colorful
                                 things and black and white pictures.Infants need
                                 love and enjoyment every day. <br />
-                                <i class="fa fa-star" aria-hidden="true">
+                                <i className="fa fa-star" aria-hidden="true">
                                     {" "}
                                 </i>
                                 Diapering Policy is to change every 2 hours,
@@ -96,7 +96,7 @@ export default function Infants() {
                                 {" "}
                                 Toddlers
                                 <i
-                                    class="fa fa-angle-double-right"
+                                    className="fa fa-angle-double-right"
                                     aria-hidden="true"></i>
                             </NavLink>
                         </p>

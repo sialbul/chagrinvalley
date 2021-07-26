@@ -79,7 +79,7 @@ export default class Home extends Component {
                         <div className="parentSectionPhoto">
                             <img
                                 src={Toddler}
-                                class="circular--square"
+                                className="circular--square"
                                 alt=""
                             />
                         </div>

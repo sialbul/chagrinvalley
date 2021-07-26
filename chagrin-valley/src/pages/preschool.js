@@ -9,7 +9,7 @@ export default function Preschool() {
         <div>
             <container>
                 <div id="infantContainer">
-                    <p class="infantHeaderSchool"> Pre-School </p>
+                    <p className="infantHeaderSchool"> Pre-School </p>
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
@@ -71,7 +71,7 @@ export default function Preschool() {
                             <p data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
                                     <i
-                                        class="fa fa-clock-o"
+                                        className="fa fa-clock-o"
                                         aria-hidden="true"
                                         fa-lg></i>
                                     Sample of the Daily Schedule
@@ -123,7 +123,7 @@ export default function Preschool() {
                                 {" "}
                                 School Age
                                 <i
-                                    class="fa fa-angle-double-right"
+                                    className="fa fa-angle-double-right"
                                     aria-hidden="true"></i>
                             </NavLink>
                         </p>

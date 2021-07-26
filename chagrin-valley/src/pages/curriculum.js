@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Curriculum() {
     return (
         <div id="pageContainer">
-            <span class="sectionHeader"> Our Approach </span>
+            <span className="sectionHeader"> Our Approach </span>
 
             <p>
                 The Creative Curriculum® is research-based and supports the
@@ -42,7 +42,7 @@ export default function Curriculum() {
                             {" "}
                             Cincy After School{" "}
                             <i
-                                class="fa fa-angle-double-right"
+                                className="fa fa-angle-double-right"
                                 aria-hidden="true"></i>
                         </h2>
                     </NavLink>

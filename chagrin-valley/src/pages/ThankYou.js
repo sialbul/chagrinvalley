@@ -8,7 +8,7 @@ export default function ThankYou() {
                 <br /> Chagrin Valley Early Learning Center!
             </h2>
             <br />
-            <i class="fa fa-heart fa-5x" id="heart" aria-hidden="true"></i>
+            <i className="fa fa-heart fa-5x" id="heart" aria-hidden="true"></i>
         </div>
     );
 }

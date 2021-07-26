@@ -5,9 +5,9 @@ export default function Testimonials() {
     return (
         <div>
             <div id="pageContainer">
-                <span class="sectionHeader"> Testimonials </span>
+                <span className="sectionHeader"> Testimonials </span>
                 <div id="cardContainer">
-                    <div class="card">
+                    <div className="card">
                         <p>
                             Chagrin Valley Early Learning Center is great! The
                             rooms are bright and clean. They offer excellent
@@ -20,9 +20,9 @@ export default function Testimonials() {
                         </p>
                         <h1>Tara Klevay</h1>
 
-                        <i class="fa fa-google">oogle Review</i>
+                        <i className="fa fa-google">oogle Review</i>
                     </div>
-                    <div class="card">
+                    <div className="card">
                         <p>
                             We love Chagrin Valley Early Learning Center. We
                             have one in the infant room and one in the toddler
@@ -33,9 +33,9 @@ export default function Testimonials() {
                         </p>
                         <h1>Kathryn Burry</h1>
 
-                        <i class="fa fa-google">oogle Review</i>
+                        <i className="fa fa-google">oogle Review</i>
                     </div>
-                    <div class="card">
+                    <div className="card">
                         <p>
                             Chagrin Valley Early Learning Center is a Dream Come
                             True for the Working Parent and their Family. The
@@ -50,7 +50,7 @@ export default function Testimonials() {
                         </p>
                         <h1>Caringmom3</h1>
 
-                        <i class="fa fa-yelp"> Review</i>
+                        <i className="fa fa-yelp"> Review</i>
                     </div>
                 </div>
                 <div>
@@ -59,7 +59,7 @@ export default function Testimonials() {
                             {" "}
                             Take a virtual tour{" "}
                             <i
-                                class="fa fa-angle-double-right"
+                                className="fa fa-angle-double-right"
                                 aria-hidden="true"></i>
                         </NavLink>
                     </p>

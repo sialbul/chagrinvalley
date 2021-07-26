@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function CincyAfterSchool() {
     return (
         <div id="pageContainer">
-            <span class="sectionHeader"> Cincy After School </span>
+            <span className="sectionHeader"> Cincy After School </span>
 
             <p>
                 The Cincy After School curriculum is designed to support the
@@ -68,7 +68,7 @@ export default function CincyAfterSchool() {
                             {" "}
                             Child Care Cost{" "}
                             <i
-                                class="fa fa-angle-double-right"
+                                className="fa fa-angle-double-right"
                                 aria-hidden="true"></i>
                         </h2>
                     </NavLink>
