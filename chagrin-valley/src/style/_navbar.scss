@@ -16,6 +16,9 @@ header {
             color: $blue;
         }
     }
+    i {
+        margin-right: 5px;
+    }
 }
 
 #headerSocial {
@@ -55,6 +58,10 @@ header {
     img {
         height: 12vh;
         width: 12vh;
+        transition: transform .2s;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -63,6 +70,7 @@ header {
     list-style: none;
     text-align: center;
     margin-right: 2rem;
+    font-weight: bold;
     &:hover {
         color: $blue;
     }
@@ -75,7 +83,7 @@ header {
     height: 100%;
     border-bottom: 3px solid transparent;
     &:hover {
-        color: $blue;
+        color: $blue !important;
         font-weight: bold;
     }
 }
@@ -186,7 +194,7 @@ header {
         text-align: center;
     }
     header {
-        font-size: 1.8vw;
+        font-size: 2vw;
         grid-template-columns: 1fr 1fr;
         div {
             padding-bottom: 2vh;
@@ -199,8 +207,8 @@ header {
     }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 486px) {
     .nav-menu {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 }

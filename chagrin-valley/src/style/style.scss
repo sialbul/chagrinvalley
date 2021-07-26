@@ -384,6 +384,9 @@ footer {
 }
 
 @media screen and (max-width: 769px) {
+    body {
+        background-image: none;
+    }
     .topPicture {
         padding-top: 13vh;
     }

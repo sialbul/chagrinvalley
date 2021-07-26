@@ -12,9 +12,7 @@ export default function ChildCare() {
                             <th role="columnheader"></th>
                             <th role="columnheader">1st Child</th>
                             <th role="columnheader">2nd Child</th>
-                            <th role="columnheader">3rd Child</th>
                             <th role="columnheader">Part Time</th>
-                            <th role="columnheader">Daily</th>
                             <th role="columnheader">12.5hr a week</th>
                         </tr>
                     </thead>
@@ -27,8 +25,6 @@ export default function ChildCare() {
                             <td role="cell">232.00</td>
                             <td role="cell">208.80 </td>
                             <td role="cell">185.60</td>
-                            <td role="cell">168.00</td>
-                            <td role="cell">56.00</td>
                             <td role="cell"></td>
                         </tr>
                         <tr role="row">
@@ -40,8 +36,7 @@ export default function ChildCare() {
                             <td role="cell">250.00</td>
                             <td role="cell">225.00 </td>
                             <td role="cell">200.00</td>
-                            <td role="cell">177.00</td>
-                            <td role="cell">59.00</td>
+
                             <td role="cell"></td>
                         </tr>
                         <tr role="row">
@@ -52,9 +47,8 @@ export default function ChildCare() {
                             <td role="cell">205.00</td>
                             <td role="cell">184.50 </td>
                             <td role="cell">164.00</td>
-                            <td role="cell">153.00</td>
-                            <td role="cell">51.00</td>
-                            <td role="cell">85.00**</td>
+
+                            <td role="cell">90.00**</td>
                         </tr>
                         <tr role="row">
                             <td role="cell">
@@ -64,8 +58,7 @@ export default function ChildCare() {
                             <td role="cell">223.00</td>
                             <td role="cell">200.70 </td>
                             <td role="cell">178.40</td>
-                            <td role="cell">162.00</td>
-                            <td role="cell">54.00</td>
+
                             <td role="cell"></td>
                         </tr>
                         <tr role="row">
@@ -75,9 +68,8 @@ export default function ChildCare() {
                             <td role="cell">187.00</td>
                             <td role="cell">168.30 </td>
                             <td role="cell">149.60</td>
-                            <td role="cell">135.00</td>
-                            <td role="cell">45.00</td>
-                            <td role="cell">73.00**</td>
+
+                            <td role="cell">78.00**</td>
                         </tr>
                         <tr role="row">
                             <td role="cell">
@@ -86,53 +78,28 @@ export default function ChildCare() {
                             <td role="cell">177.00</td>
                             <td role="cell">159.30 </td>
                             <td role="cell">141.60</td>
-                            <td role="cell">126.00</td>
-                            <td role="cell">42.00</td>
+
                             <td role="cell"></td>
                         </tr>
                         <tr role="row">
                             <td role="cell">Before and After</td>
                             <td role="cell">93.00</td>
                             <td role="cell">83.70 </td>
-                            <td role="cell">74.40</td>
                             <td role="cell">83.70</td>
-                            <td role="cell">28.00</td>
                             <td role="cell"></td>
                         </tr>
                         <tr role="row">
                             <td role="cell">Before </td>
                             <td role="cell">48.00</td>
                             <td role="cell">43.20 </td>
-                            <td role="cell">38.40</td>
                             <td role="cell">43.20</td>
-                            <td role="cell">15.00</td>
                             <td role="cell"></td>
                         </tr>
                         <tr role="row">
                             <td role="cell">After </td>
                             <td role="cell">75.00</td>
                             <td role="cell">67.50 </td>
-                            <td role="cell">60.00</td>
                             <td role="cell">67.50</td>
-                            <td role="cell">23.00</td>
-                            <td role="cell"></td>
-                        </tr>
-
-                        <tr role="row">
-                            <td role="cell">
-                                Transportation to <br /> surrounding schools
-                            </td>
-                            <td role="cell">
-                                25.00
-                                <br />+ weekly
-                            </td>
-                            <td role="cell"> </td>
-                            <td role="cell"></td>
-                            <td role="cell"></td>
-                            <td role="cell">
-                                10.00
-                                <br />+ daily
-                            </td>
                             <td role="cell"></td>
                         </tr>
                     </tbody>
@@ -152,7 +119,7 @@ export default function ChildCare() {
                     <br />
                     <span id="parHeader"> Part-Time: </span> Children who
                     receive 5 or less hours of child care per day or are
-                    enrolled 3 days a week
+                    enrolled 2-3 days a week
                     <br />
                     <span id="parHeader"> Daily Rate: </span>minimum of 2 full
                     days
@@ -167,17 +134,13 @@ export default function ChildCare() {
                     <span id="parHeader"> Late Pick Up Fee: </span>$5 per child
                     every minute here past 6:45 pm.
                     <br />
-                    <span id="parHeader"> Transportation: </span>
-                    We provide transportation to Gurney, Kenston if needed for
-                    special programs.
-                    <br />
                     <span id="parHeader"> **2 ½ Hour Preschool: </span>
-                    Monday thru Friday 9-11:30 am. Toddler $85 Preschool $73
+                    Monday thru Friday 9-11:30 am. Toddler $90 Preschool $78
                 </p>
                 <br />
                 <h2>
                     ***Hours of Operation: Monday thru Thursday 6am—5:30pm
-                    Friday 6am—5pm***effective 6/1/20
+                    Friday 6am—5pm***effective 08/02/21
                 </h2>
                 <br />
             </div>

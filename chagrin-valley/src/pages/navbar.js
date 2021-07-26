@@ -29,9 +29,10 @@ export default class Navbar extends Component {
                     <div id="navPhone">
                         <a href="tel:440-338-4499">
                             {" "}
-                            <i className="fa fa-phone" aria-hidden="true">
-                                440-338-4499{" "}
-                            </i>{" "}
+                            <i
+                                className="fa fa-phone"
+                                aria-hidden="true"></i>{" "}
+                            440-338-4499{" "}
                         </a>
                     </div>
                     <div>

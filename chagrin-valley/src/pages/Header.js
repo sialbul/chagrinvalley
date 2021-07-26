@@ -11,7 +11,7 @@ function NavBar() {
             <nav className="navbar">
                 <div className="nav-container">
                     <NavLink exact to="/" className="nav-logo">
-                        <img src={Logo} />{" "}
+                        <img alt="Home" title="Home" src={Logo} />{" "}
                     </NavLink>
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -114,14 +114,7 @@ function NavBar() {
                                         Pre-School
                                     </NavLink>
                                 </li>
-                                <li
-                                    className="dropdownLi"
-                                    onClick={handleClick}>
-                                    <NavLink to="/food">
-                                        <i className="fas fa-apple-alt"></i>{" "}
-                                        Food and nutrition
-                                    </NavLink>{" "}
-                                </li>
+
                                 <li
                                     className="dropdownLi"
                                     onClick={handleClick}>
