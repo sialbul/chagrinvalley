@@ -3,6 +3,11 @@ import "../style/style.css";
 import Header from "./Header";
 
 export default class Navbar extends Component {
+    constructor(props) {
+        super(props);
+        this.headerRef = React.createRef();
+    }
+
     //Header hide-when scroll down and display again
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
@@ -11,21 +16,21 @@ export default class Navbar extends Component {
     componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
     }
-    handleScroll(event) {
+    handleScroll = (event) => {
         var currentScrollPos = window.pageYOffset;
 
         if (currentScrollPos > 20) {
             // I am using 'display' instead of 'top':
-            document.getElementById("topHeader").style.display = "none";
+            this.headerRef.current.style.display = "none";
         } else {
-            document.getElementById("topHeader").style.display = "flex";
+            this.headerRef.current.style.display = "flex";
         }
-    }
+    };
 
     render() {
         return (
             <div>
-                <header id="topHeader">
+                <header ref={this.headerRef} id="topHeader">
                     <div id="navPhone">
                         <a href="tel:440-338-4499">
                             {" "}

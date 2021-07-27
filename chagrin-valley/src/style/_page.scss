@@ -204,15 +204,9 @@ td:first-child {
         content: "2nd Child";
     }
     td:nth-of-type(4):before {
-        content: "3rd Child";
-    }
-    td:nth-of-type(5):before {
         content: "Part Time";
     }
-    td:nth-of-type(6):before {
-        content: "Daily";
-    }
-    td:nth-of-type(7):before {
+    td:nth-of-type(5):before {
         content: "12.5hr a week";
     }
 }
