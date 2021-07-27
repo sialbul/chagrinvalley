@@ -10,15 +10,14 @@ function NavBar() {
         <>
             <nav className="navbar">
                 <div className="nav-container">
-                    <NavLink exact to="/" className="nav-logo">
+                    <NavLink to="/" className="nav-logo">
                         <img alt="Home" title="Home" src={Logo} />{" "}
                     </NavLink>
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
                             <div
-                                exact
-                                activeClassName="active"
+                                activeclassname="active"
                                 className="nav-links"
                                 onClick={handleClick}>
                                 OUR CENTER <i className="fa fa-caret-down"></i>
@@ -79,8 +78,7 @@ function NavBar() {
                         </li>
                         <li className="nav-item">
                             <div
-                                exact
-                                activeClassName="active"
+                                activeclassname="active"
                                 className="nav-links"
                                 onClick={handleClick}>
                                 PROGRAMS
@@ -127,7 +125,7 @@ function NavBar() {
                         </li>
                         <li className="nav-item">
                             <div
-                                activeClassName="active"
+                                activeclassname="active"
                                 className="nav-links"
                                 onClick={handleClick}>
                                 CURRICULUM<i className="fa fa-caret-down"></i>
@@ -154,7 +152,7 @@ function NavBar() {
                         </li>
                         <li className="nav-item">
                             <div
-                                activeClassName="active"
+                                activeclassname="active"
                                 className="nav-links"
                                 onClick={handleClick}>
                                 RESOURCES<i className="fa fa-caret-down"></i>
@@ -197,9 +195,8 @@ function NavBar() {
                         </li>
                         <li className="nav-item">
                             <NavLink
-                                exact
                                 to="/gallery"
-                                activeClassName="active"
+                                activeclassname="active"
                                 className="nav-links"
                                 onClick={handleClick}>
                                 GALLERY
@@ -207,9 +204,8 @@ function NavBar() {
                         </li>
                         <li className="nav-item">
                             <NavLink
-                                exact
                                 to="/career"
-                                activeClassName="active"
+                                activeclassname="active"
                                 className="nav-links"
                                 onClick={handleClick}>
                                 CAREER
@@ -219,7 +215,7 @@ function NavBar() {
                             <a
                                 href="https://alis.care"
                                 target="_blank"
-                                activeClassName="active"
+                                activeclassname="active"
                                 className="nav-links"
                                 onClick={handleClick}>
                                 {" "}
