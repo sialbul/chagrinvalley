@@ -17,7 +17,7 @@ export default class AboutUs extends Component {
     //About us section
     componentDidMount() {
         this.setState({
-            header: "Your Kids is Our Future",
+            header: "Your Kids are Our Future",
             parargaf:
                 "Chagrin Valley Early Learning Center envisions a diverse community in which kids are respected and heard by a collaborative support system of organized and trained adults, who are teachers and friends at the same time and help kids realize their potential."
         });
