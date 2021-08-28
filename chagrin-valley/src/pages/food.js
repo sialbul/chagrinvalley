@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Construction from "../components/Construction";
 
 export default function Food() {
     return (
         <div>
-            Food
             <div>
+                <Construction />
                 <p className="sectionHeaderPrograms">
                     <NavLink to="/ourapproach">
                         {" "}

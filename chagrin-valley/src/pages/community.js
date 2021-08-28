@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import Construction from "../components/Construction";
 export default function Community() {
     return (
         <div>
-            Community
+            <Construction />
             <div>
                 <p className="sectionHeaderPrograms">
                     <NavLink to="/infants">

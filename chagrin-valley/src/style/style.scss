@@ -1,498 +1,493 @@
-@import "_navbar";
-@import "_variables";
-@import "_programs";
-@import "_page";
-@import "_gallery";
-@import "_career";
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    background-image: url("../assets/photo-gallery/Chagrin-Valley.png");
-    text-align: center;
-}
-
-.sectionHeader {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: 5vw;
-    font-weight: 900;
-    color: $blue;
-    margin-bottom: 5vh;
-    border: 2px dotted $blue;
-    padding: 0.2em 1em;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 2em;
-    display: inline-block;
-}
-
-.sectionHeaderPrograms {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: 1.5vw;
-    font-weight: 900;
-    margin-bottom: 5vh;
-    a {
+    @import "_navbar";
+    @import "_variables";
+    @import "_programs";
+    @import "_page";
+    @import "_gallery";
+    @import "_career";
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Quicksand', sans-serif;
+        background-image: url("../assets/photo-gallery/Chagrin-Valley.png");
+        text-align: center;
+    }
+    
+    .sectionHeader {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 5vw;
+        font-weight: 900;
         color: $blue;
-        text-decoration: none;
-        &:hover {
-            color: $red;
+        margin-bottom: 5vh;
+        border: 2px dotted $blue;
+        padding: 0.2em 1em;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 2em;
+        display: inline-block;
+    }
+    
+    .sectionHeaderPrograms {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 1.5vw;
+        font-weight: 900;
+        margin-bottom: 5vh;
+        a {
+            color: $blue;
+            text-decoration: none;
+            &:hover {
+                color: $red;
+            }
         }
     }
-}
-
-
-/*Top Picture Section*/
-
-.topPicture {
-    position: relative;
-}
-
-.mainphoto {
-    width: 100%;
-    max-height: 100vh;
-}
-
-.perfectphoto {
-    width: 35%;
-    position: absolute;
-    top: 25%;
-    left: 30%;
-}
-
-
-/*Buttons*/
-
-.learnMoreButton2,
-#SummerFlyer {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    background-color: $red;
-    color: $white;
-    font-size: 2vw;
-    padding: 0.6em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 2em;
-    border: none;
-    cursor: pointer;
-    a {
-        text-decoration: none;
-        color: $white;
+    /*Top Picture Section*/
+    
+    .topPicture {
+        position: relative;
     }
-    &:hover {
-        background-color: $blue;
-        color: $white;
+    
+    .mainphoto {
+        width: 100%;
+        max-height: 100vh;
     }
-}
-
-.learnMoreButton2 {
-    background-color: $yellow;
-    color: $black;
-    margin-top: 5vh;
-}
-
-
-/*About Us Section*/
-
-.aboutUs {
-    padding-top: 6vh;
-}
-
-.aboutLink ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    margin: 4vh 0;
-    li {
-        margin-right: 2vh;
-        padding: 1vh;
-        background-color: $yellow;
+    
+    .perfectphoto {
+        width: 35%;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+    }
+    /*Buttons*/
+    
+    .learnMoreButton2,
+    #SummerFlyer {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+        background-color: $red;
+        color: $white;
+        font-size: 1.4vw;
         padding: 0.6em 1.2em;
         margin: 0 0.3em 0.3em 0;
         border-radius: 2em;
+        border: none;
         cursor: pointer;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $white;
+        }
         &:hover {
             background-color: $blue;
             color: $white;
         }
     }
-}
-
-#aboutUsInfoPhotos {
-    width: 55%;
-    border-radius: 0 20% 0 0;
-    align-items: center;
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#aboutUsInfo,
-.ourActivitiesInfo {
-    display: grid;
-    margin: 5vh;
-    line-height: 5vh;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
-
-.aboutUsInfoParargaf {
-    text-align: center;
-    margin: 5vh;
-}
-
-
-/*Our Activities Section*/
-
-.ourActivities {
-    background-color: $turqoise;
-    padding-top: 6vh;
-}
-
-.ourActivitiesInfo {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 6vh 0;
-}
-
-#ourActivitiesPhoto {
-    width: 80%;
-    border-radius: 0 20% 0 0;
-    align-items: center;
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.ourActivitiesLink {
-    margin-top: 5vh;
-    padding-bottom: 6vh;
-    img {
-        height: 30vh;
-        width: 30vh;
-    }
-}
-
-
-/*Event Section*/
-
-.eventGalleryCards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 5vh 0;
-}
-
-.eventGallery {
-    width: 80%;
-    height: 30vh;
-    margin: 5vh;
-}
-
-.cardEvent {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 300px;
-    margin: auto;
-    margin-bottom: 5vh;
-    text-align: center;
-    background-color: $eventgrey;
-    transition: transform .2s;
-    overflow: hidden;
-    border-radius: 10%;
-    padding-bottom: 1vw;
-    /* Animation */
-    img {
-        object-fit: cover;
-        border: 2px solid $black;
-        border-radius: 10%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        &:hover {
-            transform: scale(1.8);
-            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        }
-    }
-}
-
-
-/*Parent section*/
-
-.parentSection {
-    background-color: #fff;
-    background-size: 100% 1.2em;
-    background-image: -webkit-linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), -webkit-linear-gradient(#eee .05em, transparent .05em);
-    background-image: -moz-linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), -moz-linear-gradient(#eee .05em, transparent .05em);
-    background-image: -ms-linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), -ms-linear-gradient(#eee .05em, transparent .05em);
-    background-image: -o-linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), -o-linear-gradient(#eee .05em, transparent .05em);
-    background-image: linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), linear-gradient(#eee .05em, transparent .05em);
-    //  -pie-background: linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px) 0 0 / 100% 1.2em, linear-gradient(#eee .05em, transparent .05em) 0 0 / 100% 1.2em #fff;
-    //  behavior: url(/PIE.htc);
-    margin: 6vh 0;
-}
-
-.parentSectionInfo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-items: center;
-    text-align: center;
-    padding: 6vh 0vh;
-}
-
-.parentSectionPhoto {
-    margin-bottom: 6vh;
-    img {
-        border-radius: 0 20% 0 0;
-        width: 20vw;
-        height: 20vw;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-}
-
-.parentSectionText {
-    width: 90%;
-    p {
-        font-size: 1.5vw;
-        line-height: 35px;
-    }
-}
-
-
-/*Contact Section*/
-
-.contactSection {
-    display: grid;
-    grid-template-columns: 1fr;
-    color: $white;
-    i {
-        font-size: 5vw;
-    }
-    a {
-        text-decoration: none;
-        color: $white;
-        &:hover {
-            color: $blue
-        }
-    }
-}
-
-.phoneNumberSection,
-.adressSection,
-.emailSection {
-    padding: 5vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-}
-
-.phoneNumberSection {
-    background-color: $darkturqoise;
-}
-
-.adressSection {
-    background-color: $yellow;
-}
-
-.emailSection {
-    background-color: $red;
-}
-
-//footer
-.footer,
-footer {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $lightgrey;
-    a {
-        margin: 0 1vh;
-        text-decoration: none;
+    
+    .learnMoreButton2 {
+        background-color: $yellow;
         color: $black;
-        &:hover {
-            font-weight: bold;
-            color: $blue;
+        margin-top: 5vh;
+    }
+    /*About Us Section*/
+    
+    .aboutUs {
+        padding-top: 6vh;
+    }
+    
+    .aboutLink ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        margin: 4vh 0;
+        li {
+            margin-right: 2vh;
+            padding: 1vh;
+            background-color: $yellow;
+            padding: 0.6em 1.2em;
+            margin: 0 0.3em 0.3em 0;
+            border-radius: 2em;
+            cursor: pointer;
+            &:hover {
+                background-color: $blue;
+                color: $white;
+            }
         }
     }
-}
-
-#footerPage {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-#root>div:nth-child(3)>div>div.phoneNumberSection.aos-init.aos-animate>div.infoPart>h2:nth-child(2)>div {
-    font-family: 'Quicksand', sans-serif;
-    color: $white;
-    font-size: 3vh;
-    font-weight: bold;
-    &:hover {
-        color: $blue;
+    
+    #aboutUsInfoPhotos {
+        width: 55%;
+        border-radius: 0 20% 0 0;
+        align-items: center;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-}
-
-
-/*Mobile view*/
-
-@media screen and (max-width: 1281px) {
-    .navbar {
-        justify-content: space-evenly;
-        font-size: 1.3vw;
-    }
-    .eventGalleryCards {
-        grid-template-columns: 1fr 1fr;
-    }
-    .parentSectionPhoto {
-        img {
-            height: 40vh;
-            width: 60%;
-        }
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .logo {
-        margin-top: 0;
-        img {
-            margin-left: 2vh;
-            height: 15vh;
-            width: 15vh
-        }
-    }
-    .logo:hover,
-    .nav-links:hover {
-        color: rgba(255, 255, 255, 1);
-    }
-    .contactSection {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    
+    #aboutUsInfo,
     .ourActivitiesInfo {
-        grid-template-columns: 1fr 2fr;
+        display: grid;
+        margin: 5vh;
+        line-height: 5vh;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
-    .contactSection i {
-        font-size: 3vw;
+    
+    .aboutUsInfoParargaf {
+        text-align: center;
+        margin: 5vh;
+        background-color: $white;
     }
-    .phoneNumberSection,
-    .adressSection,
-    .emailSection {
-        grid-template-columns: 1fr 3fr;
+    /*Our Activities Section*/
+    
+    .ourActivities {
+        background-color: $turqoise;
+        padding-top: 6vh;
     }
-    .sectionHeader {
-        font-size: 3vw;
+    
+    .ourActivitiesInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 6vh 0;
     }
-}
-
-@media screen and (max-width: 769px) {
-    body {
-        background-image: none;
+    
+    #ourActivitiesPhoto {
+        width: 80%;
+        border-radius: 0 20% 0 0;
+        align-items: center;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .topPicture {
-        padding-top: 13vh;
+    
+    .ourActivitiesLink {
+        margin-top: 5vh;
+        padding-bottom: 6vh;
+        img {
+            height: 30vh;
+            width: 30vh;
+        }
     }
+    /*Event Section*/
+    
+    .eventGalleryCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 5vh 0;
+    }
+    
+    .eventGallery {
+        width: 80%;
+        height: 30vh;
+        margin: 5vh;
+    }
+    
+    .cardEvent {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 5vh;
+        text-align: center;
+        background-color: $eventgrey;
+        transition: transform .2s;
+        overflow: hidden;
+        border-radius: 10%;
+        padding-bottom: 1vw;
+        /* Animation */
+        img {
+            object-fit: cover;
+            border: 2px solid $black;
+            border-radius: 10%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            &:hover {
+                transform: scale(1.8);
+                /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+        }
+    }
+    /*Parent section*/
+    
+    .parentSection {
+        background-color: #fff;
+        background-size: 100% 1.2em;
+        background-image: -webkit-linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), -webkit-linear-gradient(#eee .05em, transparent .05em);
+        background-image: -moz-linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), -moz-linear-gradient(#eee .05em, transparent .05em);
+        background-image: -ms-linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), -ms-linear-gradient(#eee .05em, transparent .05em);
+        background-image: -o-linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), -o-linear-gradient(#eee .05em, transparent .05em);
+        background-image: linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px), linear-gradient(#eee .05em, transparent .05em);
+        //  -pie-background: linear-gradient(0deg, transparent 79px, #536162 79px, #536162 81px, transparent 81px) 0 0 / 100% 1.2em, linear-gradient(#eee .05em, transparent .05em) 0 0 / 100% 1.2em #fff;
+        //  behavior: url(/PIE.htc);
+        margin: 6vh 0;
+    }
+    
+    .parentSectionInfo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-items: center;
+        text-align: center;
+        padding: 6vh 0vh;
+    }
+    
+    .parentSectionPhoto {
+        margin-bottom: 6vh;
+        img {
+            border-radius: 0 20% 0 0;
+            width: 20vw;
+            height: 20vw;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+    
     .parentSectionText {
         width: 90%;
         p {
-            font-size: 3vw;
+            font-size: 1.5vw;
+            line-height: 35px;
         }
     }
-    .parentSectionPhoto {
-        img {
-            width: 80%;
-            height: 30vh;
-        }
-    }
-    .sectionHeaderPrograms {
-        font-size: 4vw;
-    }
-    .footer a img {
-        width: 10vh;
-    }
-    #ourActivitiesPhoto {
-        width: 80%;
-    }
-    #aboutUsInfoPhotos {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 415px) {
-    main {
-        padding-top: 50px;
-    }
-    .learnMoreButton2,
-    #SummerFlyer {
-        font-size: 4vw;
-        padding: 1em 1.6em;
-    }
-    .sectionHeader {
-        font-size: 4vh;
-        font-weight: 200;
-        font-weight: bold;
-    }
-    .sectionHeaderPrograms {
-        font-size: 5vw;
-    }
-    .aboutLink ul li {
-        justify-content: space-evenly;
-        margin-right: 1vh;
-        padding: 1vh;
-    }
-    .topPicture {
-        padding-top: 12vh;
-    }
-    .perfectphoto {
-        top: 40%;
-        left: 30%;
-    }
-    .eventGalleryCards {
-        grid-template-columns: 1fr;
-    }
-    .parentSectionPhoto {
-        img {
-            width: 60vw;
-            height: 60vw;
-        }
-    }
+    /*Contact Section*/
+    
     .contactSection {
-        font-size: 3vw;
-    }
-    .ourActivities {
-        width: 100%;
-    }
-    .parentSectionText {
-        p {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: $white;
+        i {
             font-size: 5vw;
         }
-    }
-}
-
-@media screen and (max-width: 281px) {
-    .aboutLink ul {
-        font-size: 3.5vw;
-    }
-    h2 {
-        font-size: 3vw;
-    }
-    p {
-        font-size: 2vw;
-    }
-    #aboutUsInfo {
-        padding: 0px;
-        margin: 0px;
-        text-align: center;
-        h2 {
-            font-size: 4vw;
+        a {
+            text-decoration: none;
+            color: $white;
+            &:hover {
+                color: $blue
+            }
         }
-        p {
+    }
+    
+    .phoneNumberSection,
+    .adressSection,
+    .emailSection {
+        padding: 5vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+    
+    .phoneNumberSection {
+        background-color: $darkturqoise;
+    }
+    
+    .adressSection {
+        background-color: $yellow;
+    }
+    
+    .emailSection {
+        background-color: $red;
+    }
+    
+    //footer
+    .footer,
+    footer {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $lightgrey;
+        a {
+            margin: 0 1vh;
+            text-decoration: none;
+            color: $black;
+            &:hover {
+                font-weight: bold;
+                color: $blue;
+            }
+        }
+    }
+    
+    #footerPage {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    #root>div:nth-child(3)>div>div.phoneNumberSection.aos-init.aos-animate>div.infoPart>h2:nth-child(2)>div {
+        font-family: 'Quicksand', sans-serif;
+        color: $white;
+        font-size: 3vh;
+        font-weight: bold;
+        &:hover {
+            color: $blue;
+        }
+    }
+    /*Mobile view*/
+    
+    @media screen and (max-width: 1281px) {
+        .navbar {
+            justify-content: space-evenly;
+            font-size: 1.3vw;
+        }
+        .eventGalleryCards {
+            grid-template-columns: 1fr 1fr;
+        }
+        .parentSectionPhoto {
+            img {
+                height: 40vh;
+                width: 60%;
+            }
+        }
+    }
+    
+    .construction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        color: $red;
+        background-image: url("../assets/photo-gallery/Chagrin-Valley.png");
+    }
+    
+    @media screen and (min-width: 769px) {
+        .logo {
+            margin-top: 0;
+            img {
+                margin-left: 2vh;
+                height: 15vh;
+                width: 15vh
+            }
+        }
+        .logo:hover,
+        .nav-links:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+        .contactSection {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .ourActivitiesInfo {
+            grid-template-columns: 1fr 2fr;
+        }
+        .contactSection i {
+            font-size: 3vw;
+        }
+        .phoneNumberSection,
+        .adressSection,
+        .emailSection {
+            grid-template-columns: 1fr 3fr;
+        }
+        .sectionHeader {
             font-size: 3vw;
         }
     }
-    .aboutUsInfoParargaf {
-        margin: 0px auto;
-        padding: 10px;
+    
+    @media screen and (max-width: 769px) {
+        body {
+            background-image: none;
+        }
+        .topPicture {
+            padding-top: 13vh;
+        }
+        .parentSectionText {
+            width: 90%;
+            p {
+                font-size: 3vw;
+            }
+        }
+        .parentSectionPhoto {
+            img {
+                width: 80%;
+                height: 30vh;
+            }
+        }
+        .sectionHeaderPrograms {
+            font-size: 4vw;
+        }
+        .footer a img {
+            width: 10vh;
+        }
+        #ourActivitiesPhoto {
+            width: 80%;
+        }
+        #aboutUsInfoPhotos {
+            width: 80%;
+        }
     }
-    .learnMoreButton2 {
-        font-size: 2vw;
+    
+    @media screen and (max-width: 415px) {
+        main {
+            padding-top: 50px;
+        }
+        .learnMoreButton2,
+        #SummerFlyer {
+            font-size: 4vw;
+            padding: 1em 1.6em;
+        }
+        .sectionHeader {
+            font-size: 4vh;
+            font-weight: 200;
+            font-weight: bold;
+        }
+        .sectionHeaderPrograms {
+            font-size: 5vw;
+        }
+        .aboutLink ul li {
+            justify-content: space-evenly;
+            margin-right: 1vh;
+            padding: 1vh;
+        }
+        .topPicture {
+            padding-top: 12vh;
+        }
+        .perfectphoto {
+            top: 40%;
+            left: 30%;
+        }
+        .eventGalleryCards {
+            grid-template-columns: 1fr;
+        }
+        .parentSectionPhoto {
+            img {
+                width: 60vw;
+                height: 60vw;
+            }
+        }
+        .contactSection {
+            font-size: 3vw;
+        }
+        .ourActivities {
+            width: 100%;
+        }
+        .parentSectionText {
+            p {
+                font-size: 5vw;
+            }
+        }
     }
-}
+    
+    @media screen and (max-width: 281px) {
+        .aboutLink ul {
+            font-size: 3.5vw;
+        }
+        h2 {
+            font-size: 3vw;
+        }
+        p {
+            font-size: 2vw;
+        }
+        #aboutUsInfo {
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            h2 {
+                font-size: 4vw;
+            }
+            p {
+                font-size: 3vw;
+            }
+        }
+        .aboutUsInfoParargaf {
+            margin: 0px auto;
+            padding: 10px;
+        }
+        .learnMoreButton2 {
+            font-size: 2vw;
+        }
+    }
