@@ -1,15 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-export default function Community() {
+import Construction from "../components/Construction";
+export default function OurApproach() {
     return (
         <div>
-            Community
+            <Construction />
             <div>
                 <p className="sectionHeaderPrograms">
-                    <NavLink to="/infants">
+                    <NavLink to="/community">
                         {" "}
-                        Infants{" "}
+                        Community involvement
                         <i
                             className="fa fa-angle-double-right"
                             aria-hidden="true"></i>

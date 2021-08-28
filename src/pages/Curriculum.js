@@ -38,13 +38,10 @@ export default function Curriculum() {
                 <p className="sectionHeaderPrograms">
                     <NavLink to="/cincyafterschool">
                         {" "}
-                        <h2>
-                            {" "}
-                            Cincy After School{" "}
-                            <i
-                                className="fa fa-angle-double-right"
-                                aria-hidden="true"></i>
-                        </h2>
+                        Cincy After School{" "}
+                        <i
+                            className="fa fa-angle-double-right"
+                            aria-hidden="true"></i>
                     </NavLink>
                 </p>
             </div>

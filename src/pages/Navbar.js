@@ -59,7 +59,7 @@ export default class Navbar extends Component {
 
                     <div>
                         <a
-                            href="https://www.instagram.com/chagrinvelc/"
+                            href="https://www.instagram.com/chagrinvalleyearlylc/"
                             target="_blank">
                             {" "}
                             <i
@@ -67,7 +67,7 @@ export default class Navbar extends Component {
                                 id="headerSocial"></i>{" "}
                         </a>
                         <a
-                            href="https://www.facebook.com/CVELC"
+                            href="https://m.facebook.com/chagrinvalleyelc/"
                             target="_blank">
                             <i
                                 className="fab fa-facebook"

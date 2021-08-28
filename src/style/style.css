@@ -854,12 +854,13 @@ body {
   font-weight: bold;
   background-color: #F12D2D;
   color: white;
-  font-size: 2vw;
+  font-size: 1.4vw;
   padding: 0.6em 1.2em;
   margin: 0 0.3em 0.3em 0;
   border-radius: 2em;
   border: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .learnMoreButton2 a,
@@ -939,6 +940,7 @@ body {
 .aboutUsInfoParargaf {
   text-align: center;
   margin: 5vh;
+  background-color: white;
 }
 
 /*Our Activities Section*/
@@ -1173,6 +1175,21 @@ footer a:hover {
     height: 40vh;
     width: 60%;
   }
+}
+
+.construction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh;
+  color: #F12D2D;
+  background-image: url("../assets/photo-gallery/Chagrin-Valley.png");
 }
 
 @media screen and (min-width: 769px) {

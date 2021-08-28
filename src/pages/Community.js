@@ -1,15 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-export default function Food() {
+import Construction from "../components/Construction";
+export default function Community() {
     return (
         <div>
-            Food
+            <Construction />
             <div>
                 <p className="sectionHeaderPrograms">
-                    <NavLink to="/ourapproach">
+                    <NavLink to="/infants">
                         {" "}
-                        Our approach to education{" "}
+                        Infants{" "}
                         <i
                             className="fa fa-angle-double-right"
                             aria-hidden="true"></i>

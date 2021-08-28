@@ -15,7 +15,7 @@ class Career extends React.Component {
                 </p>
                 <form
                     id="careerForm"
-                    action="https://formsubmit.co/sbaslamisli@yahoo.com"
+                    action="https://formsubmit.co/chagrinvalleyelc@gmail.com"
                     method="POST"
                     encType="multipart/form-data"
                     onSubmit={this.handleSubmit}>
@@ -45,7 +45,7 @@ class Career extends React.Component {
                         name="phone"
                         required
                         size="20"
-                        minlength="9"
+                        minLength="9"
                         placeholder="123-456-78-90"></input>
                     <br />
                     <br />
