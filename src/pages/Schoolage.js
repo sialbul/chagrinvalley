@@ -28,13 +28,12 @@ export default function Schoolage() {
                                     Before & After School Care
                                 </h3>
                                 <br />
-                                At CV Early Learning Centers, we have Before and
-                                After School Care.West Geauga, Kenston and
+                                  At CV Early Learning Centers, we have Before and
+                                After School Care. West Geauga, Kenston and
                                 Chagrin Falls schools all provide transportation
                                 to & from our center. You can drop your child in
                                 the morning and pick up in the afternoon with
-                                affordable rates. need a chance to wind down
-                                after school.
+                                affordable rates.
                                 <br />
                                 Chagrin Valley offers school agers a calm and
                                 safe place after school. There are plenty of
