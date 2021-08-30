@@ -46,31 +46,49 @@ export default function Toddler() {
                                 </span>
                                 <br />
                                 <div id="schedule">
-                                    6-8:30 Arrival/Breakfast/Diapers
+                                    8:10 - 8:15 Get ready for breakfast
                                     <br />
-                                    8:30-9 Movement Activity <br />
-                                    9-9:45 Indoor play/ art
+                                    8:15 - 8:45 Breakfast time
                                     <br />
-                                    9:45-10:30 Snack/Diapers/Hand washing
+                                    8:45 - 9:00 Diaper changes
                                     <br />
-                                    10:30-11:15 Outside/large muscle activity
+                                    9:00 - 9:10 Circle time
                                     <br />
-                                    11:15-11:30 Story <br />
-                                    11:30-12:30 Lunch/Quiet Cot
-                                    play/Diapers/Hand washing <br />
-                                    12:30-2:45 Rest Time
+                                    9:10 - 9:25 Art time
                                     <br />
-                                    2:45-3 Wake up/Quiet play/Diapers/Hand
-                                    washing
+                                    9:25 - 9:45 Get ready to go outside
                                     <br />
-                                    3-3:30 Snack
+                                    9:45 - 10:45 Outside time
                                     <br />
-                                    3:30-4:30 Indoor Play <br />
-                                    4:30-5 Large muscle activity/outside
+                                    10:45 -11:10 Diaper changes
                                     <br />
-                                    5-6 Indoor play/ Diapering/ departure
+                                    11:10 - 11:15 Get ready for lunch
                                     <br />
-                                    6-6:45 Quiet play/ departure
+                                    11:15 - 11:45 Lunch time
+                                    <br />
+                                    3:30-4:30 Indoor Play
+                                    <br />
+                                    11:50 - 12:05 Diaper changes
+                                    <br />
+                                    12:10 - 12:15 Get ready for nap
+                                    <br />
+                                    12:15 - 2:15 Nap time
+                                    <br />
+                                    2:20 - 2:35 Diaper changes
+                                    <br />
+                                    2:40 - 2:50 Get snack ready
+                                    <br />
+                                    2:50 - 3:10 Snack time
+                                    <br />
+                                    3:10 - 3:20 Get ready for outside
+                                    <br />
+                                    3:20 - 4:00 Outside time
+                                    <br />
+                                    4:00 - 4:15 Diaper changes
+                                    <br />
+                                    4:15 - 5:30 Waiting to go home (free play)
+                                    <br />
+                                    5:30 Get Shoes on to go home!!
                                 </div>
                             </p>{" "}
                         </div>

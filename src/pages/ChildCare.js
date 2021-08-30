@@ -132,7 +132,8 @@ export default function ChildCare() {
                     After care Program the fee is $21.00 a day.
                     <br />
                     <span id="parHeader"> Late Pick Up Fee: </span>$5 per child
-                    every minute here past 6:45 pm.
+                    every minute here past 5:30 pm Monday--Thursday & 5:00pm
+                    Friday.
                     <br />
                     <span id="parHeader"> **2 ½ Hour Preschool: </span>
                     Monday thru Friday 9-11:30 am. Toddler $90 Preschool $78
