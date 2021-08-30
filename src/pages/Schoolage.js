@@ -27,16 +27,12 @@ export default function Schoolage() {
                                 <h3 className="schoolAgeHeader">
                                     Before & After School Care
                                 </h3>
-                                <br /> Your child will practice how to write
-                                their name and you’ll start to see it all over
-                                their artwork! We’ll also work on our ABCs,
-                                using letters and drawings.
                                 <br />
                                 At CV Early Learning Centers, we have Before and
-                                After School Care. We provide transportation for
-                                most of the schools ( What Geauga, Kenston,
-                                Chagrin Falls). You can drop your child in the
-                                morning and pick up in the afternoon with
+                                After School Care.West Geauga, Kenston and
+                                Chagrin Falls schools all provide transportation
+                                to & from our center. You can drop your child in
+                                the morning and pick up in the afternoon with
                                 affordable rates. need a chance to wind down
                                 after school.
                                 <br />
