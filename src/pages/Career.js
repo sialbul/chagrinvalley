@@ -85,7 +85,7 @@ class Career extends React.Component {
                     <input
                         type="hidden"
                         name="_next"
-                        value="https://chagrinvalleyearlylearningcenter.com/thankyou"
+                        value="http://www.chagrinvalleyearlylearningcenter.co/thankyou"
                     />
 
                     <input id="formButton" type="submit"></input>
