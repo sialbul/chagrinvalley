@@ -83,8 +83,8 @@ export default class AboutUs extends Component {
                     </div>{" "}
                     <div id="aboutUsInfo">
                         <div className="aboutUsInfoParargaf">
-                            <h2 id="headerAboutUs"> {this.state.header} </h2>{" "}
-                            <p id="parargafAboutUs"> {this.state.parargaf} </p>{" "}
+                            <h1 id="headerAboutUs"> {this.state.header} </h1>{" "}
+                            <h2 id="parargafAboutUs"> {this.state.parargaf} </h2>{" "}
                             <button className="learnMoreButton2">
                                 <NavLink to="/howtoenroll">LEARN MORE </NavLink>
                             </button>{" "}

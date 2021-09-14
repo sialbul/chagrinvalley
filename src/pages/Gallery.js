@@ -2,6 +2,7 @@ import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../components/ImageCart";
+import { NavLink } from "react-router-dom";
 
 const PhotoGallery = () => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -19,6 +20,7 @@ const PhotoGallery = () => {
 
     return (
         <div id="galleryContainer">
+            <div id="galleryTop">
             <p className="sectionHeader">Gallery</p>
             <Gallery photos={photos} onClick={openLightbox} />
             <ModalGateway>
@@ -35,6 +37,23 @@ const PhotoGallery = () => {
                     </Modal>
                 ) : null}
             </ModalGateway>
+            </div>
+            <div>
+                <p className="sectionHeaderPrograms">
+                    <NavLink to="/career">
+                        {" "}
+                        
+                            {" "}
+                            Career{" "}
+                            <i
+                                className="fa fa-angle-double-right"
+                                aria-hidden="true"></i>
+                            <i
+                                className="fa fa-angle-double-right"
+                                aria-hidden="true"></i>
+                    </NavLink>
+                </p>
+            </div>
         </div>
     );
 };

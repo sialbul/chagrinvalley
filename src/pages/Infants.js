@@ -98,7 +98,10 @@ export default function Infants() {
                                 <i
                                     className="fa fa-angle-double-right"
                                     aria-hidden="true"></i>
-                            </NavLink>
+                                <i
+                                    className="fa fa-angle-double-right"
+                                    aria-hidden="true"></i>
+                                    </NavLink>
                         </p>
                     </div>
                 </div>

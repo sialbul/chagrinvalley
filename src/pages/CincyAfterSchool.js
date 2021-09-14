@@ -64,13 +64,15 @@ export default function CincyAfterSchool() {
                 <p className="sectionHeaderPrograms">
                     <NavLink to="/childcare">
                         {" "}
-                        <h2>
+                        
                             {" "}
                             Child Care Cost{" "}
                             <i
                                 className="fa fa-angle-double-right"
                                 aria-hidden="true"></i>
-                        </h2>
+                            <i
+                                className="fa fa-angle-double-right"
+                                aria-hidden="true"></i>
                     </NavLink>
                 </p>
             </div>

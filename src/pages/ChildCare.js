@@ -153,6 +153,9 @@ export default function ChildCare() {
                         <i
                             className="fa fa-angle-double-right"
                             aria-hidden="true"></i>
+                        <i
+                            className="fa fa-angle-double-right"
+                            aria-hidden="true"></i>
                     </NavLink>
                 </p>
             </div>

@@ -609,7 +609,7 @@ td:first-child {
   }
 }
 
-#galleryContainer {
+#galleryTop {
   padding: 10vw;
 }
 
@@ -618,19 +618,19 @@ td:first-child {
 }
 
 @media screen and (max-width: 1280px) {
-  #galleryContainer {
+  #galleryTop {
     padding: 14vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #galleryContainer {
+  #galleryTop {
     padding-top: 25vw;
   }
 }
 
 @media screen and (max-width: 411px) {
-  #galleryContainer {
+  #galleryTop {
     padding-top: 32vw;
   }
 }
@@ -806,11 +806,12 @@ body {
   font-weight: 900;
   color: #0779E4;
   margin-bottom: 5vh;
-  border: 2px dotted #0779E4;
+  border-bottom: 2px dotted #0779E4;
   padding: 0.2em 1em;
   margin: 0 0.3em 0.3em 0;
   border-radius: 2em;
   display: inline-block;
+  background-color: rgba(255, 255, 255, 0.749);
 }
 
 .sectionHeaderPrograms {
@@ -828,6 +829,10 @@ body {
 
 .sectionHeaderPrograms a:hover {
   color: #F12D2D;
+}
+
+.sectionHeaderPrograms i {
+  margin-left: 5px;
 }
 
 /*Top Picture Section*/
@@ -852,9 +857,7 @@ body {
 #SummerFlyer {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
-  background-color: #F12D2D;
-  color: white;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
   padding: 0.6em 1.2em;
   margin: 0 0.3em 0.3em 0;
   border-radius: 2em;
@@ -875,10 +878,22 @@ body {
   color: white;
 }
 
+#SummerFlyer {
+  background-color: #F12D2D;
+  color: white;
+}
+
 .learnMoreButton2 {
   background-color: #ffE75E;
-  color: black;
   margin-top: 5vh;
+}
+
+.learnMoreButton2 a {
+  color: black;
+}
+
+.learnMoreButton2 a:hover {
+  color: white;
 }
 
 /*About Us Section*/
@@ -899,6 +914,7 @@ body {
           justify-content: center;
   list-style: none;
   margin: 4vh 0;
+  font-size: 1.6vw;
 }
 
 .aboutLink ul li {
@@ -943,6 +959,10 @@ body {
   background-color: white;
 }
 
+#headerAboutUs {
+  margin-bottom: 8px;
+}
+
 /*Our Activities Section*/
 .ourActivities {
   background-color: #00ead350;
@@ -950,8 +970,6 @@ body {
 }
 
 .ourActivitiesInfo {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   padding: 6vh 0;
@@ -974,8 +992,8 @@ body {
 }
 
 .ourActivitiesLink img {
-  height: 30vh;
-  width: 30vh;
+  height: 25vh;
+  width: 25vh;
 }
 
 /*Event Section*/
@@ -996,22 +1014,24 @@ body {
 .cardEvent {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 300px;
+  width: 320px;
   margin: auto;
   margin-bottom: 5vh;
   text-align: center;
-  background-color: rgba(186, 180, 180, 0.898);
+  background-color: #d6c97c;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   overflow: hidden;
   border-radius: 10%;
-  padding-bottom: 1vw;
+  padding: 15px;
   /* Animation */
 }
 
 .cardEvent img {
+  margin: 0;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border: 2px solid black;
@@ -1037,8 +1057,8 @@ body {
 .parentSectionInfo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
   text-align: center;
   padding: 6vh 0vh;
@@ -1058,11 +1078,7 @@ body {
 
 .parentSectionText {
   width: 90%;
-}
-
-.parentSectionText p {
-  font-size: 1.5vw;
-  line-height: 35px;
+  line-height: 5vh;
 }
 
 /*Contact Section*/
@@ -1159,6 +1175,21 @@ footer a:hover {
   color: #0779E4;
 }
 
+.construction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh;
+  color: #F12D2D;
+  background-image: url("../assets/photo-gallery/Chagrin-Valley.png");
+}
+
 /*Mobile view*/
 @media screen and (max-width: 1281px) {
   .navbar {
@@ -1173,23 +1204,12 @@ footer a:hover {
   }
   .parentSectionPhoto img {
     height: 40vh;
-    width: 60%;
   }
-}
-
-.construction {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 80vh;
-  color: #F12D2D;
-  background-image: url("../assets/photo-gallery/Chagrin-Valley.png");
+  .aboutUsInfoPicture img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -1237,9 +1257,6 @@ footer a:hover {
   .parentSectionText {
     width: 90%;
   }
-  .parentSectionText p {
-    font-size: 3vw;
-  }
   .parentSectionPhoto img {
     width: 80%;
     height: 30vh;
@@ -1256,6 +1273,10 @@ footer a:hover {
   #aboutUsInfoPhotos {
     width: 80%;
   }
+  .eventGalleryCards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 415px) {
@@ -1264,7 +1285,7 @@ footer a:hover {
   }
   .learnMoreButton2,
   #SummerFlyer {
-    font-size: 4vw;
+    font-size: 4.5vw;
     padding: 1em 1.6em;
   }
   .sectionHeader {
@@ -1289,10 +1310,6 @@ footer a:hover {
     top: 40%;
     left: 30%;
   }
-  .eventGalleryCards {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
   .parentSectionPhoto img {
     width: 60vw;
     height: 60vw;
@@ -1302,9 +1319,6 @@ footer a:hover {
   }
   .ourActivities {
     width: 100%;
-  }
-  .parentSectionText p {
-    font-size: 5vw;
   }
 }
 
@@ -1335,6 +1349,13 @@ footer a:hover {
   }
   .learnMoreButton2 {
     font-size: 2vw;
+  }
+  .cardEvent {
+    width: 220px;
+  }
+  .parentSectionInfo {
+    -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 /*# sourceMappingURL=style.css.map */

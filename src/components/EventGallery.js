@@ -15,42 +15,43 @@ export default function EventGallery() {
             <div className="ourEventGallery">
                 <p className="sectionHeader">Our Event Gallery</p>
                 <div className="eventGalleryCards">
+                   
                     <div className="cardEvent">
-                        <img className="eventGallery" src={Donuts} alt="" />
-                        <h2>Muffins with Dad</h2>
-                    </div>
-                    <div className="cardEvent">
-                        <img className="eventGallery" src={Muffins} alt="" />
-                        <h2>Donuts with Mom</h2>
-                    </div>
-                    <div className="cardEvent">
-                        <img className="eventGallery" src={Garden} alt="" />
+                        <img className="eventGallery" src={Garden} alt="Garden Party" />
                         <h2>Garden Party</h2>
                     </div>
                     <div className="cardEvent">
-                        <img className="eventGallery" src={Graduation} alt="" />
+                        <img className="eventGallery" src={Graduation} alt="Graduation" />
                         <h2>Graduation</h2>
                     </div>
 
                     <div className="cardEvent">
-                        <img className="eventGallery" src={Stem} alt="" />
+                        <img className="eventGallery" src={Stem} alt="Stem Festival" />
                         <h2>Stem Festival</h2>
                     </div>
                     <div className="cardEvent">
                         <img
                             className="eventGallery"
                             src={Thanksgiving}
-                            alt=""
+                            alt="Thanksgiving"
                         />
                         <h2>Thanksgiving Feast</h2>
                     </div>
                     <div className="cardEvent">
-                        <img className="eventGallery" src={Halloween} alt="" />
+                        <img className="eventGallery" src={Halloween} alt="Holidays" />
                         <h2>Holidays</h2>
                     </div>
                     <div className="cardEvent">
-                        <img className="eventGallery" src={Lego} alt="" />
+                        <img className="eventGallery" src={Lego} alt="Lego Robotics" />
                         <h2>Lego Robotics</h2>
+                    </div> 
+                    <div className="cardEvent">
+                        <img className="eventGallery" src={Donuts} alt="Muffins with Dad" />
+                        <h2>Muffins with Dad</h2>
+                    </div>
+                    <div className="cardEvent">
+                        <img className="eventGallery" src={Muffins} alt="Donuts with Mom" />
+                        <h2>Donuts with Mom</h2>
                     </div>
                 </div>
             </div>

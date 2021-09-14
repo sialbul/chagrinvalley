@@ -17,92 +17,102 @@ import "aos/dist/aos.css";
 AOS.init();
 
 export default class Home extends Component {
-    render() {
-        return (
+  render() {
+    return (
+      <div>
+        <div className="topPicture">
+          <img className="mainphoto" src={InfantPhoto} alt="Reading a book" />
+          <img
+            className="perfectphoto"
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+            src={MainPhoto}
+            alt="Perfect Start for your child"
+          />
+        </div>
+        <AboutUs />
+        <div className="ourActivities">
+          <p className="sectionHeader">Our Programs</p>
+          <div className="ourActivitiesInfo">
             <div>
-                <div className="topPicture">
-                    <img className="mainphoto" src={InfantPhoto} />
-                    <img
-                        className="perfectphoto"
-                        data-aos="zoom-in-left"
-                        data-aos-duration="1000"
-                        data-aos-delay="150"
-                        src={MainPhoto}
-                    />
-                </div>
-                <AboutUs />
-                <div className="ourActivities">
-                    <p className="sectionHeader">Our Programs</p>
-                    <div className="ourActivitiesInfo">
-                        <img id="ourActivitiesPhoto" src={Photo1} alt="" />
-                        <div className="ourActivitiesLink">
-                            <NavLink to="/infants">
-                                <img
-                                    data-aos="fade-down"
-                                    data-aos-delay="50"
-                                    src={Photo2}
-                                    alt=""
-                                />
-                            </NavLink>
-                            <NavLink to="/toddler">
-                                <img
-                                    data-aos="fade-down"
-                                    data-aos-delay="100"
-                                    src={Photo3}
-                                    alt=""
-                                />
-                            </NavLink>
-                            <NavLink to="/preschool">
-                                <img
-                                    data-aos="fade-down"
-                                    data-aos-delay="150"
-                                    src={Photo4}
-                                    alt=""
-                                />
-                            </NavLink>
-                            <NavLink to="/schoolage">
-                                <img
-                                    data-aos="fade-down"
-                                    data-aos-delay="200"
-                                    src={Photo5}
-                                    alt=""
-                                />
-                            </NavLink>
-                        </div>
-                    </div>
-                </div>
-                <EventGallery />
-
-                <div className="parentSection">
-                    <p className="sectionHeader">What Parents Says</p>
-                    <div className="parentSectionInfo">
-                        <div className="parentSectionPhoto">
-                            <img
-                                src={Toddler}
-                                className="circular--square"
-                                alt=""
-                            />
-                        </div>
-                        <div className="parentSectionText">
-                            <p>
-                                Chagrin Valley Early Learning Center is great!
-                                The rooms are bright and clean. They offer
-                                excellent activities for the kids and the
-                                outdoor space is huge! All of the teachers are
-                                kind and really care about the children. My kids
-                                look forward to going to Chagrin Valley Early
-                                Center everyday and I know they are well taken
-                                care of and learn a lot while they are there.{" "}
-                                <br />
-                                <br />
-                                Tara Klevay
-                                <br />
-                                Mother{" "}
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              <h2>
+                Chagrin Valley Early Learning Center offers a variety of child
+                care programs to meet your child care needs and we are committed
+                to the development of well-rounded children.{" "}
+              </h2>
+              <br />
+              <h2>
+                Which Program Are You Interested in? Click the image for
+                details.
+              </h2>
             </div>
-        );
-    }
+            {/* <img id="ourActivitiesPhoto" src={Photo1} alt="Activity Photo" /> */}
+            <div className="ourActivitiesLink">
+              <NavLink to="/infants">
+                <img
+                  data-aos="fade-down"
+                  data-aos-delay="50"
+                  src={Photo2}
+                  alt="Infants"
+                />
+              </NavLink>
+              <NavLink to="/toddler">
+                <img
+                  data-aos="fade-down"
+                  data-aos-delay="100"
+                  src={Photo3}
+                  alt="Toodler"
+                />
+              </NavLink>
+              <NavLink to="/preschool">
+                <img
+                  data-aos="fade-down"
+                  data-aos-delay="150"
+                  src={Photo4}
+                  alt="Preschool"
+                />
+              </NavLink>
+              <NavLink to="/schoolage">
+                <img
+                  data-aos="fade-down"
+                  data-aos-delay="200"
+                  src={Photo5}
+                  alt="School Age"
+                />
+              </NavLink>
+            </div>
+          </div>
+        </div>
+        <EventGallery />
+
+        <div className="parentSection">
+          <p className="sectionHeader">What Parents Says</p>
+          <div className="parentSectionInfo">
+            <div className="parentSectionPhoto">
+              <img
+                src={Toddler}
+                className="circular--square"
+                alt="Toddler activities"
+              />
+            </div>
+            <div className="parentSectionText">
+              <h2>
+                Chagrin Valley Early Learning Center is great! The rooms are
+                bright and clean. They offer excellent activities for the kids
+                and the outdoor space is huge! All of the teachers are kind and
+                really care about the children. My kids look forward to going to
+                Chagrin Valley Early Center everyday and I know they are well
+                taken care of and learn a lot while they are there. <br />
+                <br />
+                Tara Klevay
+                <br />
+                Mother{" "}
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }

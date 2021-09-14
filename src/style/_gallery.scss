@@ -1,25 +1,27 @@
-#galleryContainer {
+#galleryTop {
     padding: 10vw;
 }
+
+
 
 #centerClosureList {
     background-color: $white;
 }
 
 @media screen and (max-width:1280px) {
-    #galleryContainer {
+    #galleryTop {
         padding: 14vw;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #galleryContainer {
+    #galleryTop {
         padding-top: 25vw;
     }
 }
 
 @media screen and (max-width: 411px) {
-    #galleryContainer {
+    #galleryTop {
         padding-top: 32vw;
     }
 }
