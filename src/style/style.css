@@ -1,4 +1,4 @@
-header {
+#topHeader {
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,23 +10,23 @@ header {
           justify-content: space-evenly;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   color: #4a4141;
   -webkit-transition: top 0.5s ease-in-out;
   transition: top 0.5s ease-in-out;
 }
 
-header a {
+#topHeader a {
   text-decoration: none;
   color: #4a4141;
 }
 
-header a:hover {
+#topHeader a:hover {
   color: #0779E4;
 }
 
-header i {
+#topHeader i {
   margin-right: 5px;
 }
 
@@ -242,12 +242,10 @@ header i {
     position: relative;
     text-align: center;
   }
-  header {
-    font-size: 2vw;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+  #topHeader {
+    font-size: 1.5vw;
   }
-  header div {
+  #topHeader div {
     padding-bottom: 2vh;
   }
   .logo a img {
@@ -258,6 +256,9 @@ header i {
 @media screen and (max-width: 486px) {
   .nav-menu {
     font-size: 5vw;
+  }
+  #topHeader {
+    font-size: 2vw;
   }
 }
 

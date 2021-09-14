@@ -1,13 +1,13 @@
 @import "_variables";
-header {
+#topHeader {
     background-color: $white;
     display: flex;
     padding: 1.5vh;
     font-size: 1vw;
     justify-content: space-evenly;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    color: $darkgrey;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        color: $darkgrey;
     transition: top 0.5s ease-in-out;
     a {
         text-decoration: none;
@@ -193,9 +193,9 @@ header {
         position: relative;
         text-align: center;
     }
-    header {
-        font-size: 2vw;
-        grid-template-columns: 1fr 1fr;
+    #topHeader {
+        font-size: 1.5vw;
+        // grid-template-columns: 1fr 1fr !important;
         div {
             padding-bottom: 2vh;
         }
@@ -211,4 +211,6 @@ header {
     .nav-menu {
         font-size: 5vw;
     }
+    #topHeader {
+        font-size: 2vw;}
 }
