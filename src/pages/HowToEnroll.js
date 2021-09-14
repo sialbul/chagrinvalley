@@ -22,7 +22,7 @@ export default function HowToEnroll() {
                 <br />
                 <span className="sectionHeader3">
                     {" "}
-                    Begin the Enrollment Process
+                    <h5>Begin the Enrollment Process</h5>
                 </span>
                 <p>
                     You must complete and sign all forms and have the Center
