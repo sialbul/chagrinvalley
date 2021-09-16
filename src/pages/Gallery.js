@@ -8,7 +8,7 @@ const PhotoGallery = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-    const openLightbox = useCallback((event, { photo, index }) => {
+    const openLightbox = useCallback((event, {index }) => {
         setCurrentImage(index);
         setViewerIsOpen(true);
     }, []);
@@ -22,7 +22,9 @@ const PhotoGallery = () => {
         <div id="galleryContainer">
             <div id="galleryTop">
             <p className="sectionHeader">Gallery</p>
+
             <Gallery photos={photos} onClick={openLightbox} />
+
             <ModalGateway>
                 {viewerIsOpen ? (
                     <Modal onClose={closeLightbox}>
@@ -37,6 +39,7 @@ const PhotoGallery = () => {
                     </Modal>
                 ) : null}
             </ModalGateway>
+            
             </div>
             <div>
                 <p className="sectionHeaderPrograms">

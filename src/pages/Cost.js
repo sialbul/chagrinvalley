@@ -1,106 +1,106 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function ChildCare() {
+export default function Cost() {
     return (
         <div>
             <div id="pageContainer">
                 <span className="sectionHeader"> Tuition and Fees </span>
-                <table role="table">
-                    <thead role="rowgroup">
-                        <tr role="row">
-                            <th role="columnheader"></th>
-                            <th role="columnheader">1st Child</th>
-                            <th role="columnheader">2nd Child</th>
-                            <th role="columnheader">Part Time</th>
-                            <th role="columnheader">12.5hr a week</th>
+                <table>
+                    <thead>
+                        <tr >
+                            <th></th>
+                            <th>1st Child</th>
+                            <th>2nd Child</th>
+                            <th>Part Time</th>
+                            <th>12.5hr a week</th>
                         </tr>
                     </thead>
-                    <tbody role="rowgroup">
+                    <tbody>
                         <tr>
-                            <td role="cell">
+                            <td>
                                 INFANTS
                                 <br />6 weeks- 21months
                             </td>
-                            <td role="cell">232.00</td>
-                            <td role="cell">208.80 </td>
-                            <td role="cell">185.60</td>
-                            <td role="cell"></td>
+                            <td>232.00</td>
+                            <td>208.80 </td>
+                            <td>185.60</td>
+                            <td></td>
                         </tr>
-                        <tr role="row">
-                            <td role="cell">
+                        <tr>
+                            <td>
                                 INFANTS with
                                 <br />
                                 Diaper and Wipes
                             </td>
-                            <td role="cell">250.00</td>
-                            <td role="cell">225.00 </td>
-                            <td role="cell">200.00</td>
+                            <td>250.00</td>
+                            <td>225.00 </td>
+                            <td>200.00</td>
 
-                            <td role="cell"></td>
+                            <td></td>
                         </tr>
-                        <tr role="row">
-                            <td role="cell">
+                        <tr>
+                            <td>
                                 TODDLER <br />
                                 21 months-3 years{" "}
                             </td>
-                            <td role="cell">205.00</td>
-                            <td role="cell">184.50 </td>
-                            <td role="cell">164.00</td>
+                            <td>205.00</td>
+                            <td>184.50 </td>
+                            <td>164.00</td>
 
-                            <td role="cell">90.00**</td>
+                            <td>90.00**</td>
                         </tr>
-                        <tr role="row">
-                            <td role="cell">
+                        <tr>
+                            <td>
                                 TODDLER <br />
                                 Pullups and Wipes{" "}
                             </td>
-                            <td role="cell">223.00</td>
-                            <td role="cell">200.70 </td>
-                            <td role="cell">178.40</td>
+                            <td>223.00</td>
+                            <td>200.70 </td>
+                            <td>178.40</td>
 
-                            <td role="cell"></td>
+                            <td></td>
                         </tr>
-                        <tr role="row">
-                            <td role="cell">
+                        <tr>
+                            <td>
                                 PRESCHOOL <br />3 years-5 years{" "}
                             </td>
-                            <td role="cell">187.00</td>
-                            <td role="cell">168.30 </td>
-                            <td role="cell">149.60</td>
+                            <td>187.00</td>
+                            <td>168.30 </td>
+                            <td>149.60</td>
 
-                            <td role="cell">78.00**</td>
+                            <td>78.00**</td>
                         </tr>
-                        <tr role="row">
-                            <td role="cell">
+                        <tr>
+                            <td>
                                 SCHOOL AGE <br />
                             </td>
-                            <td role="cell">177.00</td>
-                            <td role="cell">159.30 </td>
-                            <td role="cell">141.60</td>
+                            <td>177.00</td>
+                            <td>159.30 </td>
+                            <td>141.60</td>
 
-                            <td role="cell"></td>
+                            <td></td>
                         </tr>
-                        <tr role="row">
-                            <td role="cell">Before and After</td>
-                            <td role="cell">93.00</td>
-                            <td role="cell">83.70 </td>
-                            <td role="cell">83.70</td>
-                            <td role="cell"></td>
+                        <tr>
+                            <td>Before and After</td>
+                            <td>93.00</td>
+                            <td>83.70 </td>
+                            <td>83.70</td>
+                            <td></td>
                         </tr>
-                        <tr role="row">
-                            <td role="cell">Before </td>
-                            <td role="cell">48.00</td>
-                            <td role="cell">43.20 </td>
-                            <td role="cell">43.20</td>
-                            <td role="cell"></td>
+                        <tr>
+                            <td>Before </td>
+                            <td>48.00</td>
+                            <td>43.20 </td>
+                            <td>43.20</td>
+                            <td></td>
                         </tr>
-                        <tr role="row">
-                            <td role="cell">After </td>
-                            <td role="cell">75.00</td>
-                            <td role="cell">67.50 </td>
-                            <td role="cell">67.50</td>
-                            <td role="cell"></td>
+                        <tr>
+                            <td>After </td>
+                            <td>75.00</td>
+                            <td>67.50 </td>
+                            <td>67.50</td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>

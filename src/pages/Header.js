@@ -161,7 +161,7 @@ function NavBar() {
                                 <li
                                     className="dropdownLi"
                                     onClick={handleClick}>
-                                    <NavLink to="/childcare">
+                                    <NavLink to="/cost">
                                         <i className="fas fa-dollar-sign"></i>{" "}
                                         Child Care Cost
                                     </NavLink>

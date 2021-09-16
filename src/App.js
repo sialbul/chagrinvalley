@@ -10,7 +10,7 @@ import Home from "../src/pages/Home";
 import Footer from "../src/pages/Footer";
 import CincyAfterSchool from "../src/pages/CincyAfterSchool";
 import CenterClosure from "../src/pages/CenterClosure";
-import ChildCare from "../src/pages/ChildCare";
+import Cost from "../src/pages/Cost";
 import Community from "../src/pages/Community";
 import Curriculum from "../src/pages/Curriculum";
 import Food from "../src/pages/Food";
@@ -49,7 +49,7 @@ export default function App() {
                         path="/centerclosure"
                         component={CenterClosure}
                     />
-                    <Route exact path="/childcare" component={ChildCare} />
+                    <Route exact path="/cost" component={Cost} />
                     <Route exact path="/community" component={Community} />
                     <Route exact path="/curriculum" component={Curriculum} />
                     <Route exact path="/food" component={Food} />

@@ -62,7 +62,7 @@ export default function CincyAfterSchool() {
             </p>
             <div>
                 <p className="sectionHeaderPrograms">
-                    <NavLink to="/childcare">
+                    <NavLink to="/cost">
                         {" "}
                         
                             {" "}
