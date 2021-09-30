@@ -55,7 +55,7 @@ export default function Schoolage() {
                                 </span>
                                 <br />
                                 <h3 className="schoolAgeHeader">Before</h3>
-                                <div id="schedule">
+                                <div>
                                     <table id="pageTable">
                                         <body>
                                             <tr>
@@ -79,7 +79,7 @@ export default function Schoolage() {
                                 </div>
                                 <h3 className="schoolAgeHeader">After</h3>
 
-                                <div id="schedule">
+                                <div>
                                     <table id="pageTable">
                                         <body>
                                             <tr>
@@ -170,7 +170,7 @@ export default function Schoolage() {
                                     Sample of the Daily Summer<br/> School Schedule
                                 </span>
                                 <br />
-                                <div id="schedule">
+                                <div>
                                     <table id="pageTable">
                                         <body>
                                             <tr>

@@ -76,7 +76,7 @@ export default function Preschool() {
                                     Sample of the Daily Schedule
                                 </span>
                                 <br />
-                                <div id="schedule">
+                                <div>
                                     <table id="pageTable">
                                         <body>
                                             <tr>
