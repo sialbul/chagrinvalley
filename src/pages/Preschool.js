@@ -21,7 +21,6 @@ export default function Preschool() {
                         </div>
                         <div>
                             <p data-aos="fade-down" data-aos-duration="2000">
-                                <span id="headSmall">Pre-School </span> <br />
                                 Your child is changing and growing so quickly
                                 and is now getting ready for reading, writing,
                                 math, language and much more. Our program

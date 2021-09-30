@@ -8,7 +8,8 @@ export default function Toddler() {
         <div>
             <container>
                 <div id="infantContainer">
-                    <p className="infantHeaderToddler"> Toddler </p>
+                    <p className="infantHeaderToddler"> Toddler <span>&#8544;</span> & <span>&#8545;</span>
+</p>
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
@@ -20,7 +21,6 @@ export default function Toddler() {
                         </div>
                         <div>
                             <p data-aos="fade-down" data-aos-duration="2000">
-                                <span id="headSmall">TODDLER I & II</span>
                                 <br />
                                 Toddlers, with their new found independence, are
                                 ready for a more structured learning

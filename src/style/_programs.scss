@@ -7,6 +7,8 @@
         line-height: 5vh;
         font-weight: bold;
         padding: 2vh;
+        font-size: larger;
+        background-color: $white;
     }
     #programsPagePhoto1 {
         margin: 5vh;
@@ -50,7 +52,7 @@
 .infantHeaderSchool,
 .infantHeaderToddler,
 .infantHeaderSchoolAge {
-    font-size: 8vh;
+    font-size: 3em !important;
     color: $blue;
     padding: 2vh;
     margin: 2vh;
@@ -108,7 +110,7 @@
             width: 80%;
         }
     }
-    #infantContainer2 p {
+    #infantContainer2 span {
         font-size: 4vw;
     }
 }

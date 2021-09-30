@@ -59,9 +59,9 @@ export default function Infants() {
                                 naps to prepare them for the Toddler room.
                                 <br />
                                 <i className="fa fa-star" aria-hidden="true">
-                                    {" "}
+                                    {" "} 
                                 </i>
-                                We feel that infants should be fed when they are
+                                 We feel that infants should be fed when they are
                                 hungry, sleep when they are tired, and they
                                 should be changed and clean. They should be
                                 rocked, held, sung to, and read to when they are

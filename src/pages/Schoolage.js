@@ -11,7 +11,7 @@ export default function Schoolage() {
         <div>
             <container>
                 <div id="infantContainer">
-                    <span className="infantHeaderSchoolAge"> School Age </span>
+                    <p className="infantHeaderSchoolAge"> School Age </p>
                     <div id="infantContainer2">
                         <div id="infantFirstPart">
                             <img
@@ -23,12 +23,11 @@ export default function Schoolage() {
                         </div>
                         <div>
                             <p data-aos="fade-down" data-aos-duration="2000">
-                                <span id="headSmall">School Age</span> <br />
                                 <h3 className="schoolAgeHeader">
                                     Before & After School Care
                                 </h3>
                                 <br />
-                                  At CV Early Learning Centers, we have Before and
+                                At CV Early Learning Centers, we have Before and
                                 After School Care. West Geauga, Kenston and
                                 Chagrin Falls schools all provide transportation
                                 to & from our center. You can drop your child in
@@ -46,7 +45,7 @@ export default function Schoolage() {
                     </div>
                     <div id="infantContainer2">
                         <div>
-                            <p data-aos="fade-down" data-aos-duration="2000">
+                            <span data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
                                     <i
                                         className="fa fa-clock-o"
@@ -57,33 +56,70 @@ export default function Schoolage() {
                                 <br />
                                 <h3 className="schoolAgeHeader">Before</h3>
                                 <div id="schedule">
-                                    6-7 Quiet play
-                                    <br />
-                                    7-7:30 Breakfast/ Free Play
-                                    <br />
-                                    7:30-8:15 Centers- Choice time /Busses
-                                    <br />
+                                    <table id="pageTable">
+                                        <body>
+                                            <tr>
+                                                <th>6:00 - 7:00</th>
+                                                <td>Quiet play </td>
+                                            </tr>
+                                            <tr>
+                                                <th>7:00 - 7:30</th>
+                                                <td>Breakfast/ Free Play </td>
+                                            </tr>
+                                            <tr>
+                                                <th>7:30 - 8:15</th>
+                                                <td>Centers- Choice time/ <br /> Busses</td>
+                                            </tr>
+
+
+
+                                        </body>
+                                    </table>
+
                                 </div>
                                 <h3 className="schoolAgeHeader">After</h3>
 
                                 <div id="schedule">
-                                    3:20-3:50 Arrival / Centers / Choice time
-                                    <br />
-                                    3:50-4:00 Handwashing
-                                    <br />
-                                    4:00-4:20 Snack & Chat
-                                    <br />
-                                    4:20-4:50 Homework/Quite Time/Books,
-                                    Puzzles, Drawing
-                                    <br />
-                                    4:50-5:30 Outside / Gross Motor
-                                    <br />
-                                    5:30-6:00 Group Activities
-                                    <br />
-                                    6:00-6:45 Table Toys/Clean up/Get ready to
-                                    go home
+                                    <table id="pageTable">
+                                        <body>
+                                            <tr>
+                                                <th>3:20 - 3:50</th>
+                                                <td>Arrival / Centers / Choice time</td>
+                                            </tr>
+                                            <tr>
+                                                <th>3:50 - 4:00</th>
+                                                <td>Handwashing</td>
+                                            </tr>
+                                            <tr>
+                                                <th>4:00 - 4:20</th>
+                                                <td>Snack & Chat</td>
+                                            </tr>
+                                            <tr>
+                                                <th>4:20 - 4:50</th>
+                                                <td>Homework/Quite Time/Books<br />
+                                                    Puzzles, Drawing</td>
+                                            </tr>
+                                            <tr>
+                                                <th>4:50 - 5:30</th>
+                                                <td>Outside / Gross Motor</td>
+                                            </tr>
+                                            <tr>
+                                                <th>5:30 - 6:00</th>
+                                                <td>Group Activities</td>
+                                            </tr>
+                                            <tr>
+                                                <th>6:00 - 6:45</th>
+                                                <td>Table Toys/Clean up/
+                                                    <br />Get ready to
+                                                    go home</td>
+                                            </tr>
+
+                                        </body>
+                                    </table>
+
+
                                 </div>
-                            </p>{" "}
+                            </span>{" "}
                         </div>
                         <div id="infantFirstPart">
                             <img
@@ -125,59 +161,102 @@ export default function Schoolage() {
                     </div>
                     <div id="infantContainer2">
                         <div>
-                            <p data-aos="fade-down" data-aos-duration="2000">
+                            <span data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
                                     <i
                                         className="fa fa-clock-o"
                                         aria-hidden="true"
                                         fa-lg></i>
-                                    Sample of the Daily Summer School Schedule
+                                    Sample of the Daily Summer<br/> School Schedule
                                 </span>
                                 <br />
                                 <div id="schedule">
-                                    6:00-8:15 Quiet play
-                                    <br />
-                                    8:15-8:45 Breakfast/ Quiet Free Play
-                                    <br />
-                                    8:15-9:00 Free choice
-                                    <br />
-                                    9:00-9:10 Morning meeting
-                                    <br />
-                                    9:10-9:45 Arts & Crafts
-                                    <br />
-                                    9:45-10:15 Science activities & Experiments
-                                    <br />
-                                    10:15-11:30 Outside/ Large motor*
-                                    <br />
-                                    11:30-12:15 Centers/small groups-CINCY
-                                    ACTIVITIES
-                                    <br />
-                                    12:15-1:00 Lunch
-                                    <br />
-                                    1:00-1:15 Story time read aloud
-                                    <br />
-                                    1:15-2:30 Outside*
-                                    <br />
-                                    2:30-3:30 Homework/ Quiet Play / Group
-                                    Activities
-                                    <br />
-                                    3:30-3:45 Afternoon Meeting
-                                    <br />
-                                    3:45-4:15 Afternoon Snack & Chat
-                                    <br />
-                                    4:15-4:40 Book Time/ Puzzle Time
-                                    <br />
-                                    4:40-5:15 Outside*
-                                    <br />
-                                    5:15-5:45 Table toys
-                                    <br />
-                                    5:45-6:30 Limited Centers
-                                    <br />
-                                    6:30-6:45 Clean up/Get ready to go home
-                                    <br />
-                                    *times can change according to weather
+                                    <table id="pageTable">
+                                        <body>
+                                            <tr>
+                                                <th>6:00 - 8:15</th>
+                                                <td>Quiet play</td>
+                                            </tr>
+                                            <tr>
+                                                <th>8:15 - 8:45</th>
+                                                <td>Breakfast/ Quiet Free Play</td>
+                                            </tr>
+                                            <tr>
+                                                <th>8:45 - 9:00</th>
+                                                <td>Free choice</td>
+                                            </tr>
+                                            <tr>
+                                                <th>9:00 - 9:10</th>
+                                                <td>Morning meeting</td>
+                                            </tr>
+                                            <tr>
+                                                <th>9:10 - 9:45</th>
+                                                <td>Arts & Crafts</td>
+                                            </tr>
+                                            <tr>
+                                                <th>9:45 - 10:15</th>
+                                                <td>Science activities & Experiments</td>
+                                            </tr>
+                                            <tr>
+                                                <th>10:15 - 11:30</th>
+                                                <td>Outside/ Large motor*</td>
+                                            </tr>
+                                            <tr>
+                                                <th>11:30 - 12:15</th>
+                                                <td>Centers/small groups-CINCY
+                                                    ACTIVITIES</td>
+                                            </tr>
+                                            <tr>
+                                                <th>12:15 - 1:00</th>
+                                                <td>Story time read aloud</td>
+                                            </tr>
+                                            <tr>
+                                                <th>1:00 - 1:15</th>
+                                                <td>Story time read aloud</td>
+                                            </tr>
+                                            <tr>
+                                                <th>1:15 - 2:30</th>
+                                                <td>Outside*</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2:30 - 3:30</th>
+                                                <td>Homework/ Quiet Play / Group
+                                                    Activities</td>
+                                            </tr>
+                                            <tr>
+                                                <th>3:30 - 3:45</th>
+                                                <td>Afternoon Meeting</td>
+                                            </tr>
+                                            <tr>
+                                                <th>3:45 - 4:15</th>
+                                                <td>Afternoon Snack & Chat</td>
+                                            </tr>
+                                            <tr>
+                                                <th>4:15 - 4:40</th>
+                                                <td>Book Time/ Puzzle Time</td>
+                                            </tr>
+                                            <tr>
+                                                <th>4:40 - 5:15</th>
+                                                <td>Outside*</td>
+                                            </tr>
+                                            <tr>
+                                                <th>5:15 - 5:45</th>
+                                                <td>Table toys</td>
+                                            </tr>
+                                            <tr>
+                                                <th>5:45 - 6:30</th>
+                                                <td>Limited Centers</td>
+                                            </tr>
+                                            <tr>
+                                                <th>6:30 - 6:45</th>
+                                                <td>Clean up/Get ready to go home</td>
+                                            </tr>
+                                            <br />
+                                            *times can change according to weather
+                                        </body>
+                                    </table>
                                 </div>
-                            </p>{" "}
+                            </span>{" "}
                         </div>
                         <div id="infantFirstPart">
                             <img

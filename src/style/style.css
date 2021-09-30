@@ -267,6 +267,8 @@
   line-height: 5vh;
   font-weight: bold;
   padding: 2vh;
+  font-size: larger;
+  background-color: white;
 }
 
 #infantContainer #programsPagePhoto1 {
@@ -316,7 +318,7 @@
 .infantHeaderSchool,
 .infantHeaderToddler,
 .infantHeaderSchoolAge {
-  font-size: 8vh;
+  font-size: 3em !important;
   color: #0779E4;
   padding: 2vh;
   margin: 2vh;
@@ -373,7 +375,7 @@
   #infantContainer #infantBaby3 {
     width: 80%;
   }
-  #infantContainer2 p {
+  #infantContainer2 span {
     font-size: 4vw;
   }
 }
@@ -439,6 +441,10 @@
   margin-top: 2vh;
 }
 
+.fa-star, .fa-clock-o {
+  margin-right: 5px;
+}
+
 #cardContainer {
   display: -ms-grid;
   display: grid;
@@ -501,12 +507,16 @@ td:first-child {
   line-height: 4;
 }
 
-#pageTable th, td {
+#pageTable {
+  margin-bottom: 2vw;
+}
+
+#pageTable th, #pageTable td {
   background-color: white;
   padding: 10px 5px;
 }
 
-#pageTable th th, td th {
+#pageTable th th, #pageTable td th {
   text-align: left;
 }
 
@@ -517,7 +527,8 @@ td:first-child {
 
 .schoolAgeHeader {
   color: red;
-  text-decoration: underline;
+  text-transform: uppercase;
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -595,7 +606,6 @@ td:first-child {
   }
   #pageTable {
     text-align: center;
-    width: 70%;
   }
   #pageTable tr {
     margin: 0;
