@@ -335,7 +335,7 @@
 }
 
 #schedule {
-  width: 100%;
+  width: 90%;
   text-align: left;
 }
 
@@ -501,6 +501,15 @@ td:first-child {
   line-height: 4;
 }
 
+#pageTable th, td {
+  background-color: white;
+  padding: 10px 5px;
+}
+
+#pageTable th th, td th {
+  text-align: left;
+}
+
 #galleryContainer > div:nth-child(7),
 #pageContainer > div {
   margin-top: 5vw;
@@ -583,6 +592,21 @@ td:first-child {
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
+  }
+  #pageTable {
+    text-align: center;
+    width: 70%;
+  }
+  #pageTable tr {
+    margin: 0;
+  }
+  #pageTable td {
+    padding-left: 0;
+    border: none;
+  }
+  #pageTable th {
+    background-color: #ffE75E;
+    border: none;
   }
   /*
 		Label the data

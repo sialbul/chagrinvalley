@@ -68,7 +68,7 @@ export default function Preschool() {
                             />
                         </div>
                         <div>
-                            <p data-aos="fade-down" data-aos-duration="2000">
+                            <span data-aos="fade-down" data-aos-duration="2000">
                                 <span id="headSmall">
                                     <i
                                         className="fa fa-clock-o"
@@ -78,43 +78,78 @@ export default function Preschool() {
                                 </span>
                                 <br />
                                 <div id="schedule">
-                                    6-7 Arrival, quiet play free choice
-                                    activities
-                                    <br />
-                                    7-8:30 Breakfast/ Quiet Free Play
-                                    <br />
-                                    8:30-9:00 Table toys/ Partner play
-                                    <br />
-                                    9:00-9:15 Circle/ Group time activities
-                                    including calendar, attendance
-                                    <br />
-                                    9:15-10:45 Center: Choice time/ small group
-                                    activities/ arts & crafts
-                                    <br />
-                                    10:45-11 Group time/ potty time/ books
-                                    <br />
-                                    11-11:55 Outside/ Gross Motor
-                                    <br />
-                                    11:55-12:30 Handwashing & Lunch
-                                    <br />
-                                    12:30-2:45 Potty/ Quiet Cot Play/ Rest time
-                                    <br />
-                                    2:45-3:15 Wake up/ Afternoon readiness
-                                    activity
-                                    <br />
-                                    3:15-3:35 Handwashing & snack
-                                    <br />
-                                    3:35-4:00 Puzzles / Group time
-                                    <br />
-                                    4:00-4:30 Outside / Gross motor
-                                    <br />
-                                    4:30-5:15 Centers-choice time
-                                    <br />
-                                    5:15-5:45 Table toys/ Coloring
-                                    <br />
-                                    6:15-6:45 Table toys/ Get ready to go home
-                                </div>
-                            </p>{" "}
+                                    <table id="pageTable">
+                                        <body>
+                                            <tr>
+                                                <th>6:00 - 7:00</th>
+                                                <td> Arrival, quiet play free choice
+                                                    activities </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>7:00 - 8:30</th>
+                                                <td>Breakfast/ Quiet Free Play</td>
+                                            </tr>
+                                            <tr>
+                                                <th>8:30 - 9:00</th>
+                                                <td>Table toys/ Partner play</td>
+                                            </tr>
+                                            <tr>
+                                                <th>9:00 - 9:15</th>
+                                                <td>Circle/ Group time activities including<br/> calendar, attendance</td>
+                                            </tr>
+                                            <tr>
+                                                <th>9:15 - 10:45</th>
+                                                <td>Center: Choice time/ small group activities/<br/> arts & crafts</td>
+                                            </tr>
+                                            <tr>
+                                                <th>10:45 - 11:00   </th>
+                                                <td>Group time/ potty time/ books</td>
+                                            </tr>
+                                            <tr>
+                                                <th>11:00 - 11:55 </th>
+                                                <td>Outside/ Gross Motor</td>
+                                            </tr>
+                                            <tr>
+                                                <th>11:55 - 12:30</th>
+                                                <td> Handwashing & Lunch</td>
+                                            </tr>
+                                            <tr>
+                                                <th>12:30 - 2:45</th>
+                                                <td>Potty/ Quiet Cot Play/ Rest time</td>
+                                            </tr>
+                                            <tr>
+                                                <th>2:45 - 3:15</th>
+                                                <td>Wake up/ Afternoon readiness activity</td>
+                                            </tr>
+                                            <tr>
+                                                <th>3:15 - 3:35 </th>
+                                                <td>Handwashing & snack</td>
+                                            </tr>
+                                            <tr>
+                                                <th>3:35 - 4:00</th>
+                                                <td>Puzzles / Group time</td>
+                                            </tr>
+                                            <tr>
+                                                <th>4:00 - 4:30</th>
+                                                <td>Outside / Gross motor</td>
+                                            </tr>
+                                            <tr>
+                                                <th>4:30 - 5:15</th>
+                                                <td>Centers-choice time</td>
+                                            </tr>
+                                            <tr>
+                                                <th>5:15 - 5:45</th>
+                                                <td>Table toys/ Coloring</td>
+                                            </tr>
+                                            <tr>
+                                                <th>6:15 - 6:45</th>
+                                                <td>Table toys/ Get ready to go home</td>
+                                            </tr>
+                                        </body>
+                                    </table>
+                                     </div>
+                            </span>{" "}
                         </div>
                     </div>
                     <div>

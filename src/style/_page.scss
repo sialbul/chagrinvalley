@@ -110,6 +110,14 @@ td:first-child {
     line-height: 4;
 }
 
+#pageTable th,td {
+background-color: $white;
+padding: 10px 5px;
+th{
+    text-align: left;
+
+}
+}
 #galleryContainer>div:nth-child(7),
 #pageContainer>div {
     margin-top: 5vw;
@@ -189,6 +197,21 @@ td:first-child {
         width: 45%;
         padding-right: 10px;
         white-space: nowrap;
+    }
+    #pageTable{
+        text-align: center;
+        width: 70%;
+        tr{
+            margin: 0;
+        }
+        td{
+            padding-left: 0;
+            border: none;
+        }
+        th{
+            background-color: $yellow;
+            border: none;
+        }
     }
     /*
 		Label the data
