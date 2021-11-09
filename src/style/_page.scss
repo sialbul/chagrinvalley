@@ -134,6 +134,14 @@ th{
     margin-top:15px;
 }
 
+.equal{
+    height: 25vh;
+    background-color: $white;
+}
+#equalImage{
+    width:150px;
+    height:60px;
+}
 @media screen and (max-width: 768px) {
     #enrollForm {
         grid-template-columns: 1fr 1fr;

@@ -1,8 +1,5 @@
 #topHeader {
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 1.5vh;
   font-size: 1vw;
   -webkit-box-pack: space-evenly;
@@ -529,6 +526,16 @@ td:first-child {
   color: red;
   text-transform: uppercase;
   margin-top: 15px;
+}
+
+.equal {
+  height: 25vh;
+  background-color: white;
+}
+
+#equalImage {
+  width: 150px;
+  height: 60px;
 }
 
 @media screen and (max-width: 768px) {
