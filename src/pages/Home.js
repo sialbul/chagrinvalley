@@ -13,6 +13,7 @@ import AboutUs from "../components/AboutUs";
 import EventGallery from "../components/EventGallery";
 
 import "aos/dist/aos.css";
+import Equal from "../components/Equal";
 
 AOS.init();
 
@@ -110,7 +111,12 @@ export default class Home extends Component {
                 Mother{" "}
               </h2>
             </div>
+
           </div>
+
+        </div>
+        <div>
+          <Equal />
         </div>
       </div>
     );
