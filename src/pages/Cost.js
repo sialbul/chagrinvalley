@@ -22,9 +22,9 @@ export default function Cost() {
                                 INFANTS
                                 <br />6 weeks- 21months
                             </td>
-                            <td>269.00</td>
-                            <td>242.80 </td>
-                            <td>198.00</td>
+                            <td>$269.00</td>
+                            <td>$242.00 </td>
+                            <td>$198.00</td>
                             <td></td>
                         </tr>
                         <tr>
@@ -33,9 +33,9 @@ export default function Cost() {
                                 <br />
                                 Diaper and Wipes
                             </td>
-                            <td>290.00</td>
-                            <td>261.00 </td>
-                            <td>2220.00</td>
+                            <td>$290.00</td>
+                            <td>$261.00 </td>
+                            <td>$220.00</td>
 
                             <td></td>
                         </tr>
@@ -44,20 +44,20 @@ export default function Cost() {
                                 TODDLER <br />
                                 21 months-3 years{" "}
                             </td>
-                            <td>239.00</td>
-                            <td>215.00 </td>
-                            <td>185.00</td>
+                            <td>$239.00</td>
+                            <td>$215.00 </td>
+                            <td>$185.00</td>
 
-                            <td>98.00**</td>
+                            <td>$98.00**</td>
                         </tr>
                         <tr>
                             <td>
                                 TODDLER <br />
                                 Pullups and Wipes{" "}
                             </td>
-                            <td>260.00</td>
-                            <td>234.00 </td>
-                            <td>198.00</td>
+                            <td>$260.00</td>
+                            <td>$234.00 </td>
+                            <td>$198.00</td>
 
                             <td></td>
                         </tr>
@@ -65,41 +65,41 @@ export default function Cost() {
                             <td>
                                 PRESCHOOL <br />3 years-5 years{" "}
                             </td>
-                            <td>209.00</td>
-                            <td>188.00 </td>
-                            <td>159.00</td>
+                            <td>$209.00</td>
+                            <td>$188.00 </td>
+                            <td>$159.00</td>
 
-                            <td>88.00**</td>
+                            <td>$88.00**</td>
                         </tr>
                         <tr>
                             <td>
                                 SCHOOL AGE <br />
                             </td>
-                            <td>189.00</td>
-                            <td>170.00 </td>
-                            <td>151.00</td>
+                            <td>$189.00</td>
+                            <td>$170.00 </td>
+                            <td>$151.00</td>
 
                             <td></td>
                         </tr>
                         <tr>
                             <td>Before and After</td>
-                            <td>96.00</td>
-                            <td>86.40 </td>
-                            <td>85.00</td>
+                            <td>$96.00</td>
+                            <td>$86.40 </td>
+                            <td>$85.00</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>Before </td>
-                            <td>49.00</td>
-                            <td>44.10 </td>
-                            <td>44.00</td>
+                            <td>$49.00</td>
+                            <td>$44.10 </td>
+                            <td>$44.00</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>After </td>
-                            <td>77.00</td>
-                            <td>69.30 </td>
-                            <td>69.00</td>
+                            <td>$77.00</td>
+                            <td>$69.30 </td>
+                            <td>$69.00</td>
                             <td></td>
                         </tr>
                     </tbody>
